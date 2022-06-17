@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
+  "dependencies": {
+    "grafanaDependency": ">=8.5.0",
+    "plugins": []
+  },
+  "id": "volkovlabs-abc-app",
+  "info": {
+    "author": {
+      "name": "Volkov Labs",
+      "url": "https://volkovlabs.io"
+    },
+    "description": "Template to create a new Grafana application plugin",
+    "keywords": ["template"],
+    "links": [
+      {
+        "name": "Website",
+        "url": "https://volkovlabs.io"
+      }
+    ],
+    "logos": {
+      "large": "img/logo.svg",
+      "small": "img/logo.svg"
+    },
+    "screenshots": [],
+    "updated": "%TODAY%",
+    "version": "%VERSION%"
+  },
+  "includes": [
+    {
+      "addToNav": true,
+      "defaultNav": true,
+      "icon": "home-alt",
+      "name": "Home",
+      "path": "/a/volkovlabs-abc-app/",
+      "role": "Viewer",
+      "type": "page"
+    }
+  ],
+  "name": "Abc Application",
+  "type": "app"
+}
