@@ -1,5 +1,7 @@
 # Volkov Labs Application plugin
 
+![Application](https://raw.githubusercontent.com/volkovlabs/volkovlabs-app/main/img/app.png)
+
 [![Grafana 9](https://img.shields.io/badge/Grafana-9-orange)](https://www.grafana.com)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/VolkovLabs/volkovlabs-app.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/VolkovLabs/volkovlabs-app/context:javascript)
 ![CI](https://github.com/volkovlabs/volkovlabs-app/workflows/CI/badge.svg)
