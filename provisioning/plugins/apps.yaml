@@ -1,5 +1,5 @@
 apiVersion: 1
 
 apps:
-  - type: volkovlabs-abc-app
+  - type: volkovlabs-demo-app
     disabled: false

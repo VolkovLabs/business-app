@@ -1,9 +1,9 @@
 # Template to create a new Grafana application plugin
 
 [![Grafana 9](https://img.shields.io/badge/Grafana-9-orange)](https://www.grafana.com)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/VolkovLabs/volkovlabs-abc-app.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/VolkovLabs/volkovlabs-abc-app/context:javascript)
-![CI](https://github.com/volkovlabs/volkovlabs-abc-app/workflows/CI/badge.svg)
-[![codecov](https://codecov.io/gh/VolkovLabs/volkovlabs-abc-app/branch/main/graph/badge.svg?token=2W9VR0PG5N)](https://codecov.io/gh/VolkovLabs/volkovlabs-abc-app)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/VolkovLabs/volkovlabs-demo-app.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/VolkovLabs/volkovlabs-demo-app/context:javascript)
+![CI](https://github.com/volkovlabs/volkovlabs-demo-app/workflows/CI/badge.svg)
+[![codecov](https://codecov.io/gh/VolkovLabs/volkovlabs-demo-app/branch/main/graph/badge.svg?token=2W9VR0PG5N)](https://codecov.io/gh/VolkovLabs/volkovlabs-demo-app)
 
 ## Introduction
 
@@ -53,7 +53,7 @@ yarn run start
 
 We love to hear from users, developers, and the whole community interested in this plugin. These are various ways to get in touch with us:
 
-- Ask a question, request a new feature, and file a bug with [GitHub issues](https://github.com/volkovlabs/volkovlabs-abc-app/issues/new/choose).
+- Ask a question, request a new feature, and file a bug with [GitHub issues](https://github.com/volkovlabs/volkovlabs-demo-app/issues/new/choose).
 - Star the repository to show your support.
 
 ## Contributing
@@ -64,4 +64,4 @@ We love to hear from users, developers, and the whole community interested in th
 
 ## License
 
-- Apache License Version 2.0, see [LICENSE](https://github.com/volkovlabs/volkovlabs-abc-app/blob/main/LICENSE).
+- Apache License Version 2.0, see [LICENSE](https://github.com/volkovlabs/volkovlabs-demo-app/blob/main/LICENSE).
