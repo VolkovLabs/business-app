@@ -71,6 +71,6 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/volkovlabs/demo:latest
+          tags: ghcr.io/volkovlabs/app:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
