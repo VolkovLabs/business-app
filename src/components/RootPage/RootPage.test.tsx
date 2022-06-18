@@ -77,10 +77,10 @@ describe('RootPage', () => {
         url: path,
         children: [
           {
-            text: 'Home',
+            text: 'Plugins',
             url: path,
             id: 'home',
-            icon: 'fa fa-fw fa-home',
+            icon: 'apps',
             active: true,
           },
         ],
