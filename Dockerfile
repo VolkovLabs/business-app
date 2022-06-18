@@ -29,7 +29,8 @@ ENV GF_PATHS_PROVISIONING="/etc/grafana/provisioning"
 ENV GF_PATHS_PLUGINS="/var/lib/grafana/plugins"
 
 # Copy artifacts
-COPY --chown=grafana:root dist /var/lib/grafana/plugins/volkovlabs-app
+COPY --chown=grafana:root dist /app
+COPY entrypoint.sh /
 
 ###### Customization ########################################
 USER root
@@ -50,3 +51,6 @@ RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|{text:"Docu
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|{text:`${e.edition}${a}`,url:t.licenseUrl}||g' {} \;
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|{text:`v${e.version} (${e.commit})`}||g' {} \;
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|{id:"updateVersion",text:"New version available!",icon:"download-alt",url:"https://grafana.com/grafana/download?utm_source=grafana_footer",target:"_blank"}||g' {} \;
+
+# Entrypoint
+ENTRYPOINT [ "/bin/bash", "/entrypoint.sh" ]
