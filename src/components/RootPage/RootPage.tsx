@@ -1,3 +1,4 @@
+import { Plugins } from 'components/Plugins';
 import React, { PureComponent } from 'react';
 import { AppRootProps, NavModelItem } from '@grafana/data';
 import { Alert } from '@grafana/ui';
@@ -63,10 +64,10 @@ export class RootPage extends PureComponent<Props, State> {
      * Home
      */
     tabs.push({
-      text: 'Home',
+      text: 'Plugins',
       url: path,
       id: 'home',
-      icon: 'fa fa-fw fa-home',
+      icon: 'apps',
       active: true,
     });
 
@@ -107,6 +108,6 @@ export class RootPage extends PureComponent<Props, State> {
       );
     }
 
-    return <div>Loaded and ready to go!</div>;
+    return <Plugins />;
   }
 }
