@@ -31,6 +31,9 @@ ENV GF_PATHS_PLUGINS="/var/lib/grafana/plugins"
 COPY --chown=grafana:root dist /app
 COPY entrypoint.sh /
 
+# Provisioning
+COPY --chown=grafana:root provisioning $GF_PATHS_PROVISIONING
+
 ###### Customization ########################################
 USER root
 

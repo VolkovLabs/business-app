@@ -37,6 +37,7 @@
       "type": "page"
     }
   ],
+  "autoEnabled": true,
   "name": "Volkov Labs",
   "type": "app"
 }

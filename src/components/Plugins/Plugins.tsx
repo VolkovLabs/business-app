@@ -43,6 +43,13 @@ export class Plugins extends PureComponent {
               <LinkButton variant="secondary" target="_blank" href="https://www.youtube.com/watch?v=1_bgLSehjhg">
                 Youtube
               </LinkButton>
+              <LinkButton
+                variant="secondary"
+                target="_blank"
+                href="https://volkovlabs.com/display-base64-encoded-images-from-any-data-source-on-your-dashboard-398a99ba5b5e"
+              >
+                Medium
+              </LinkButton>
             </Card.Actions>
           </Card>
 
@@ -76,6 +83,13 @@ export class Plugins extends PureComponent {
               <LinkButton variant="secondary" target="_blank" href="https://www.youtube.com/watch?v=RAxqS2hpWkg">
                 Youtube
               </LinkButton>
+              <LinkButton
+                variant="secondary"
+                target="_blank"
+                href="https://volkovlabs.com/do-you-want-to-be-on-top-of-the-latest-news-staying-in-grafana-9abb064ed449"
+              >
+                Medium
+              </LinkButton>
             </Card.Actions>
           </Card>
         </FieldSet>
@@ -107,6 +121,13 @@ export class Plugins extends PureComponent {
               <LinkButton variant="secondary" target="_blank" href="https://www.youtube.com/watch?v=DXALVG8GijM">
                 Youtube
               </LinkButton>
+              <LinkButton
+                variant="secondary"
+                target="_blank"
+                href="https://volkovlabs.com/data-manipulation-panel-plugin-for-grafana-97f9af2c67e0"
+              >
+                Medium
+              </LinkButton>
             </Card.Actions>
           </Card>
 
@@ -135,6 +156,13 @@ export class Plugins extends PureComponent {
               </LinkButton>
               <LinkButton variant="secondary" target="_blank" href="https://www.youtube.com/watch?v=GPzsciOxKdk">
                 Youtube
+              </LinkButton>
+              <LinkButton
+                variant="secondary"
+                target="_blank"
+                href="https://volkovlabs.com/using-environment-variables-for-configuration-provisioning-and-dashboards-in-grafana-279661733416"
+              >
+                Medium
               </LinkButton>
             </Card.Actions>
           </Card>
