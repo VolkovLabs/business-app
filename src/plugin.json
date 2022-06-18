@@ -4,13 +4,13 @@
     "grafanaDependency": ">=8.5.0",
     "plugins": []
   },
-  "id": "volkovlabs-demo-app",
+  "id": "volkovlabs-app",
   "info": {
     "author": {
       "name": "Volkov Labs",
       "url": "https://volkovlabs.io"
     },
-    "description": "Volkov Labs Demo Application plugin",
+    "description": "Volkov Labs Application plugin",
     "keywords": ["template"],
     "links": [
       {
@@ -32,11 +32,11 @@
       "defaultNav": true,
       "icon": "home-alt",
       "name": "Home",
-      "path": "/a/volkovlabs-demo-app/",
+      "path": "/a/volkovlabs-app/",
       "role": "Viewer",
       "type": "page"
     }
   ],
-  "name": "Demo Application",
+  "name": "Volkov Labs",
   "type": "app"
 }

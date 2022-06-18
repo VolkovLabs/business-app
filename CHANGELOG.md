@@ -1,6 +1,6 @@
 # Change Log
 
-## 1.0.0 (2022-06-16)
+## 1.0.0 (2022-06-18)
 
 ### Features / Enhancements
 

@@ -1,6 +1,6 @@
 {
   "author": "Volkov Labs",
-  "description": "Volkov Labs Demo Application plugin",
+  "description": "Volkov Labs Application plugin",
   "devDependencies": {
     "@grafana/data": "9.0.0",
     "@grafana/runtime": "9.0.0",
@@ -14,7 +14,7 @@
   "engines": {
     "node": ">=16"
   },
-  "name": "volkovlabs-demo-app",
+  "name": "volkovlabs-app",
   "scripts": {
     "build": "grafana-toolkit plugin:build --coverage",
     "dev": "grafana-toolkit plugin:dev",
@@ -26,5 +26,5 @@
     "upgrade": "yarn upgrade --latest",
     "watch": "grafana-toolkit plugin:dev --watch"
   },
-  "version": "2.0.0"
+  "version": "1.0.0"
 }
