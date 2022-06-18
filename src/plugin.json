@@ -4,13 +4,13 @@
     "grafanaDependency": ">=8.5.0",
     "plugins": []
   },
-  "id": "volkovlabs-abc-app",
+  "id": "volkovlabs-demo-app",
   "info": {
     "author": {
       "name": "Volkov Labs",
       "url": "https://volkovlabs.io"
     },
-    "description": "Template to create a new Grafana application plugin",
+    "description": "Volkov Labs Demo Application plugin",
     "keywords": ["template"],
     "links": [
       {
@@ -19,8 +19,8 @@
       }
     ],
     "logos": {
-      "large": "img/logo.svg",
-      "small": "img/logo.svg"
+      "large": "img/app-logo.svg",
+      "small": "img/app-logo.svg"
     },
     "screenshots": [],
     "updated": "%TODAY%",
@@ -32,11 +32,11 @@
       "defaultNav": true,
       "icon": "home-alt",
       "name": "Home",
-      "path": "/a/volkovlabs-abc-app/",
+      "path": "/a/volkovlabs-demo-app/",
       "role": "Viewer",
       "type": "page"
     }
   ],
-  "name": "Abc Application",
+  "name": "Demo Application",
   "type": "app"
 }

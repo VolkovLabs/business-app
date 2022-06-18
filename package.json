@@ -1,6 +1,6 @@
 {
   "author": "Volkov Labs",
-  "description": "Template for a new Grafana application plugin",
+  "description": "Volkov Labs Demo Application plugin",
   "devDependencies": {
     "@grafana/data": "9.0.0",
     "@grafana/runtime": "9.0.0",
@@ -14,7 +14,7 @@
   "engines": {
     "node": ">=16"
   },
-  "name": "volkovlabs-abc-app",
+  "name": "volkovlabs-demo-app",
   "scripts": {
     "build": "grafana-toolkit plugin:build --coverage",
     "dev": "grafana-toolkit plugin:dev",
