@@ -6,13 +6,13 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    image: ghcr.io/volkovlabs/demo:latest
+    image: ghcr.io/volkovlabs/app:latest
     ports:
       - 3000:3000/tcp
     environment:
       - GF_DEFAULT_APP_MODE=development
     volumes:
-      - ./dist:/var/lib/grafana/plugins/volkovlabs-demo-app
+      - ./dist:/var/lib/grafana/plugins/volkovlabs-app
       - ./provisioning:/etc/grafana/provisioning
 
   nginx:

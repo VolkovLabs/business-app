@@ -29,7 +29,7 @@ ENV GF_PATHS_PROVISIONING="/etc/grafana/provisioning"
 ENV GF_PATHS_PLUGINS="/var/lib/grafana/plugins"
 
 # Copy artifacts
-COPY --chown=grafana:root dist /var/lib/grafana/plugins/volkovlabs-demo-app
+COPY --chown=grafana:root dist /var/lib/grafana/plugins/volkovlabs-app
 
 ###### Customization ########################################
 USER root
@@ -45,7 +45,7 @@ RUN sed -i 's|<title>\[\[.AppTitle\]\]</title>|<title>Volkov Labs</title>|g' /us
 
 # Update Javascript
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|o(l,"AppTitle","Grafana")|o(l,"AppTitle","Volkov Labs")|g' {} \;
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|o(l,"LoginTitle","Welcome to Grafana")|o(l,"LoginTitle","Welcome to Volkov Labs Demo")|g' {} \;
+RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|o(l,"LoginTitle","Welcome to Grafana")|o(l,"LoginTitle","Welcome to Volkov Labs")|g' {} \;
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|{text:"Documentation",icon:"document-info",url:"https://grafana.com/docs/grafana/latest/?utm_source=grafana_footer",target:"_blank"},{text:"Support",icon:"question-circle",url:"https://grafana.com/products/enterprise/?utm_source=grafana_footer",target:"_blank"},{text:"Community",icon:"comments-alt",url:"https://community.grafana.com/?utm_source=grafana_footer",target:"_blank"}||g' {} \;
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|{text:`${e.edition}${a}`,url:t.licenseUrl}||g' {} \;
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|{text:`v${e.version} (${e.commit})`}||g' {} \;
