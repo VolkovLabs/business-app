@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { Card, FieldSet, LinkButton, TagList } from '@grafana/ui';
-import { Base64Image, DataManipulation, Environment, RSSAtom } from '../../icons';
+import { Base64Image, DataManipulation, ECharts, Environment, RSSAtom } from '../../icons';
 
 /**
  * Plugins
@@ -28,6 +28,7 @@ export class Plugins extends PureComponent {
             <Card.Actions>
               <LinkButton
                 variant="secondary"
+                icon="cloud-download"
                 target="_blank"
                 href="https://grafana.com/grafana/plugins/volkovlabs-image-panel/"
               >
@@ -36,15 +37,22 @@ export class Plugins extends PureComponent {
               <LinkButton
                 variant="secondary"
                 target="_blank"
+                icon="star"
                 href="https://github.com/volkovlabs/volkovlabs-image-panel"
               >
                 GitHub
               </LinkButton>
-              <LinkButton variant="secondary" target="_blank" href="https://www.youtube.com/watch?v=1_bgLSehjhg">
-                Youtube
+              <LinkButton
+                variant="secondary"
+                icon="play"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=1_bgLSehjhg"
+              >
+                YouTube
               </LinkButton>
               <LinkButton
                 variant="secondary"
+                icon="file-alt"
                 target="_blank"
                 href="https://volkovlabs.com/display-base64-encoded-images-from-any-data-source-on-your-dashboard-398a99ba5b5e"
               >
@@ -68,6 +76,7 @@ export class Plugins extends PureComponent {
             <Card.Actions>
               <LinkButton
                 variant="secondary"
+                icon="cloud-download"
                 target="_blank"
                 href="https://grafana.com/grafana/plugins/volkovlabs-rss-datasource/"
               >
@@ -75,20 +84,35 @@ export class Plugins extends PureComponent {
               </LinkButton>
               <LinkButton
                 variant="secondary"
+                icon="star"
                 target="_blank"
                 href="https://github.com/volkovlabs/volkovlabs-rss-datasource"
               >
                 GitHub
               </LinkButton>
-              <LinkButton variant="secondary" target="_blank" href="https://www.youtube.com/watch?v=RAxqS2hpWkg">
-                Youtube
+              <LinkButton
+                variant="secondary"
+                icon="play"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=RAxqS2hpWkg"
+              >
+                YouTube
               </LinkButton>
               <LinkButton
                 variant="secondary"
+                icon="file-alt"
                 target="_blank"
                 href="https://volkovlabs.com/do-you-want-to-be-on-top-of-the-latest-news-staying-in-grafana-9abb064ed449"
               >
                 Medium
+              </LinkButton>
+              <LinkButton
+                variant="secondary"
+                icon="monitor"
+                target="_blank"
+                href="https://demo.volkovlabs.io/d/O4tc_E6Gz/rss-atom-feeds?orgId=1"
+              >
+                Demo
               </LinkButton>
             </Card.Actions>
           </Card>
@@ -113,20 +137,68 @@ export class Plugins extends PureComponent {
             <Card.Actions>
               <LinkButton
                 variant="secondary"
+                icon="star"
                 target="_blank"
                 href="https://github.com/volkovlabs/volkovlabs-form-panel"
               >
                 GitHub
               </LinkButton>
-              <LinkButton variant="secondary" target="_blank" href="https://www.youtube.com/watch?v=DXALVG8GijM">
-                Youtube
+              <LinkButton
+                variant="secondary"
+                icon="play"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=DXALVG8GijM"
+              >
+                YouTube
               </LinkButton>
               <LinkButton
                 variant="secondary"
+                icon="file-alt"
                 target="_blank"
                 href="https://volkovlabs.com/data-manipulation-panel-plugin-for-grafana-97f9af2c67e0"
               >
                 Medium
+              </LinkButton>
+            </Card.Actions>
+          </Card>
+
+          <Card>
+            <Card.Heading>Apache ECharts Panel</Card.Heading>
+            <Card.Description>
+              The ECharts Panel is a plugin for Grafana that allows to visualize Apache ECharts on your Grafana
+              dashboard.
+            </Card.Description>
+            <Card.Figure>
+              <ECharts size={40} />
+            </Card.Figure>
+            <Card.Meta>
+              grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-echarts-panel
+            </Card.Meta>
+            <Card.Tags>
+              <TagList tags={['Panel']} />
+            </Card.Tags>
+            <Card.Actions>
+              <LinkButton
+                variant="secondary"
+                icon="star"
+                target="_blank"
+                href="https://github.com/volkovlabs/volkovlabs-echarts-panel"
+              >
+                GitHub
+              </LinkButton>
+              <LinkButton variant="secondary" icon="play" target="_blank" disabled>
+                YouTube
+              </LinkButton>
+              <LinkButton variant="secondary" icon="file-alt" target="_blank" disabled>
+                Medium
+              </LinkButton>
+              <LinkButton
+                variant="secondary"
+                icon="monitor"
+                target="_blank"
+                href="https://demo.volkovlabs.io/d/O4tc_E6G5/apache-echarts?orgId=1"
+              >
+                Demo
               </LinkButton>
             </Card.Actions>
           </Card>
@@ -149,16 +221,23 @@ export class Plugins extends PureComponent {
             <Card.Actions>
               <LinkButton
                 variant="secondary"
+                icon="star"
                 target="_blank"
                 href="https://github.com/volkovlabs/volkovlabs-env-datasource"
               >
                 GitHub
               </LinkButton>
-              <LinkButton variant="secondary" target="_blank" href="https://www.youtube.com/watch?v=GPzsciOxKdk">
-                Youtube
+              <LinkButton
+                variant="secondary"
+                icon="play"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=GPzsciOxKdk"
+              >
+                YouTube
               </LinkButton>
               <LinkButton
                 variant="secondary"
+                icon="file-alt"
                 target="_blank"
                 href="https://volkovlabs.com/using-environment-variables-for-configuration-provisioning-and-dashboards-in-grafana-279661733416"
               >
