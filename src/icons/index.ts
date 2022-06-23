@@ -1,3 +1,4 @@
+export * from './Balena';
 export * from './Base64Image';
 export * from './DataManipulation';
 export * from './ECharts';

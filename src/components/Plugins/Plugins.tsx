@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { Card, FieldSet, LinkButton, TagList } from '@grafana/ui';
-import { Base64Image, DataManipulation, ECharts, Environment, RSSAtom } from '../../icons';
+import { Balena, Base64Image, DataManipulation, ECharts, Environment, RSSAtom } from '../../icons';
 
 /**
  * Plugins
@@ -120,6 +120,79 @@ export class Plugins extends PureComponent {
 
         <FieldSet label="Private Community plugins">
           <Card>
+            <Card.Heading>Apache ECharts Panel</Card.Heading>
+            <Card.Description>
+              The ECharts Panel is a plugin for Grafana that allows to visualize Apache ECharts on your Grafana
+              dashboard.
+            </Card.Description>
+            <Card.Figure>
+              <ECharts size={40} />
+            </Card.Figure>
+            <Card.Meta>
+              grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-echarts-panel
+            </Card.Meta>
+            <Card.Tags>
+              <TagList tags={['Panel']} />
+            </Card.Tags>
+            <Card.Actions>
+              <LinkButton
+                variant="secondary"
+                icon="star"
+                target="_blank"
+                href="https://github.com/volkovlabs/volkovlabs-echarts-panel"
+              >
+                GitHub
+              </LinkButton>
+              <LinkButton variant="secondary" icon="play" target="_blank" disabled>
+                YouTube
+              </LinkButton>
+              <LinkButton variant="secondary" icon="file-alt" target="_blank" disabled>
+                Medium
+              </LinkButton>
+              <LinkButton
+                variant="secondary"
+                icon="monitor"
+                target="_blank"
+                href="https://demo.volkovlabs.io/d/O4tc_E6G5/apache-echarts?orgId=1"
+              >
+                Demo
+              </LinkButton>
+            </Card.Actions>
+          </Card>
+
+          <Card>
+            <Card.Heading>Balena Application</Card.Heading>
+            <Card.Description>
+              The Balena Application plugin for Grafana allows to display device information and manage services using
+              Balena Supervisor API.
+            </Card.Description>
+            <Card.Figure>
+              <Balena size={40} />
+            </Card.Figure>
+            <Card.Meta>
+              grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-balena-app
+            </Card.Meta>
+            <Card.Tags>
+              <TagList tags={['Application']} />
+            </Card.Tags>
+            <Card.Actions>
+              <LinkButton
+                variant="secondary"
+                icon="star"
+                target="_blank"
+                href="https://github.com/volkovlabs/volkovlabs-balena-app"
+              >
+                GitHub
+              </LinkButton>
+              <LinkButton variant="secondary" icon="play" target="_blank" disabled>
+                YouTube
+              </LinkButton>
+              <LinkButton variant="secondary" icon="file-alt" target="_blank" disabled>
+                Medium
+              </LinkButton>
+            </Card.Actions>
+          </Card>
+          <Card>
             <Card.Heading>Data Manipulation Panel</Card.Heading>
             <Card.Description>
               The Data Manipulation Form Panel is a plugin for Grafana that can be used to insert, update application
@@ -158,47 +231,6 @@ export class Plugins extends PureComponent {
                 href="https://volkovlabs.com/data-manipulation-panel-plugin-for-grafana-97f9af2c67e0"
               >
                 Medium
-              </LinkButton>
-            </Card.Actions>
-          </Card>
-
-          <Card>
-            <Card.Heading>Apache ECharts Panel</Card.Heading>
-            <Card.Description>
-              The ECharts Panel is a plugin for Grafana that allows to visualize Apache ECharts on your Grafana
-              dashboard.
-            </Card.Description>
-            <Card.Figure>
-              <ECharts size={40} />
-            </Card.Figure>
-            <Card.Meta>
-              grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-echarts-panel
-            </Card.Meta>
-            <Card.Tags>
-              <TagList tags={['Panel']} />
-            </Card.Tags>
-            <Card.Actions>
-              <LinkButton
-                variant="secondary"
-                icon="star"
-                target="_blank"
-                href="https://github.com/volkovlabs/volkovlabs-echarts-panel"
-              >
-                GitHub
-              </LinkButton>
-              <LinkButton variant="secondary" icon="play" target="_blank" disabled>
-                YouTube
-              </LinkButton>
-              <LinkButton variant="secondary" icon="file-alt" target="_blank" disabled>
-                Medium
-              </LinkButton>
-              <LinkButton
-                variant="secondary"
-                icon="monitor"
-                target="_blank"
-                href="https://demo.volkovlabs.io/d/O4tc_E6G5/apache-echarts?orgId=1"
-              >
-                Demo
               </LinkButton>
             </Card.Actions>
           </Card>
