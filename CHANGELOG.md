@@ -5,6 +5,9 @@
 ### Features / Enhancements
 
 - Add ECharts and update plugins (#7)
+- Add Balena Application (#8)
+- Add RSS Dashboard as Home (#9)
+- Fix LGTM The value of the id attribute must not contain any space characters (#10)
 
 ## 1.0.0 (2022-06-18)
 
