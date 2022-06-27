@@ -1,0 +1,50 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
+  "alerting": true,
+  "dependencies": {
+    "grafanaDependency": ">=8.5.0",
+    "plugins": []
+  },
+  "id": "volkovlabs-rss-datasource",
+  "info": {
+    "author": {
+      "name": "Volkov Labs",
+      "url": "https://volkovlabs.io"
+    },
+    "description": "RSS/Atom datasource plugin for Grafana",
+    "keywords": ["rss", "atom", "news"],
+    "links": [
+      {
+        "name": "Website",
+        "url": "https://volkovlabs.io"
+      }
+    ],
+    "logos": {
+      "large": "img/logo.svg",
+      "small": "img/logo.svg"
+    },
+    "screenshots": [
+      {
+        "name": "Dashboard",
+        "path": "img/dashboard.png"
+      },
+      {
+        "name": "Panel",
+        "path": "img/panel.png"
+      }
+    ],
+    "updated": "2022-06-23",
+    "version": "2.1.0"
+  },
+  "metrics": true,
+  "name": "RSS/Atom",
+  "routes": [
+    {
+      "method": "*",
+      "path": "feed",
+      "reqRole": "Viewer",
+      "url": "{{ .JsonData.feed }}"
+    }
+  ],
+  "type": "datasource"
+}
