@@ -24,12 +24,13 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
+  "id": 1,
   "links": [],
   "liveNow": false,
   "panels": [
     {
       "datasource": {
-        "type": "volkovlabs-abc-datasource",
+        "type": "volkovlabs-rss-datasource",
         "uid": "rZAdZdf7a"
       },
       "gridPos": {
@@ -48,7 +49,7 @@
       "targets": [
         {
           "datasource": {
-            "type": "volkovlabs-abc-datasource",
+            "type": "volkovlabs-rss-datasource",
             "uid": "rZAdZdf7a"
           },
           "dateField": "pubDate",
@@ -88,7 +89,7 @@
       },
       "id": 3,
       "options": {
-        "content": "<table width=100% style='border:0'>\n<tr>\n<td style='border:0'><h3><a target=\"_blank\" style=\"color: blue\" href=\"{{link}}\">{{title}}</a></h3>\n{{{content:h4}}}</td>\n<td rowspan=2 style='border:0' width=200px>\n<div style='max-width: 100%; display: inline; height: auto '><img width=200px height=100% src=\"{{content:img-src}}\"></div></td>\n</tr>\n<tr>\n<td style='border:0'><b>{{date pubDate 'MMM, DD YYYY'}} by {{dc:creator}}</b></td>\n</table>",
+        "content": "<table width=100% style='border:0'>\n<tr>\n<td style='border:0'><h3><a target=\"_blank\" style=\"color: blue\" href=\"{{link}}\">{{title}}</a></h3>\n{{{content:h4}}}</td>\n<td rowspan=2 style='border:0' width=200px>\n<div style='max-width: 100%; display: inline; height: auto '><img width=200px src=\"{{media:group:media:thumbnail:url}}\"></div></td>\n</tr>\n<tr>\n<td style='border:0'><b>{{date updated 'MMM, DD YYYY'}} by {{author}}</b></td>\n</table>",
         "defaultContent": "The query didn't return any results.",
         "everyRow": true
       },
@@ -99,7 +100,7 @@
             "type": "volkovlabs-rss-datasource",
             "uid": "rZAdZdf82"
           },
-          "dateField": "pubDate",
+          "dateField": "",
           "feedType": "items",
           "queryText": "test",
           "refId": "A"
@@ -112,9 +113,9 @@
           "options": {
             "conversions": [
               {
-                "dateFormat": "ddd, DD MMM YYYY HH:mm:ss ZZ",
+                "dateFormat": "",
                 "destinationType": "time",
-                "targetField": "pubDate"
+                "targetField": "updated"
               }
             ],
             "fields": {}
@@ -137,7 +138,7 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "Panels",
+  "title": "Volkov Labs News",
   "uid": "O4tc_E6Gz",
   "version": 1,
   "weekStart": ""
