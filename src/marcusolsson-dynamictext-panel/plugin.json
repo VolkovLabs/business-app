@@ -1,0 +1,43 @@
+{
+  "$schema": "https://github.com/grafana/grafana/raw/main/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "panel",
+  "name": "Dynamic text",
+  "id": "marcusolsson-dynamictext-panel",
+  "info": {
+    "description": "Data-driven text with Markdown support",
+    "author": {
+      "name": "Marcus Olsson",
+      "url": "https://github.com/marcusolsson"
+    },
+    "keywords": ["text", "markdown", "handlebars"],
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "links": [
+      {
+        "name": "Documentation",
+        "url": "https://marcusolsson.github.io/grafana-dynamictext-panel"
+      },
+      {
+        "name": "Website",
+        "url": "https://github.com/marcusolsson/grafana-dynamictext-panel"
+      },
+      {
+        "name": "License",
+        "url": "https://github.com/marcusolsson/grafana-dynamictext-panel/blob/main/LICENSE"
+      }
+    ],
+    "screenshots": [
+      { "name": "Dynamic text (Dark)", "path": "img/dark.png" },
+      { "name": "Dynamic text (Light)", "path": "img/light.png" }
+    ],
+    "version": "1.9.0",
+    "updated": "2022-01-08"
+  },
+  "dependencies": {
+    "grafanaDependency": ">=7.0.0",
+    "grafanaVersion": "7.0.0",
+    "plugins": []
+  }
+}

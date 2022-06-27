@@ -2,14 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
   "dependencies": {
     "grafanaDependency": ">=8.5.0",
-    "plugins": [
-      {
-        "id": "volkovlabs-rss-datasource",
-        "name": "RSS/Atom Data Source",
-        "type": "datasource",
-        "version": "^2.1.0"
-      }
-    ]
+    "plugins": []
   },
   "id": "volkovlabs-app",
   "info": {
