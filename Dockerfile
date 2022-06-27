@@ -23,6 +23,9 @@ ENV GF_EXPLORE_ENABLED=false
 ENV GF_ALERTING_ENABLED=false
 ENV GF_UNIFIED_ALERTING_ENABLED=false
 
+# Home Dashboard
+ENV GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/etc/grafana/provisioning/dashboards/news.json
+
 # Paths
 ENV GF_PATHS_PROVISIONING="/etc/grafana/provisioning"
 ENV GF_PATHS_PLUGINS="/var/lib/grafana/plugins"
