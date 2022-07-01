@@ -57,5 +57,9 @@ RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|{text:`${e.
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|{text:`v${e.version} (${e.commit})`}||g' {} \;
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|{id:"updateVersion",text:"New version available!",icon:"download-alt",url:"https://grafana.com/grafana/download?utm_source=grafana_footer",target:"_blank"}||g' {} \;
 
+#############################################################
+
+USER grafana
+
 # Entrypoint
 ENTRYPOINT [ "/bin/bash", "/entrypoint.sh" ]
