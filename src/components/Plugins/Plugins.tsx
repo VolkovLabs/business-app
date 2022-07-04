@@ -143,7 +143,12 @@ export class Plugins extends PureComponent {
               >
                 GitHub
               </LinkButton>
-              <LinkButton variant="secondary" icon="play" target="_blank" disabled>
+              <LinkButton
+                variant="secondary"
+                icon="play"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=DxqCrBEmrQw"
+              >
                 YouTube
               </LinkButton>
               <LinkButton variant="secondary" icon="file-alt" target="_blank" disabled>
@@ -189,6 +194,9 @@ export class Plugins extends PureComponent {
               </LinkButton>
               <LinkButton variant="secondary" icon="file-alt" target="_blank" disabled>
                 Medium
+              </LinkButton>
+              <LinkButton variant="secondary" icon="compass" target="_blank">
+                balenaHub
               </LinkButton>
             </Card.Actions>
           </Card>
