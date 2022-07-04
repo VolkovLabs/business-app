@@ -12,6 +12,7 @@
 - Add DynamicText panel and Set Home Dashboard (#12)
 - Update Docker permissions (#13)
 - Update ECharts and Balena Plugins (#14)
+- Upgrade to Grafana 9.0.2 (#15)
 
 ## 1.0.0 (2022-06-18)
 
