@@ -195,7 +195,12 @@ export class Plugins extends PureComponent {
               <LinkButton variant="secondary" icon="file-alt" target="_blank" disabled>
                 Medium
               </LinkButton>
-              <LinkButton variant="secondary" icon="compass" target="_blank">
+              <LinkButton
+                variant="secondary"
+                icon="compass"
+                target="_blank"
+                href="https://hub.balena.io/organizations/volkovlabs/projects/balena-app"
+              >
                 balenaHub
               </LinkButton>
             </Card.Actions>
