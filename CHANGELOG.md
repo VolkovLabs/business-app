@@ -1,6 +1,6 @@
 # Change Log
 
-## 1.1.0 (IN PROGRESS)
+## 1.1.0 (2022-07-04)
 
 ### Features / Enhancements
 
@@ -8,6 +8,10 @@
 - Add Balena Application (#8)
 - Add RSS Dashboard as Home (#9)
 - Fix LGTM The value of the id attribute must not contain any space characters (#10)
+- Add RSS Data Source 2.1.0 (#11)
+- Add DynamicText panel and Set Home Dashboard (#12)
+- Update Docker permissions (#13)
+- Update ECharts and Balena Plugins (#14)
 
 ## 1.0.0 (2022-06-18)
 
