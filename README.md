@@ -13,7 +13,7 @@ The Volkov Labs Application includes Docker image and Application plugin with in
 
 ### Requirements
 
-- Grafana 8.5+, Grafana 9.0+ is required for version 2.X.
+- Grafana 8.5+, Grafana 9.0+ is required.
 
 ## Feedback
 
