@@ -12,7 +12,7 @@ export class Plugins extends PureComponent {
   render() {
     return (
       <div>
-        <FieldSet label="Public Community plugins">
+        <FieldSet label="Grafana Marketplace">
           <Card>
             <Card.Heading>Base64 Image/Video/Audio/PDF</Card.Heading>
             <Card.Description>
@@ -26,14 +26,6 @@ export class Plugins extends PureComponent {
               <TagList tags={['Panel']} />
             </Card.Tags>
             <Card.Actions>
-              <LinkButton
-                variant="secondary"
-                icon="cloud-download"
-                target="_blank"
-                href="https://grafana.com/grafana/plugins/volkovlabs-image-panel/"
-              >
-                Grafana Marketplace
-              </LinkButton>
               <LinkButton
                 variant="secondary"
                 target="_blank"
@@ -58,6 +50,14 @@ export class Plugins extends PureComponent {
               >
                 Medium
               </LinkButton>
+              <LinkButton
+                variant="secondary"
+                icon="cloud-download"
+                target="_blank"
+                href="https://grafana.com/grafana/plugins/volkovlabs-image-panel/"
+              >
+                Grafana Marketplace
+              </LinkButton>
             </Card.Actions>
           </Card>
 
@@ -74,14 +74,6 @@ export class Plugins extends PureComponent {
               <TagList tags={['Data Source']} />
             </Card.Tags>
             <Card.Actions>
-              <LinkButton
-                variant="secondary"
-                icon="cloud-download"
-                target="_blank"
-                href="https://grafana.com/grafana/plugins/volkovlabs-rss-datasource/"
-              >
-                Grafana Marketplace
-              </LinkButton>
               <LinkButton
                 variant="secondary"
                 icon="star"
@@ -110,15 +102,23 @@ export class Plugins extends PureComponent {
                 variant="secondary"
                 icon="monitor"
                 target="_blank"
-                href="https://demo.volkovlabs.io/d/O4tc_E6Gz/rss-atom-feeds?orgId=1"
+                href="https://demo.volkovlabs.io/d/O4tc_E6G2/rss-atom-data-source?orgId=1"
               >
                 Demo
+              </LinkButton>
+              <LinkButton
+                variant="secondary"
+                icon="cloud-download"
+                target="_blank"
+                href="https://grafana.com/grafana/plugins/volkovlabs-rss-datasource/"
+              >
+                Grafana Marketplace
               </LinkButton>
             </Card.Actions>
           </Card>
         </FieldSet>
 
-        <FieldSet label="Private Community plugins">
+        <FieldSet label="Private Repository">
           <Card>
             <Card.Heading>Apache ECharts Panel</Card.Heading>
             <Card.Description>
