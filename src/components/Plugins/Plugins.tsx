@@ -151,7 +151,12 @@ export class Plugins extends PureComponent {
               >
                 YouTube
               </LinkButton>
-              <LinkButton variant="secondary" icon="file-alt" target="_blank" disabled>
+              <LinkButton
+                variant="secondary"
+                icon="file-alt"
+                target="_blank"
+                href="https://volkovlabs.com/the-missing-plugin-to-create-business-and-industrial-charts-in-grafana-1d8f7304229f"
+              >
                 Medium
               </LinkButton>
               <LinkButton

@@ -1,10 +1,11 @@
 # Change Log
 
-## 1.2.0 (IN PROGRESS)
+## 1.2.0 (2022-08-05)
 
 ### Features / Enhancements
 
 - Upgrade to Grafana 9.0.3 (#16)
+- Upgrade to Grafana 9.0.6 (#17)
 
 ## 1.1.0 (2022-07-04)
 
