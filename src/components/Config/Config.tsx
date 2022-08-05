@@ -40,7 +40,10 @@ export class Config extends PureComponent<Props, State> {
     return (
       <FieldSet>
         <h2>{Application.name}</h2>
-        <p>The Abc Application, is a plugin for Grafana that...</p>
+        <p>
+          The Volkov Labs Application includes Docker image and Application plugin with information about Volkov Labs
+          supported Grafana plugins.
+        </p>
       </FieldSet>
     );
   }

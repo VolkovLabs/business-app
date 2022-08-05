@@ -1,4 +1,4 @@
-# Volkov Labs Application plugin
+# Volkov Labs Application plugin for Grafana
 
 ![Application](https://raw.githubusercontent.com/volkovlabs/volkovlabs-app/main/img/app.png)
 
@@ -13,7 +13,14 @@ The Volkov Labs Application includes Docker image and Application plugin with in
 
 ### Requirements
 
-- Grafana 8.5+, Grafana 9.0+ is required.
+- Grafana 9.0+ is required.
+
+## Bundle
+
+Application plugin includes:
+
+- [RSS/Atom data source plugin](https://github.com/volkovlabs/volkovlabs-rss-datasource)
+- [Dynamic text for Grafana](https://github.com/marcusolsson/grafana-dynamictext-panel)
 
 ## Feedback
 
