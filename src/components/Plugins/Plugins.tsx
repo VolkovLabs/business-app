@@ -14,6 +14,63 @@ export class Plugins extends PureComponent {
       <div>
         <FieldSet label="Grafana Marketplace">
           <Card>
+            <Card.Heading>Apache ECharts Panel</Card.Heading>
+            <Card.Description>
+              The ECharts Panel is a plugin for Grafana that allows to visualize Apache ECharts on your Grafana
+              dashboard.
+            </Card.Description>
+            <Card.Figure>
+              <ECharts size={40} />
+            </Card.Figure>
+            <Card.Meta>grafana-cli plugins install volkovlabs-echarts-panel</Card.Meta>
+            <Card.Tags>
+              <TagList tags={['Panel']} />
+            </Card.Tags>
+            <Card.Actions>
+              <LinkButton
+                variant="secondary"
+                icon="star"
+                target="_blank"
+                href="https://github.com/volkovlabs/volkovlabs-echarts-panel"
+              >
+                GitHub
+              </LinkButton>
+              <LinkButton
+                variant="secondary"
+                icon="play"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=DxqCrBEmrQw"
+              >
+                YouTube
+              </LinkButton>
+              <LinkButton
+                variant="secondary"
+                icon="file-alt"
+                target="_blank"
+                href="https://volkovlabs.com/the-missing-plugin-to-create-business-and-industrial-charts-in-grafana-1d8f7304229f"
+              >
+                Medium
+              </LinkButton>
+              <LinkButton
+                variant="secondary"
+                icon="monitor"
+                target="_blank"
+                href="https://demo.volkovlabs.io/d/O4tc_E6G5/apache-echarts?orgId=1"
+              >
+                Demo
+              </LinkButton>
+              <LinkButton
+                variant="secondary"
+                icon="cloud-download"
+                target="_blank"
+                href="https://grafana.com/grafana/plugins/volkovlabs-echarts-panel/"
+              >
+                Grafana Marketplace
+              </LinkButton>
+            </Card.Actions>
+          </Card>
+
+          <Card>
             <Card.Heading>Base64 Image/Video/Audio/PDF</Card.Heading>
             <Card.Description>
               The Base64 Image/Video/Audio/PDF Panel is a plugin for Grafana that displays raw and Base64 encoded files
@@ -22,6 +79,7 @@ export class Plugins extends PureComponent {
             <Card.Figure>
               <Base64Image size={40} />
             </Card.Figure>
+            <Card.Meta>grafana-cli plugins install volkovlabs-image-panel</Card.Meta>
             <Card.Tags>
               <TagList tags={['Panel']} />
             </Card.Tags>
@@ -62,6 +120,55 @@ export class Plugins extends PureComponent {
           </Card>
 
           <Card>
+            <Card.Heading>Data Manipulation Panel</Card.Heading>
+            <Card.Description>
+              The Data Manipulation Form Panel is a plugin for Grafana that can be used to insert, update application
+              data, and modify configuration directly from your Grafana dashboard.
+            </Card.Description>
+            <Card.Figure>
+              <DataManipulation size={40} />
+            </Card.Figure>
+            <Card.Meta>grafana-cli plugins install volkovlabs-form-panel</Card.Meta>
+            <Card.Tags>
+              <TagList tags={['Panel']} />
+            </Card.Tags>
+            <Card.Actions>
+              <LinkButton
+                variant="secondary"
+                icon="star"
+                target="_blank"
+                href="https://github.com/volkovlabs/volkovlabs-form-panel"
+              >
+                GitHub
+              </LinkButton>
+              <LinkButton
+                variant="secondary"
+                icon="play"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=DXALVG8GijM"
+              >
+                YouTube
+              </LinkButton>
+              <LinkButton
+                variant="secondary"
+                icon="file-alt"
+                target="_blank"
+                href="https://volkovlabs.com/data-manipulation-panel-plugin-for-grafana-97f9af2c67e0"
+              >
+                Medium
+              </LinkButton>
+              <LinkButton
+                variant="secondary"
+                icon="cloud-download"
+                target="_blank"
+                href="https://grafana.com/grafana/plugins/volkovlabs-form-panel/"
+              >
+                Grafana Marketplace
+              </LinkButton>
+            </Card.Actions>
+          </Card>
+
+          <Card>
             <Card.Heading>RSS/Atom Data Source</Card.Heading>
             <Card.Description>
               The RSS/Atom data source is a plugin for Grafana that retrieves RSS/Atom feeds and allows to visualize
@@ -70,6 +177,7 @@ export class Plugins extends PureComponent {
             <Card.Figure>
               <RSSAtom size={40} />
             </Card.Figure>
+            <Card.Meta>grafana-cli plugins install volkovlabs-rss-datasource</Card.Meta>
             <Card.Tags>
               <TagList tags={['Data Source']} />
             </Card.Tags>
@@ -120,57 +228,6 @@ export class Plugins extends PureComponent {
 
         <FieldSet label="Private Repository">
           <Card>
-            <Card.Heading>Apache ECharts Panel</Card.Heading>
-            <Card.Description>
-              The ECharts Panel is a plugin for Grafana that allows to visualize Apache ECharts on your Grafana
-              dashboard.
-            </Card.Description>
-            <Card.Figure>
-              <ECharts size={40} />
-            </Card.Figure>
-            <Card.Meta>
-              grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-echarts-panel
-            </Card.Meta>
-            <Card.Tags>
-              <TagList tags={['Panel']} />
-            </Card.Tags>
-            <Card.Actions>
-              <LinkButton
-                variant="secondary"
-                icon="star"
-                target="_blank"
-                href="https://github.com/volkovlabs/volkovlabs-echarts-panel"
-              >
-                GitHub
-              </LinkButton>
-              <LinkButton
-                variant="secondary"
-                icon="play"
-                target="_blank"
-                href="https://www.youtube.com/watch?v=DxqCrBEmrQw"
-              >
-                YouTube
-              </LinkButton>
-              <LinkButton
-                variant="secondary"
-                icon="file-alt"
-                target="_blank"
-                href="https://volkovlabs.com/the-missing-plugin-to-create-business-and-industrial-charts-in-grafana-1d8f7304229f"
-              >
-                Medium
-              </LinkButton>
-              <LinkButton
-                variant="secondary"
-                icon="monitor"
-                target="_blank"
-                href="https://demo.volkovlabs.io/d/O4tc_E6G5/apache-echarts?orgId=1"
-              >
-                Demo
-              </LinkButton>
-            </Card.Actions>
-          </Card>
-
-          <Card>
             <Card.Heading>Balena Application</Card.Heading>
             <Card.Description>
               The Balena Application plugin for Grafana allows to display device information and manage services using
@@ -207,48 +264,6 @@ export class Plugins extends PureComponent {
                 href="https://hub.balena.io/organizations/volkovlabs/projects/balena-app"
               >
                 balenaHub
-              </LinkButton>
-            </Card.Actions>
-          </Card>
-          <Card>
-            <Card.Heading>Data Manipulation Panel</Card.Heading>
-            <Card.Description>
-              The Data Manipulation Form Panel is a plugin for Grafana that can be used to insert, update application
-              data, and modify configuration directly from your Grafana dashboard.
-            </Card.Description>
-            <Card.Figure>
-              <DataManipulation size={40} />
-            </Card.Figure>
-            <Card.Meta>
-              grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-form-panel
-            </Card.Meta>
-            <Card.Tags>
-              <TagList tags={['Panel']} />
-            </Card.Tags>
-            <Card.Actions>
-              <LinkButton
-                variant="secondary"
-                icon="star"
-                target="_blank"
-                href="https://github.com/volkovlabs/volkovlabs-form-panel"
-              >
-                GitHub
-              </LinkButton>
-              <LinkButton
-                variant="secondary"
-                icon="play"
-                target="_blank"
-                href="https://www.youtube.com/watch?v=DXALVG8GijM"
-              >
-                YouTube
-              </LinkButton>
-              <LinkButton
-                variant="secondary"
-                icon="file-alt"
-                target="_blank"
-                href="https://volkovlabs.com/data-manipulation-panel-plugin-for-grafana-97f9af2c67e0"
-              >
-                Medium
               </LinkButton>
             </Card.Actions>
           </Card>
