@@ -4,7 +4,7 @@
 
 ### Features / Enhancements
 
-- Update plugins included in Grafana Marketplace
+- Update plugins included in Grafana Marketplace (#18)
 
 ## 1.2.0 (2022-08-05)
 
