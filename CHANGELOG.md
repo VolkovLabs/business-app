@@ -5,6 +5,7 @@
 ### Features / Enhancements
 
 - Update plugins included in Grafana Marketplace (#18)
+- Update to Grafana 9.1.0 (#19)
 
 ## 1.2.0 (2022-08-05)
 
