@@ -11,9 +11,6 @@ import { RSSAtom } from './RSSAtom';
  * Plugins
  */
 export class Plugins extends PureComponent {
-  /**
-   * Render
-   */
   render() {
     return (
       <div>

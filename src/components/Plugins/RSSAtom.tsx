@@ -5,9 +5,6 @@ import { Card, LinkButton, TagList } from '@grafana/ui';
  * RSS/Atom
  */
 export class RSSAtom extends PureComponent {
-  /**
-   * Render
-   */
   render() {
     return (
       <Card>

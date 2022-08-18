@@ -5,9 +5,6 @@ import { Card, LinkButton, TagList } from '@grafana/ui';
  * Balena Application
  */
 export class Balena extends PureComponent {
-  /**
-   * Render
-   */
   render() {
     return (
       <Card>

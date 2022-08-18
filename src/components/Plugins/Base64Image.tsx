@@ -5,9 +5,6 @@ import { Card, LinkButton, TagList } from '@grafana/ui';
  * Base64
  */
 export class Base64Image extends PureComponent {
-  /**
-   * Render
-   */
   render() {
     return (
       <Card>

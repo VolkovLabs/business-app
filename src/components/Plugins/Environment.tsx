@@ -5,9 +5,6 @@ import { Card, LinkButton, TagList } from '@grafana/ui';
  * Environment Data Source
  */
 export class Environment extends PureComponent {
-  /**
-   * Render
-   */
   render() {
     return (
       <Card>

@@ -5,9 +5,6 @@ import { Card, LinkButton, TagList } from '@grafana/ui';
  * Data Manipulation
  */
 export class DataManipulation extends PureComponent {
-  /**
-   * Render
-   */
   render() {
     return (
       <Card>

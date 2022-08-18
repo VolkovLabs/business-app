@@ -5,9 +5,6 @@ import { Card, LinkButton, TagList } from '@grafana/ui';
  * Apache ECharts
  */
 export class ApacheECharts extends PureComponent {
-  /**
-   * Render
-   */
   render() {
     return (
       <Card>
