@@ -6,6 +6,8 @@
 
 - Update plugins included in Grafana Marketplace (#18)
 - Update to Grafana 9.1.0 (#19)
+- Update to Grafana 9.1.1 (#20)
+- Add Balena Application YouTube video (#20)
 
 ## 1.2.0 (2022-08-05)
 

@@ -1,4 +1,4 @@
-FROM grafana/grafana:9.1.0
+FROM grafana/grafana:9.1.1
 
 # Set Grafana options
 ENV GF_ENABLE_GZIP=true

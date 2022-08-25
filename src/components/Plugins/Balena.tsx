@@ -50,7 +50,7 @@ export class Balena extends PureComponent {
           >
             GitHub
           </LinkButton>
-          <LinkButton variant="secondary" icon="play" target="_blank" disabled>
+          <LinkButton variant="secondary" icon="play" target="_blank" href="https://youtu.be/5NfrVdOX0s8">
             YouTube
           </LinkButton>
           <LinkButton variant="secondary" icon="file-alt" target="_blank" disabled>
