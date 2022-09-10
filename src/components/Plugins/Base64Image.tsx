@@ -57,7 +57,7 @@ export class Base64Image extends PureComponent {
             variant="secondary"
             icon="play"
             target="_blank"
-            href="https://www.youtube.com/watch?v=1_bgLSehjhg"
+            href="https://www.youtube.com/playlist?list=PLPow72ygztmQjZ19D7wKHc_6VG3dCjkwo"
           >
             YouTube
           </LinkButton>
