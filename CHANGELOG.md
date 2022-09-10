@@ -10,6 +10,7 @@
 - Add Balena Application YouTube video (#20)
 - Update to Grafana 9.1.4 (#21)
 - Update YouTube playlists (#22)
+- Update RSS Data Source 2.2.0 (#23)
 
 ## 1.2.0 (2022-08-05)
 

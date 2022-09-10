@@ -2,7 +2,7 @@
 
 ![Dashboard](https://raw.githubusercontent.com/VolkovLabs/volkovlabs-rss-datasource/main/src/img/dashboard.png)
 
-[![Grafana 9](https://img.shields.io/badge/Grafana-9-orange)](https://www.grafana.com)
+[![Grafana 9](https://img.shields.io/badge/Grafana-9.1.1-orange)](https://www.grafana.com)
 [![RSS/Atom](https://img.shields.io/badge/dynamic/json?color=blue&label=RSS%2FAtom%20Data%20Source&query=%24.version&url=https%3A%2F%2Fgrafana.com%2Fapi%2Fplugins%2Fvolkovlabs-rss-datasource)](https://grafana.com/grafana/plugins/volkovlabs-rss-datasource)
 ![CI](https://github.com/volkovlabs/volkovlabs-rss-datasource/workflows/CI/badge.svg)
 [![codecov](https://codecov.io/gh/VolkovLabs/volkovlabs-rss-datasource/branch/main/graph/badge.svg?token=2W9VR0PG5N)](https://codecov.io/gh/VolkovLabs/volkovlabs-rss-datasource)
@@ -12,9 +12,7 @@
 
 The RSS/Atom data source is a plugin for Grafana that retrieves RSS/Atom feeds and allows to visualize them using Dynamic Text and other panels.
 
-### Demo
-
-Demo is available on [demo.volkovlabs.io](https://demo.volkovlabs.io).
+[![RSS/Atom Data Source for Grafana | News feed tutorial for Grafana Dashboard](https://raw.githubusercontent.com/volkovlabs/volkovlabs-rss-datasource/main/img/video.png)](https://youtu.be/RAxqS2hpWkg)
 
 ### Requirements
 
@@ -28,8 +26,6 @@ RSS/Atom data source can be installed from the Grafana Marketplace or use the `g
 ```bash
 grafana-cli plugins install volkovlabs-rss-datasource
 ```
-
-![Grafana Marketplace](https://raw.githubusercontent.com/VolkovLabs/volkovlabs-rss-datasource/main/src/img/grafana-marketplace.png)
 
 ## Features
 
