@@ -1,6 +1,6 @@
 # Change Log
 
-## 1.3.0 (IN PROGRESS)
+## 1.3.0 (2022-09-10)
 
 ### Features / Enhancements
 
@@ -9,6 +9,7 @@
 - Update to Grafana 9.1.1 (#20)
 - Add Balena Application YouTube video (#20)
 - Update to Grafana 9.1.4 (#21)
+- Update YouTube playlists (#22)
 
 ## 1.2.0 (2022-08-05)
 
