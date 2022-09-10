@@ -61,7 +61,7 @@ export class RSSAtom extends PureComponent {
             variant="secondary"
             icon="play"
             target="_blank"
-            href="https://www.youtube.com/watch?v=RAxqS2hpWkg"
+            href="https://www.youtube.com/playlist?list=PLPow72ygztmSGfvGdXriFE-LVuS4Glg7w"
           >
             YouTube
           </LinkButton>

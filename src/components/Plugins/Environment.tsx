@@ -63,7 +63,7 @@ export class Environment extends PureComponent {
             variant="secondary"
             icon="play"
             target="_blank"
-            href="https://www.youtube.com/watch?v=sczRq2lI3e4"
+            href="https://www.youtube.com/playlist?list=PLPow72ygztmRCTyV2W5ghK2_5jLLsyGLc"
           >
             YouTube
           </LinkButton>
