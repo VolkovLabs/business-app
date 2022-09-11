@@ -3,6 +3,7 @@
 ![Application](https://raw.githubusercontent.com/volkovlabs/volkovlabs-app/main/img/app.png)
 
 [![Grafana 9](https://img.shields.io/badge/Grafana-9.1.4-orange)](https://www.grafana.com)
+[![YouTube](https://img.shields.io/badge/YouTube-Playlist-red)](https://youtube.com/playlist?list=PLPow72ygztmTm_zY_PYqJtRYpMPpZglYC)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/VolkovLabs/volkovlabs-app.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/VolkovLabs/volkovlabs-app/context:javascript)
 ![CI](https://github.com/volkovlabs/volkovlabs-app/workflows/CI/badge.svg)
 [![codecov](https://codecov.io/gh/VolkovLabs/volkovlabs-app/branch/main/graph/badge.svg?token=2W9VR0PG5N)](https://codecov.io/gh/VolkovLabs/volkovlabs-app)
@@ -15,12 +16,20 @@ The Volkov Labs Application includes Docker image and Application plugin with in
 
 - Grafana 9.0+ is required.
 
+## Docker image
+
+We use the custom build Docker image for all our projects and keep it up-to-date with the latest version of Grafana.
+
+```bash
+docker pull ghcr.io/volkovlabs/app:latest
+```
+
 ## Bundle
 
 Application plugin includes:
 
-- [RSS/Atom data source plugin](https://github.com/volkovlabs/volkovlabs-rss-datasource)
-- [Dynamic text for Grafana](https://github.com/marcusolsson/grafana-dynamictext-panel)
+- [RSS/Atom data source](https://github.com/volkovlabs/volkovlabs-rss-datasource)
+- [Dynamic text panel](https://github.com/marcusolsson/grafana-dynamictext-panel)
 
 ## Feedback
 

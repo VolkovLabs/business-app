@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.4.0 (IN PROGRESS)
+
+### Features / Enhancements
+
+- Add YouTube Playlist and Docker information (#24)
+
 ## 1.3.0 (2022-09-10)
 
 ### Features / Enhancements
