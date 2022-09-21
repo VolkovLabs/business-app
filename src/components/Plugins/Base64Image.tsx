@@ -32,7 +32,6 @@ export class Base64Image extends PureComponent {
             </svg>
           </a>
         </Card.Figure>
-        <Card.Meta>grafana-cli plugins install volkovlabs-image-panel</Card.Meta>
         <Card.Tags>
           <TagList tags={['Panel']} />
         </Card.Tags>

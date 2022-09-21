@@ -5,6 +5,8 @@
 ### Features / Enhancements
 
 - Add YouTube Playlist and Docker information (#24)
+- Add Compatibility Check Workflow (#25)
+- Update to Grafana 9.1.6 (#26)
 
 ## 1.3.0 (2022-09-10)
 
