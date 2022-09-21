@@ -41,7 +41,6 @@ export class ApacheECharts extends PureComponent {
             </svg>
           </a>
         </Card.Figure>
-        <Card.Meta>grafana-cli plugins install volkovlabs-echarts-panel</Card.Meta>
         <Card.Tags>
           <TagList tags={['Panel']} />
         </Card.Tags>

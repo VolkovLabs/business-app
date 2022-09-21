@@ -36,7 +36,6 @@ export class RSSAtom extends PureComponent {
             </svg>
           </a>
         </Card.Figure>
-        <Card.Meta>grafana-cli plugins install volkovlabs-rss-datasource</Card.Meta>
         <Card.Tags>
           <TagList tags={['Data Source']} />
         </Card.Tags>
