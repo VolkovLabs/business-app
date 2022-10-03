@@ -1,6 +1,7 @@
 export * from './ApacheECharts';
 export * from './Balena';
 export * from './Base64Image';
+export * from './Calendar';
 export * from './DataManipulation';
 export * from './Environment';
 export * from './Plugins';

@@ -46,7 +46,7 @@ export class RSSAtom extends PureComponent {
             target="_blank"
             href="https://grafana.com/grafana/plugins/volkovlabs-rss-datasource/"
           >
-            Grafana Marketplace
+            Grafana Catalog
           </LinkButton>
           <LinkButton
             variant="secondary"

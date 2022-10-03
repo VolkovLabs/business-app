@@ -51,7 +51,7 @@ export class ApacheECharts extends PureComponent {
             target="_blank"
             href="https://grafana.com/grafana/plugins/volkovlabs-echarts-panel/"
           >
-            Grafana Marketplace
+            Grafana Catalog
           </LinkButton>
           <LinkButton
             variant="secondary"
