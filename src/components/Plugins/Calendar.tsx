@@ -23,14 +23,14 @@ export class Calendar extends PureComponent {
               <path d="M0.530273 44.5103H309.954V321.606H0.530273V44.5103Z" fill="#9D70F9" />
               <path d="M0.530273 44.5103H309.954V118.402H0.530273V44.5103Z" fill="#FF5656" />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M81.352 0.635742V56.0548H58.2607V0.635742H81.352Z"
                 fill="black"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M252.225 0.635742V56.0548H229.134V0.635742H252.225Z"
                 fill="black"
               />
