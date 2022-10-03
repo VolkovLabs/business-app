@@ -42,7 +42,7 @@ export class Base64Image extends PureComponent {
             target="_blank"
             href="https://grafana.com/grafana/plugins/volkovlabs-image-panel/"
           >
-            Grafana Marketplace
+            Grafana Catalog
           </LinkButton>
           <LinkButton
             variant="secondary"

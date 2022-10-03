@@ -3,6 +3,7 @@ import { FieldSet } from '@grafana/ui';
 import { ApacheECharts } from './ApacheECharts';
 import { Balena } from './Balena';
 import { Base64Image } from './Base64Image';
+import { Calendar } from './Calendar';
 import { DataManipulation } from './DataManipulation';
 import { Environment } from './Environment';
 import { RSSAtom } from './RSSAtom';
@@ -14,9 +15,10 @@ export class Plugins extends PureComponent {
   render() {
     return (
       <div>
-        <FieldSet label="Grafana Marketplace">
+        <FieldSet label="Grafana Catalog">
           <ApacheECharts />
           <Base64Image />
+          <Calendar />
           <DataManipulation />
           <RSSAtom />
         </FieldSet>

@@ -59,7 +59,7 @@ export class DataManipulation extends PureComponent {
             target="_blank"
             href="https://grafana.com/grafana/plugins/volkovlabs-form-panel/"
           >
-            Grafana Marketplace
+            Grafana Catalog
           </LinkButton>
           <LinkButton
             variant="secondary"
