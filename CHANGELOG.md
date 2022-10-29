@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.5.0 (IN PROGRESS)
+
+### Features / Enhancements
+
+- Update Docker workflow (#32)
+
 ## 1.4.0 (2022-10-29)
 
 ### Features / Enhancements
