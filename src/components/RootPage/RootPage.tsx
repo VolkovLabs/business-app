@@ -64,7 +64,7 @@ export class RootPage extends PureComponent<Props, State> {
      * Home
      */
     tabs.push({
-      text: 'Portfolio',
+      text: 'Our Plugins',
       url: path,
       id: 'home',
       icon: 'apps',

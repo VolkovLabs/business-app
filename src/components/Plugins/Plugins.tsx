@@ -5,8 +5,10 @@ import { Balena } from './Balena';
 import { Base64Image } from './Base64Image';
 import { Calendar } from './Calendar';
 import { DataManipulation } from './DataManipulation';
+import { DynamicText } from './DynamicText';
 import { Environment } from './Environment';
 import { RSSAtom } from './RSSAtom';
+import { Static } from './Static';
 
 /**
  * Plugins
@@ -14,20 +16,22 @@ import { RSSAtom } from './RSSAtom';
 export class Plugins extends PureComponent {
   render() {
     return (
-      <div>
+      <>
         <FieldSet label="Grafana Catalog">
           <ApacheECharts />
           <Base64Image />
           <Calendar />
           <DataManipulation />
+          <DynamicText />
           <RSSAtom />
+          <Static />
         </FieldSet>
 
         <FieldSet label="Private Repository">
           <Balena />
           <Environment />
         </FieldSet>
-      </div>
+      </>
     );
   }
 }

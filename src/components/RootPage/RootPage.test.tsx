@@ -77,7 +77,7 @@ describe('RootPage', () => {
         url: path,
         children: [
           {
-            text: 'Portfolio',
+            text: 'Our Plugins',
             url: path,
             id: 'home',
             icon: 'apps',

@@ -9,10 +9,7 @@ export class RSSAtom extends PureComponent {
     return (
       <Card>
         <Card.Heading>RSS/Atom Data Source</Card.Heading>
-        <Card.Description>
-          The RSS/Atom data source is a plugin for Grafana that retrieves RSS/Atom feeds and allows to visualize them
-          using Dynamic Text and other panels.
-        </Card.Description>
+        <Card.Description>Visualize RSS/Atom feeds using Dynamic Text.</Card.Description>
         <Card.Figure>
           <a
             target="_blank"
@@ -41,7 +38,7 @@ export class RSSAtom extends PureComponent {
         </Card.Tags>
         <Card.Actions>
           <LinkButton
-            variant="secondary"
+            variant="primary"
             icon="cloud-download"
             target="_blank"
             href="https://grafana.com/grafana/plugins/volkovlabs-rss-datasource/"
@@ -57,23 +54,15 @@ export class RSSAtom extends PureComponent {
             GitHub
           </LinkButton>
           <LinkButton
-            variant="secondary"
+            variant="destructive"
             icon="play"
             target="_blank"
             href="https://www.youtube.com/playlist?list=PLPow72ygztmSGfvGdXriFE-LVuS4Glg7w"
           >
-            YouTube
+            YouTube Playlist
           </LinkButton>
           <LinkButton
-            variant="secondary"
-            icon="file-alt"
-            target="_blank"
-            href="https://volkovlabs.com/do-you-want-to-be-on-top-of-the-latest-news-staying-in-grafana-9abb064ed449"
-          >
-            Medium
-          </LinkButton>
-          <LinkButton
-            variant="secondary"
+            variant="success"
             icon="monitor"
             target="_blank"
             href="https://live.volkovlabs.io/d/zUDs5zRVk/rss-atom-data-source?orgId=1"
