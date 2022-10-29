@@ -9,7 +9,7 @@
 - Update to Grafana 9.1.6 (#26)
 - Update to Grafana 9.2.2 (#29)
 - Update CI to Node 16 and Synchronize with Release workflow (#30)
-- Add Dynamic Text and update plugins (#31)
+- Add Dynamic Text, Static Data Source (#31)
 
 ## 1.3.0 (2022-09-10)
 
