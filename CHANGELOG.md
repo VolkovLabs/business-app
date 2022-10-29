@@ -8,6 +8,7 @@
 - Add Compatibility Check Workflow (#25)
 - Update to Grafana 9.1.6 (#26)
 - Update to Grafana 9.2.2 (#29)
+- Update GitHub Actions to use Node 16 (#30)
 
 ## 1.3.0 (2022-09-10)
 
