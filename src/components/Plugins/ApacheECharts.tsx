@@ -9,9 +9,7 @@ export class ApacheECharts extends PureComponent {
     return (
       <Card>
         <Card.Heading>Apache ECharts Panel</Card.Heading>
-        <Card.Description>
-          The ECharts Panel is a plugin for Grafana that allows to visualize Apache ECharts on your Grafana dashboard.
-        </Card.Description>
+        <Card.Description>Powerful charting and visualization library Apache ECharts.</Card.Description>
         <Card.Figure>
           <a
             target="_blank"
@@ -46,7 +44,7 @@ export class ApacheECharts extends PureComponent {
         </Card.Tags>
         <Card.Actions>
           <LinkButton
-            variant="secondary"
+            variant="primary"
             icon="cloud-download"
             target="_blank"
             href="https://grafana.com/grafana/plugins/volkovlabs-echarts-panel/"
@@ -62,23 +60,15 @@ export class ApacheECharts extends PureComponent {
             GitHub
           </LinkButton>
           <LinkButton
-            variant="secondary"
+            variant="destructive"
             icon="play"
             target="_blank"
             href="https://www.youtube.com/playlist?list=PLPow72ygztmQHGWFqksEf3LebUfhqBfFu"
           >
-            YouTube
+            YouTube Playlist
           </LinkButton>
           <LinkButton
-            variant="secondary"
-            icon="file-alt"
-            target="_blank"
-            href="https://volkovlabs.com/the-missing-plugin-to-create-business-and-industrial-charts-in-grafana-1d8f7304229f"
-          >
-            Medium
-          </LinkButton>
-          <LinkButton
-            variant="secondary"
+            variant="success"
             icon="monitor"
             target="_blank"
             href="https://live.volkovlabs.io/d/tXQ9_367z/apache-echarts-panel?orgId=1"

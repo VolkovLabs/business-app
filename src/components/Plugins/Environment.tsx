@@ -9,10 +9,7 @@ export class Environment extends PureComponent {
     return (
       <Card>
         <Card.Heading>Environment Data Source</Card.Heading>
-        <Card.Description>
-          The Environment data source is a plugin for Grafana that returns environment variables to display on your
-          dashboard or use as Variables to retrieve data.
-        </Card.Description>
+        <Card.Description>Environment variables on your dashboard.</Card.Description>
         <Card.Figure>
           <a
             target="_blank"
@@ -60,23 +57,15 @@ export class Environment extends PureComponent {
             GitHub
           </LinkButton>
           <LinkButton
-            variant="secondary"
+            variant="destructive"
             icon="play"
             target="_blank"
             href="https://www.youtube.com/playlist?list=PLPow72ygztmRCTyV2W5ghK2_5jLLsyGLc"
           >
-            YouTube
+            YouTube Playlist
           </LinkButton>
           <LinkButton
-            variant="secondary"
-            icon="file-alt"
-            target="_blank"
-            href="https://volkovlabs.com/using-environment-variables-for-configuration-provisioning-and-dashboards-in-grafana-279661733416"
-          >
-            Medium
-          </LinkButton>
-          <LinkButton
-            variant="secondary"
+            variant="success"
             icon="monitor"
             target="_blank"
             href="https://live.volkovlabs.io/d/B0kLhzR4k/environment-data-source?orgId=1"

@@ -9,15 +9,12 @@ export class Balena extends PureComponent {
     return (
       <Card>
         <Card.Heading>Balena Application</Card.Heading>
-        <Card.Description>
-          The Balena Application plugin for Grafana allows to display device information and manage services using
-          Balena Supervisor API.
-        </Card.Description>
+        <Card.Description>Display device information and manage services using Balena Supervisor API.</Card.Description>
         <Card.Figure>
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/volkovlabs/volkovlabs-balena-app"
+            href="https://volkovlabs.io/plugins/volkovlabs-balena-app"
             title="Balena Application"
           >
             <svg id="Balena" width={40} height={40} viewBox="0 0 201 169">
@@ -51,18 +48,15 @@ export class Balena extends PureComponent {
             GitHub
           </LinkButton>
           <LinkButton
-            variant="secondary"
+            variant="destructive"
             icon="play"
             target="_blank"
             href="https://www.youtube.com/playlist?list=PLPow72ygztmRdzBPeQ16cwM7ZvPbXfyHv"
           >
-            YouTube
-          </LinkButton>
-          <LinkButton variant="secondary" icon="file-alt" target="_blank" disabled>
-            Medium
+            YouTube Playlist
           </LinkButton>
           <LinkButton
-            variant="secondary"
+            variant="success"
             icon="monitor"
             target="_blank"
             href="https://live.volkovlabs.io/d/8DuPr3e7z/balena-application?orgId=1"
@@ -70,7 +64,7 @@ export class Balena extends PureComponent {
             Live
           </LinkButton>
           <LinkButton
-            variant="secondary"
+            variant="primary"
             icon="compass"
             target="_blank"
             href="https://hub.balena.io/organizations/volkovlabs/projects/balena-app"

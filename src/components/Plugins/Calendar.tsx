@@ -9,9 +9,7 @@ export class Calendar extends PureComponent {
     return (
       <Card>
         <Card.Heading>Calendar Panel</Card.Heading>
-        <Card.Description>
-          The Calendar panel plugin for Grafana to display calendar events from data sources.
-        </Card.Description>
+        <Card.Description>Display calendar events and change time range.</Card.Description>
         <Card.Figure>
           <a
             target="_blank"
@@ -54,7 +52,7 @@ export class Calendar extends PureComponent {
         </Card.Tags>
         <Card.Actions>
           <LinkButton
-            variant="secondary"
+            variant="primary"
             icon="cloud-download"
             target="_blank"
             href="https://grafana.com/grafana/plugins/marcusolsson-calendar-panel/"
@@ -69,14 +67,16 @@ export class Calendar extends PureComponent {
           >
             GitHub
           </LinkButton>
-          <LinkButton variant="secondary" icon="play" target="_blank" href="" disabled>
-            YouTube
-          </LinkButton>
-          <LinkButton variant="secondary" icon="file-alt" target="_blank" href="" disabled>
-            Medium
+          <LinkButton
+            variant="destructive"
+            icon="play"
+            target="_blank"
+            href="https://www.youtube.com/playlist?list=PLPow72ygztmSBVo4p4V5RsCb0z_Rjqisp"
+          >
+            YouTube Playlist
           </LinkButton>
           <LinkButton
-            variant="secondary"
+            variant="success"
             icon="monitor"
             target="_blank"
             href="https://live.volkovlabs.io/d/0fgJcb4Vz/calendar-panel?orgId=1"

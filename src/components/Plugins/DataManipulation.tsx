@@ -9,10 +9,7 @@ export class DataManipulation extends PureComponent {
     return (
       <Card>
         <Card.Heading>Data Manipulation Panel</Card.Heading>
-        <Card.Description>
-          The Data Manipulation Form Panel is a plugin for Grafana that can be used to insert, update application data,
-          and modify configuration directly from your Grafana dashboard.
-        </Card.Description>
+        <Card.Description>Insert, update application data, and modify configuration.</Card.Description>
         <Card.Figure>
           <a
             target="_blank"
@@ -54,7 +51,7 @@ export class DataManipulation extends PureComponent {
         </Card.Tags>
         <Card.Actions>
           <LinkButton
-            variant="secondary"
+            variant="primary"
             icon="cloud-download"
             target="_blank"
             href="https://grafana.com/grafana/plugins/volkovlabs-form-panel/"
@@ -70,23 +67,15 @@ export class DataManipulation extends PureComponent {
             GitHub
           </LinkButton>
           <LinkButton
-            variant="secondary"
+            variant="destructive"
             icon="play"
             target="_blank"
             href="https://www.youtube.com/playlist?list=PLPow72ygztmRXSNBxyw0sFnnvNRY_CsSA"
           >
-            YouTube
+            YouTube Playlist
           </LinkButton>
           <LinkButton
-            variant="secondary"
-            icon="file-alt"
-            target="_blank"
-            href="https://volkovlabs.com/data-manipulation-panel-plugin-for-grafana-97f9af2c67e0"
-          >
-            Medium
-          </LinkButton>
-          <LinkButton
-            variant="secondary"
+            variant="success"
             icon="monitor"
             target="_blank"
             href="https://live.volkovlabs.io/d/h5IJk66nk/data-manipulation-panel?orgId=1"

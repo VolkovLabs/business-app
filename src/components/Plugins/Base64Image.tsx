@@ -10,8 +10,7 @@ export class Base64Image extends PureComponent {
       <Card>
         <Card.Heading>Base64 Image/Video/Audio/PDF Panel</Card.Heading>
         <Card.Description>
-          The Base64 Image/Video/Audio/PDF Panel is a plugin for Grafana that displays raw and Base64 encoded files in
-          PNG, JPG, GIF, MP4, WEBM, MP3, OGG, PDF formats.
+          Display Base64 encoded files in PNG, JPG, GIF, MP4, WEBM, MP3, OGG, PDF formats.
         </Card.Description>
         <Card.Figure>
           <a
@@ -37,7 +36,7 @@ export class Base64Image extends PureComponent {
         </Card.Tags>
         <Card.Actions>
           <LinkButton
-            variant="secondary"
+            variant="primary"
             icon="cloud-download"
             target="_blank"
             href="https://grafana.com/grafana/plugins/volkovlabs-image-panel/"
@@ -53,23 +52,15 @@ export class Base64Image extends PureComponent {
             GitHub
           </LinkButton>
           <LinkButton
-            variant="secondary"
+            variant="destructive"
             icon="play"
             target="_blank"
             href="https://www.youtube.com/playlist?list=PLPow72ygztmQjZ19D7wKHc_6VG3dCjkwo"
           >
-            YouTube
+            YouTube Playlist
           </LinkButton>
           <LinkButton
-            variant="secondary"
-            icon="file-alt"
-            target="_blank"
-            href="https://volkovlabs.com/display-base64-encoded-images-from-any-data-source-on-your-dashboard-398a99ba5b5e"
-          >
-            Medium
-          </LinkButton>
-          <LinkButton
-            variant="secondary"
+            variant="success"
             icon="monitor"
             target="_blank"
             href="https://live.volkovlabs.io/d/bN3aCqe7k/base64-image-pdf?orgId=1"
