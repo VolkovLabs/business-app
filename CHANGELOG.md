@@ -5,6 +5,7 @@
 ### Features / Enhancements
 
 - Update Docker workflow (#32)
+- Merge plugins in the alphabetical order (#33)
 
 ## 1.4.0 (2022-10-29)
 
