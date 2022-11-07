@@ -38,14 +38,6 @@ export class RSSAtom extends PureComponent {
         </Card.Tags>
         <Card.Actions>
           <LinkButton
-            variant="primary"
-            icon="cloud-download"
-            target="_blank"
-            href="https://grafana.com/grafana/plugins/volkovlabs-rss-datasource/"
-          >
-            Grafana Catalog
-          </LinkButton>
-          <LinkButton
             variant="secondary"
             icon="star"
             target="_blank"
@@ -68,6 +60,14 @@ export class RSSAtom extends PureComponent {
             href="https://live.volkovlabs.io/d/zUDs5zRVk/rss-atom-data-source?orgId=1"
           >
             Live
+          </LinkButton>
+          <LinkButton
+            variant="primary"
+            icon="cloud-download"
+            target="_blank"
+            href="https://grafana.com/grafana/plugins/volkovlabs-rss-datasource/"
+          >
+            Grafana Catalog
           </LinkButton>
         </Card.Actions>
       </Card>

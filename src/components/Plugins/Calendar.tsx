@@ -52,14 +52,6 @@ export class Calendar extends PureComponent {
         </Card.Tags>
         <Card.Actions>
           <LinkButton
-            variant="primary"
-            icon="cloud-download"
-            target="_blank"
-            href="https://grafana.com/grafana/plugins/marcusolsson-calendar-panel/"
-          >
-            Grafana Catalog
-          </LinkButton>
-          <LinkButton
             variant="secondary"
             icon="star"
             target="_blank"
@@ -82,6 +74,14 @@ export class Calendar extends PureComponent {
             href="https://live.volkovlabs.io/d/0fgJcb4Vz/calendar-panel?orgId=1"
           >
             Live
+          </LinkButton>
+          <LinkButton
+            variant="primary"
+            icon="cloud-download"
+            target="_blank"
+            href="https://grafana.com/grafana/plugins/marcusolsson-calendar-panel/"
+          >
+            Grafana Catalog
           </LinkButton>
         </Card.Actions>
       </Card>

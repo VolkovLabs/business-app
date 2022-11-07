@@ -36,7 +36,7 @@ export class Balena extends PureComponent {
         </Card.Figure>
         <Card.Meta>grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-balena-app</Card.Meta>
         <Card.Tags>
-          <TagList tags={['Application']} />
+          <TagList tags={['Application', 'Private']} />
         </Card.Tags>
         <Card.Actions>
           <LinkButton
