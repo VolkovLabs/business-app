@@ -36,14 +36,6 @@ export class DynamicText extends PureComponent {
         </Card.Tags>
         <Card.Actions>
           <LinkButton
-            variant="primary"
-            icon="cloud-download"
-            target="_blank"
-            href="https://grafana.com/grafana/plugins/marcusolsson-dynamictext-panel/"
-          >
-            Grafana Catalog
-          </LinkButton>
-          <LinkButton
             variant="secondary"
             icon="star"
             target="_blank"
@@ -66,6 +58,14 @@ export class DynamicText extends PureComponent {
             href="https://live.volkovlabs.io/d/2L2sYjVVz/dynamic-text-panel?orgId=1"
           >
             Live
+          </LinkButton>
+          <LinkButton
+            variant="primary"
+            icon="cloud-download"
+            target="_blank"
+            href="https://grafana.com/grafana/plugins/marcusolsson-dynamictext-panel/"
+          >
+            Grafana Catalog
           </LinkButton>
         </Card.Actions>
       </Card>

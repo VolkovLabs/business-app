@@ -17,19 +17,16 @@ export class Plugins extends PureComponent {
   render() {
     return (
       <>
-        <FieldSet label="Grafana Catalog">
+        <FieldSet>
           <ApacheECharts />
+          <Balena />
           <Base64Image />
           <Calendar />
           <DataManipulation />
           <DynamicText />
+          <Environment />
           <RSSAtom />
           <Static />
-        </FieldSet>
-
-        <FieldSet label="Private Repository">
-          <Balena />
-          <Environment />
         </FieldSet>
       </>
     );

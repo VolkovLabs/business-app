@@ -31,14 +31,6 @@ export class Static extends PureComponent {
         </Card.Tags>
         <Card.Actions>
           <LinkButton
-            variant="primary"
-            icon="cloud-download"
-            target="_blank"
-            href="https://grafana.com/grafana/plugins/marcusolsson-static-datasource/"
-          >
-            Grafana Catalog
-          </LinkButton>
-          <LinkButton
             variant="secondary"
             icon="star"
             target="_blank"
@@ -56,6 +48,14 @@ export class Static extends PureComponent {
             href="https://live.volkovlabs.io/d/heM1lTN4z/static-data-source?orgId=1"
           >
             Live
+          </LinkButton>
+          <LinkButton
+            variant="primary"
+            icon="cloud-download"
+            target="_blank"
+            href="https://grafana.com/grafana/plugins/marcusolsson-static-datasource/"
+          >
+            Grafana Catalog
           </LinkButton>
         </Card.Actions>
       </Card>

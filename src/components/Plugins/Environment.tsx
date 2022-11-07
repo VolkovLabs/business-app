@@ -45,7 +45,7 @@ export class Environment extends PureComponent {
           grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-env-datasource
         </Card.Meta>
         <Card.Tags>
-          <TagList tags={['Data Source']} />
+          <TagList tags={['Data Source', 'Private']} />
         </Card.Tags>
         <Card.Actions>
           <LinkButton
