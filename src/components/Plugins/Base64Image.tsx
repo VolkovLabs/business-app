@@ -49,7 +49,7 @@ export class Base64Image extends PureComponent {
             target="_blank"
             href="https://www.youtube.com/playlist?list=PLPow72ygztmQjZ19D7wKHc_6VG3dCjkwo"
           >
-            YouTube Playlist
+            YouTube
           </LinkButton>
           <LinkButton
             variant="success"
@@ -65,7 +65,7 @@ export class Base64Image extends PureComponent {
             target="_blank"
             href="https://grafana.com/grafana/plugins/volkovlabs-image-panel/"
           >
-            Grafana Catalog
+            Grafana
           </LinkButton>
         </Card.Actions>
       </Card>

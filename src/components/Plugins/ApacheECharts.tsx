@@ -57,7 +57,7 @@ export class ApacheECharts extends PureComponent {
             target="_blank"
             href="https://www.youtube.com/playlist?list=PLPow72ygztmQHGWFqksEf3LebUfhqBfFu"
           >
-            YouTube Playlist
+            YouTube
           </LinkButton>
           <LinkButton
             variant="success"
@@ -73,7 +73,7 @@ export class ApacheECharts extends PureComponent {
             target="_blank"
             href="https://grafana.com/grafana/plugins/volkovlabs-echarts-panel/"
           >
-            Grafana Catalog
+            Grafana
           </LinkButton>
         </Card.Actions>
       </Card>
