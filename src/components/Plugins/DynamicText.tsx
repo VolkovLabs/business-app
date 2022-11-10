@@ -49,7 +49,7 @@ export class DynamicText extends PureComponent {
             target="_blank"
             href="https://www.youtube.com/playlist?list=PLPow72ygztmSRxDiDIAdXNIqD_RxLRjcW"
           >
-            YouTube Playlist
+            YouTube
           </LinkButton>
           <LinkButton
             variant="success"
@@ -65,7 +65,7 @@ export class DynamicText extends PureComponent {
             target="_blank"
             href="https://grafana.com/grafana/plugins/marcusolsson-dynamictext-panel/"
           >
-            Grafana Catalog
+            Grafana
           </LinkButton>
         </Card.Actions>
       </Card>

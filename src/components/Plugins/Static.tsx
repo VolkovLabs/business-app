@@ -38,8 +38,13 @@ export class Static extends PureComponent {
           >
             GitHub
           </LinkButton>
-          <LinkButton variant="destructive" icon="play" target="_blank" href="" disabled>
-            YouTube Playlist
+          <LinkButton
+            variant="destructive"
+            icon="play"
+            target="_blank"
+            href="https://www.youtube.com/playlist?list=PLPow72ygztmSOuCRtS85zolztwDMpCsIV"
+          >
+            YouTube
           </LinkButton>
           <LinkButton
             variant="success"
@@ -55,7 +60,7 @@ export class Static extends PureComponent {
             target="_blank"
             href="https://grafana.com/grafana/plugins/marcusolsson-static-datasource/"
           >
-            Grafana Catalog
+            Grafana
           </LinkButton>
         </Card.Actions>
       </Card>

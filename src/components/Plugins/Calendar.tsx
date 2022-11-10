@@ -65,7 +65,7 @@ export class Calendar extends PureComponent {
             target="_blank"
             href="https://www.youtube.com/playlist?list=PLPow72ygztmSBVo4p4V5RsCb0z_Rjqisp"
           >
-            YouTube Playlist
+            YouTube
           </LinkButton>
           <LinkButton
             variant="success"
@@ -81,7 +81,7 @@ export class Calendar extends PureComponent {
             target="_blank"
             href="https://grafana.com/grafana/plugins/marcusolsson-calendar-panel/"
           >
-            Grafana Catalog
+            Grafana
           </LinkButton>
         </Card.Actions>
       </Card>

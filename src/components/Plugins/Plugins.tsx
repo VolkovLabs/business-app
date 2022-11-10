@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import { FieldSet } from '@grafana/ui';
 import { ApacheECharts } from './ApacheECharts';
 import { Balena } from './Balena';
 import { Base64Image } from './Base64Image';
@@ -17,17 +16,15 @@ export class Plugins extends PureComponent {
   render() {
     return (
       <>
-        <FieldSet>
-          <ApacheECharts />
-          <Balena />
-          <Base64Image />
-          <Calendar />
-          <DataManipulation />
-          <DynamicText />
-          <Environment />
-          <RSSAtom />
-          <Static />
-        </FieldSet>
+        <ApacheECharts />
+        <Balena />
+        <Base64Image />
+        <Calendar />
+        <DataManipulation />
+        <DynamicText />
+        <Environment />
+        <RSSAtom />
+        <Static />
       </>
     );
   }

@@ -64,7 +64,7 @@ export class DataManipulation extends PureComponent {
             target="_blank"
             href="https://www.youtube.com/playlist?list=PLPow72ygztmRXSNBxyw0sFnnvNRY_CsSA"
           >
-            YouTube Playlist
+            YouTube
           </LinkButton>
           <LinkButton
             variant="success"
@@ -80,7 +80,7 @@ export class DataManipulation extends PureComponent {
             target="_blank"
             href="https://grafana.com/grafana/plugins/volkovlabs-form-panel/"
           >
-            Grafana Catalog
+            Grafana
           </LinkButton>
         </Card.Actions>
       </Card>

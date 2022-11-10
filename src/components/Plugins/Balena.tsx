@@ -53,7 +53,7 @@ export class Balena extends PureComponent {
             target="_blank"
             href="https://www.youtube.com/playlist?list=PLPow72ygztmRdzBPeQ16cwM7ZvPbXfyHv"
           >
-            YouTube Playlist
+            YouTube
           </LinkButton>
           <LinkButton
             variant="success"
