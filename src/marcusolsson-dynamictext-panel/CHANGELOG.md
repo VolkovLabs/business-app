@@ -1,5 +1,23 @@
 # Changelog
 
+## 2.1.0 (2022-11-27)
+
+### Breaking changes
+
+Refactoring may introduce breaking changes. Please test before upgrading in Production.
+
+### Features / Enhancements
+
+- Fix broken link in README (#111)
+- Update CI to upload signed artifacts (#113)
+- Add feature of parsing time formatting syntax (#86)
+- Fix data rendering when using transformations (#98)
+- Update Panel Options to Monaco Code Editor (#114)
+- Increase Test Coverage (#114)
+- Refactor and update images (#116)
+- Refactor Alert Message and Text Options (#117)
+- Add Support for Disable Sanitize HTML configuration (#118)
+
 ## 2.0.0 (2022-11-02)
 
 ### Breaking changes

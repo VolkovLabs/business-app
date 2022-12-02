@@ -9,6 +9,7 @@
 - Update to Grafana 9.2.4 (#34)
 - Update Dynamic Text Panel 2.0.0 (#35)
 - Update to Grafana 9.3.1 (#36)
+- Update Dynamic Text Panel 2.1.0 and RSS/Atom Data Source 2.3.0 (#37)
 
 ## 1.4.0 (2022-10-29)
 

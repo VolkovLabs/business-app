@@ -11,9 +11,13 @@
       "name": "Volkov Labs",
       "url": "https://volkovlabs.io"
     },
-    "description": "RSS/Atom datasource plugin for Grafana",
+    "description": "RSS/Atom data source plugin for Grafana",
     "keywords": ["rss", "atom", "news"],
     "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/VolkovLabs/volkovlabs-rss-datasource"
+      },
       {
         "name": "Website",
         "url": "https://volkovlabs.io"
@@ -33,8 +37,8 @@
         "path": "img/panel.png"
       }
     ],
-    "updated": "2022-08-25",
-    "version": "2.2.0"
+    "updated": "2022-11-17",
+    "version": "2.3.0"
   },
   "metrics": true,
   "name": "RSS/Atom",

@@ -1,5 +1,15 @@
 # Change Log
 
+## 2.3.0 (2022-11-16)
+
+### Features / Enhancements
+
+- Update to Grafana 9.1.4 (#36)
+- Add Compatibility Check Workflow (#37)
+- Update CI to Node 16 and Synchronize with Release workflow (#39)
+- Update to Grafana 9.2.2 (#40)
+- Update CI to upload signed artifacts (#41)
+
 ## 2.2.0 (2022-08-25)
 
 ### Features / Enhancements
