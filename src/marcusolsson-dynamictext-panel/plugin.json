@@ -10,7 +10,7 @@
       "name": "Volkov Labs",
       "url": "https://volkovlabs.io"
     },
-    "description": "Data-driven text with Markdown support",
+    "description": "Data-driven text with Markdown and Handlebars support",
     "keywords": ["text", "markdown", "handlebars"],
     "links": [
       {
@@ -36,8 +36,8 @@
         "path": "img/screenshot.png"
       }
     ],
-    "updated": "2022-11-03",
-    "version": "2.0.0"
+    "updated": "2022-11-27",
+    "version": "2.1.0"
   },
   "name": "Dynamic Text",
   "type": "panel"
