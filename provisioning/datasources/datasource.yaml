@@ -4,7 +4,6 @@ datasources:
   - name: Volkov Labs RSS
     type: volkovlabs-rss-datasource
     access: proxy
-    isDefault: true
     uid: rZAdZdf7a
     orgId: 1
     version: 1
