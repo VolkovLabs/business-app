@@ -75,6 +75,9 @@ export class ApacheECharts extends PureComponent {
           >
             Grafana
           </LinkButton>
+          <LinkButton variant="success" icon="building" target="_blank" href="https://echarts.volkovlabs.io">
+            Examples
+          </LinkButton>
         </Card.Actions>
       </Card>
     );

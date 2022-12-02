@@ -37,9 +37,16 @@
   "includes": [
     {
       "addToNav": true,
+      "name": "News",
+      "path": "/d/O4tc_E6Gz",
+      "role": "Viewer",
+      "type": "page"
+    },
+    {
+      "addToNav": true,
       "defaultNav": true,
       "icon": "home-alt",
-      "name": "Home",
+      "name": "Plugins",
       "path": "/a/volkovlabs-app/",
       "role": "Viewer",
       "type": "page"

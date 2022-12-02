@@ -1,6 +1,6 @@
 # Change Log
 
-## 1.5.0 (IN PROGRESS)
+## 1.5.0 (2022-12-02)
 
 ### Features / Enhancements
 
@@ -8,6 +8,7 @@
 - Merge plugins in the alphabetical order (#33)
 - Update to Grafana 9.2.4 (#34)
 - Update Dynamic Text Panel 2.0.0 (#35)
+- Update to Grafana 9.3.1 (#36)
 
 ## 1.4.0 (2022-10-29)
 
