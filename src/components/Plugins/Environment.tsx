@@ -49,6 +49,14 @@ export class Environment extends PureComponent {
         </Card.Tags>
         <Card.Actions>
           <LinkButton
+            variant="primary"
+            icon="book-open"
+            target="_blank"
+            href="https://volkovlabs.io/plugins/volkovlabs-env-datasource/"
+          >
+            Documentation
+          </LinkButton>
+          <LinkButton
             variant="secondary"
             icon="star"
             target="_blank"
@@ -63,14 +71,6 @@ export class Environment extends PureComponent {
             href="https://www.youtube.com/playlist?list=PLPow72ygztmRCTyV2W5ghK2_5jLLsyGLc"
           >
             YouTube
-          </LinkButton>
-          <LinkButton
-            variant="success"
-            icon="monitor"
-            target="_blank"
-            href="https://live.volkovlabs.io/d/B0kLhzR4k/environment-data-source?orgId=1"
-          >
-            Live
           </LinkButton>
         </Card.Actions>
       </Card>

@@ -51,6 +51,14 @@ export class DataManipulation extends PureComponent {
         </Card.Tags>
         <Card.Actions>
           <LinkButton
+            variant="primary"
+            icon="book-open"
+            target="_blank"
+            href="https://volkovlabs.io/plugins/volkovlabs-form-panel/"
+          >
+            Documentation
+          </LinkButton>
+          <LinkButton
             variant="secondary"
             icon="star"
             target="_blank"
@@ -68,14 +76,6 @@ export class DataManipulation extends PureComponent {
           </LinkButton>
           <LinkButton
             variant="success"
-            icon="monitor"
-            target="_blank"
-            href="https://live.volkovlabs.io/d/h5IJk66nk/data-manipulation-panel?orgId=1"
-          >
-            Live
-          </LinkButton>
-          <LinkButton
-            variant="primary"
             icon="cloud-download"
             target="_blank"
             href="https://grafana.com/grafana/plugins/volkovlabs-form-panel/"

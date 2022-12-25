@@ -44,6 +44,14 @@ export class ApacheECharts extends PureComponent {
         </Card.Tags>
         <Card.Actions>
           <LinkButton
+            variant="primary"
+            icon="book-open"
+            target="_blank"
+            href="https://volkovlabs.io/plugins/volkovlabs-echarts-panel/"
+          >
+            Documentation
+          </LinkButton>
+          <LinkButton
             variant="secondary"
             icon="star"
             target="_blank"
@@ -61,21 +69,13 @@ export class ApacheECharts extends PureComponent {
           </LinkButton>
           <LinkButton
             variant="success"
-            icon="monitor"
-            target="_blank"
-            href="https://live.volkovlabs.io/d/tXQ9_367z/apache-echarts-panel?orgId=1"
-          >
-            Live
-          </LinkButton>
-          <LinkButton
-            variant="primary"
             icon="cloud-download"
             target="_blank"
             href="https://grafana.com/grafana/plugins/volkovlabs-echarts-panel/"
           >
             Grafana
           </LinkButton>
-          <LinkButton variant="success" icon="building" target="_blank" href="https://echarts.volkovlabs.io">
+          <LinkButton variant="secondary" icon="building" target="_blank" href="https://echarts.volkovlabs.io">
             Examples
           </LinkButton>
         </Card.Actions>
