@@ -40,6 +40,14 @@ export class Balena extends PureComponent {
         </Card.Tags>
         <Card.Actions>
           <LinkButton
+            variant="primary"
+            icon="book-open"
+            target="_blank"
+            href="https://volkovlabs.io/plugins/volkovlabs-balena-app"
+          >
+            Documentation
+          </LinkButton>
+          <LinkButton
             variant="secondary"
             icon="star"
             target="_blank"
@@ -56,15 +64,7 @@ export class Balena extends PureComponent {
             YouTube
           </LinkButton>
           <LinkButton
-            variant="success"
-            icon="monitor"
-            target="_blank"
-            href="https://live.volkovlabs.io/d/8DuPr3e7z/balena-application?orgId=1"
-          >
-            Live
-          </LinkButton>
-          <LinkButton
-            variant="primary"
+            variant="secondary"
             icon="compass"
             target="_blank"
             href="https://hub.balena.io/organizations/volkovlabs/projects/balena-app"

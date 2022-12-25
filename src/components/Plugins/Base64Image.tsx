@@ -36,6 +36,14 @@ export class Base64Image extends PureComponent {
         </Card.Tags>
         <Card.Actions>
           <LinkButton
+            variant="primary"
+            icon="book-open"
+            target="_blank"
+            href="https://volkovlabs.io/plugins/volkovlabs-image-panel/"
+          >
+            Documentation
+          </LinkButton>
+          <LinkButton
             variant="secondary"
             target="_blank"
             icon="star"
@@ -53,14 +61,6 @@ export class Base64Image extends PureComponent {
           </LinkButton>
           <LinkButton
             variant="success"
-            icon="monitor"
-            target="_blank"
-            href="https://live.volkovlabs.io/d/bN3aCqe7k/base64-image-pdf?orgId=1"
-          >
-            Live
-          </LinkButton>
-          <LinkButton
-            variant="primary"
             icon="cloud-download"
             target="_blank"
             href="https://grafana.com/grafana/plugins/volkovlabs-image-panel/"

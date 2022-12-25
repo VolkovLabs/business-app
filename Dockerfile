@@ -1,4 +1,4 @@
-FROM grafana/grafana:9.3.1
+FROM grafana/grafana:9.3.2
 
 # Set Grafana options
 ENV GF_ENABLE_GZIP=true
@@ -45,6 +45,9 @@ COPY src/img/logo.svg /usr/share/grafana/public/img/grafana_icon.svg
 # Background
 COPY img/background.svg /usr/share/grafana/public/img/g8_login_dark.svg
 COPY img/background.svg /usr/share/grafana/public/img/g8_login_light.svg
+
+# Update Main Org. to Volkov Labs
+RUN sed -i 's|Main Org.|VolkovLab|g' /usr/share/grafana/bin/grafana-server
 
 # Update Javascript
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|"AppTitle","Grafana")|"AppTitle","Volkov Labs")|g' {} \;

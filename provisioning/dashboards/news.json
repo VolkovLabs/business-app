@@ -24,7 +24,32 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "links": [],
+  "links": [
+    {
+      "asDropdown": false,
+      "icon": "info",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "Volkov Labs",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://volkovlabs.io"
+    },
+    {
+      "asDropdown": false,
+      "icon": "bolt",
+      "includeVars": false,
+      "keepTime": false,
+      "tags": [],
+      "targetBlank": true,
+      "title": "YouTube",
+      "tooltip": "",
+      "type": "link",
+      "url": "https://youtube.com/@volkovlabs"
+    }
+  ],
   "liveNow": false,
   "panels": [
     {

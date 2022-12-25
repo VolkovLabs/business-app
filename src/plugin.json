@@ -14,16 +14,16 @@
     "keywords": ["template"],
     "links": [
       {
+        "name": "Documentation",
+        "url": "https://docs.volkovlabs.io"
+      },
+      {
         "name": "GitHub",
         "url": "https://github.com/VolkovLabs/volkovlabs-app"
       },
       {
         "name": "YouTube Playlist",
         "url": "https://youtube.com/playlist?list=PLPow72ygztmTm_zY_PYqJtRYpMPpZglYC"
-      },
-      {
-        "name": "Website",
-        "url": "https://volkovlabs.io"
       }
     ],
     "logos": {
