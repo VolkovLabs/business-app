@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.6.0 (IN PROGRESS)
+
+### Features / Enhancements
+
+- Update default org Main Org to Volkov Labs (#38)
+
 ## 1.5.0 (2022-12-02)
 
 ### Features / Enhancements

@@ -46,6 +46,9 @@ COPY src/img/logo.svg /usr/share/grafana/public/img/grafana_icon.svg
 COPY img/background.svg /usr/share/grafana/public/img/g8_login_dark.svg
 COPY img/background.svg /usr/share/grafana/public/img/g8_login_light.svg
 
+# Update Main Org. to Volkov Labs
+RUN sed -i 's|Main Org.|VolkovLab|g' /usr/share/grafana/bin/grafana-server
+
 # Update Javascript
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|"AppTitle","Grafana")|"AppTitle","Volkov Labs")|g' {} \;
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|"LoginTitle","Welcome to Grafana")|"LoginTitle","Welcome to Volkov Labs")|g' {} \;
