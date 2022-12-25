@@ -1,10 +1,11 @@
 # Change Log
 
-## 1.6.0 (IN PROGRESS)
+## 2.0.0 (2022-12-25)
 
 ### Features / Enhancements
 
 - Update default org Main Org to Volkov Labs (#38)
+- Update to Grafana 9.3.2 (#38)
 
 ## 1.5.0 (2022-12-02)
 
