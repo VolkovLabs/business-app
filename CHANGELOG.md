@@ -4,7 +4,7 @@
 
 ### Features / Enhancements
 
-- Update URL and content for new Blog based on Docusaurus
+- Update URL and content for new Blog based on Docusaurus (#39)
 
 ## 2.0.0 (2022-12-25)
 

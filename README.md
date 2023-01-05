@@ -10,7 +10,7 @@
 
 ## Introduction
 
-The Volkov Labs Application includes Docker image and Application plugin with information about Volkov Labs supported Grafana plugins.
+The Volkov Labs Application includes a Docker image and Application plugin with information about Volkov Labs supported Grafana plugins.
 
 ### Requirements
 
@@ -20,7 +20,7 @@ The Volkov Labs Application includes Docker image and Application plugin with in
 
 We use custom build Docker image for all our projects and keep it up-to-date with the latest version of Grafana.
 
-```bash
+```sh
 docker pull ghcr.io/volkovlabs/app:latest
 ```
 
@@ -28,12 +28,12 @@ docker pull ghcr.io/volkovlabs/app:latest
 
 Application plugin includes:
 
-- [RSS/Atom data source](https://github.com/volkovlabs/volkovlabs-rss-datasource)
-- [Dynamic text panel](https://github.com/volkovlabs/volkovlabs-dynamictext-panel)
+- [RSS/Atom data source](https://volkovlabs.io/plugins/volkovlabs-rss-datasource)
+- [Dynamic text panel](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel)
 
 ## Feedback
 
-We love to hear from users, developers, and the whole community interested in this plugin. These are various ways to get in touch with us:
+We love to hear from you. There are various ways to get in touch with us:
 
 - Ask a question, request a new feature, and file a bug with [GitHub issues](https://github.com/volkovlabs/volkovlabs-app/issues/new/choose).
 - Sponsor our open-source plugins for Grafana with [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
