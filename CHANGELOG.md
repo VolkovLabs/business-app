@@ -1,11 +1,17 @@
 # Change Log
 
+## 2.1.0 (IN PROGRESS)
+
+### Features / Enhancements
+
+- Update URL and content for new Blog based on Docusaurus
+
 ## 2.0.0 (2022-12-25)
 
 ### Features / Enhancements
 
 - Update default org Main Org to Volkov Labs (#38)
-- Update to Grafana 9.3.2 (#38)
+- Update to Grafana 9.3.2 with Top Navigation enabled (#38)
 - Update Plugins descriptions and screenshot (#38)
 
 ## 1.5.0 (2022-12-02)
