@@ -5,6 +5,7 @@
 ### Features / Enhancements
 
 - Update URL and content for new Blog based on Docusaurus (#39)
+- Update to Grafana 9.3.4 (#41)
 
 ## 2.0.0 (2022-12-25)
 
