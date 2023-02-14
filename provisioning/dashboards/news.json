@@ -118,7 +118,7 @@
       },
       "id": 2,
       "options": {
-        "content": "<table width=100% style='border:0'>\n  <tr>\n    <td style='border:0'>\n      <h3><a target=\"_blank\" style=\"color: blue\" href=\"{{link}}\">{{title}}</a></h3>\n      <div>{{{description}}}</div>\n    </td>\n  </tr>\n  <tr>\n    <td style='border:0'><b>{{date pubDate 'MMM, DD YYYY'}} by {{author}}</b></td>\n  </tr>\n</table>",
+        "content": "<table width=100% style='border:0'>\n  <tr>\n    <td style='border:0'>\n      <h3><a target=\"_blank\" style=\"color: blue\" href=\"{{link}}\">{{title}}</a></h3>\n      <div>{{{description}}}</div>\n    </td>\n  </tr>\n  <tr>\n    <td style='border:0'><b>{{date pubDate 'MMM, DD YYYY'}} in {{category}}</b></td>\n  </tr>\n</table>",
         "defaultContent": "The query didn't return any results.",
         "editor": {
           "format": "auto",
