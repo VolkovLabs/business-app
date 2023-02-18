@@ -8,6 +8,8 @@
 [![codecov](https://codecov.io/gh/VolkovLabs/volkovlabs-app/branch/main/graph/badge.svg)](https://codecov.io/gh/VolkovLabs/volkovlabs-app)
 [![CodeQL](https://github.com/VolkovLabs/volkovlabs-app/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/VolkovLabs/volkovlabs-app/actions/workflows/codeql-analysis.yml)
 
+## Introduction
+
 The Volkov Labs Application includes a Docker image and Application plugin with information about Volkov Labs maintained Grafana plugins.
 
 ## Requirements
