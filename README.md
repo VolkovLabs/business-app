@@ -8,11 +8,9 @@
 [![codecov](https://codecov.io/gh/VolkovLabs/volkovlabs-app/branch/main/graph/badge.svg)](https://codecov.io/gh/VolkovLabs/volkovlabs-app)
 [![CodeQL](https://github.com/VolkovLabs/volkovlabs-app/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/VolkovLabs/volkovlabs-app/actions/workflows/codeql-analysis.yml)
 
-## Introduction
-
 The Volkov Labs Application includes a Docker image and Application plugin with information about Volkov Labs maintained Grafana plugins.
 
-### Requirements
+## Requirements
 
 - Grafana 9.0+ is required.
 
@@ -41,4 +39,4 @@ We love to hear from you. There are various ways to get in touch with us:
 
 ## License
 
-- Apache License Version 2.0, see [LICENSE](https://github.com/volkovlabs/volkovlabs-app/blob/main/LICENSE).
+Apache License Version 2.0, see [LICENSE](https://github.com/volkovlabs/volkovlabs-app/blob/main/LICENSE).

@@ -1,12 +1,13 @@
 # Change Log
 
-## 2.1.0 (IN PROGRESS)
+## 2.1.0 (2023-02-18)
 
 ### Features / Enhancements
 
 - Update URL and content for new Blog based on Docusaurus (#39)
 - Update to Grafana 9.3.4 (#41)
 - Update to Grafana 9.3.6 (#42)
+- Update CI and Release Workflows (#43)
 
 ## 2.0.0 (2022-12-25)
 
