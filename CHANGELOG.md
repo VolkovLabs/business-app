@@ -5,6 +5,8 @@
 ### Features / Enhancements
 
 - Update Docker customization to Grafana 9.4.2 (#47)
+- Update to Grafana 9.4.2 (#48)
+- Update Dynamic Text Panel 3.0.0 (#48)
 
 ## 2.1.0 (2023-02-18)
 

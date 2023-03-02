@@ -1,5 +1,38 @@
 # Changelog
 
+## 3.0.0 (2023-02-19)
+
+### Breaking changes
+
+The default Content and JavaScript editors are not displayed by default unless values were modified.
+To display required editors, including the new Styles, they should be selected in the list.
+
+### Features / Enhancements
+
+- Update README features with new JavaScript Code Editor (#141)
+- Update to Grafana 9.3.6 (#147)
+- Update CI and Release workflows (#147)
+- Update README to include JavaScript tutorial (#148)
+- Add custom styles (#149)
+- Add option to display optional editors (#149)
+- Remove Panel Padding (#150)
+- Add Code Syntax Highlight (#151)
+- Add Breaking Changes for displaying optional editors (#152)
+
+## 2.2.0 (2023-01-09)
+
+### Features / Enhancements
+
+- Add JSON helper to show objects and arrays (#121)
+- Update to Grafana 9.3.1 (#122)
+- Update Documentation links (#130, #131)
+- Add Split Helper (#132)
+- Refactor Text Component and Styles (#133)
+- Add JavaScript Code to add Handlebars helpers and Event handlers (#134)
+- Update default Content to `{{json @root}}` and Code Editor height to `200px` (#134)
+- Update CSS to fit images to screen (#135)
+- Add `getLocale()` parameter to JavaScript Code (#137)
+
 ## 2.1.0 (2022-11-27)
 
 ### Breaking changes
