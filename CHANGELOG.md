@@ -1,5 +1,11 @@
 # Change Log
 
+## 2.2.0 (2023-03-02)
+
+### Features / Enhancements
+
+- Update Docker customization to Grafana 9.4.2 (#47)
+
 ## 2.1.0 (2023-02-18)
 
 ### Features / Enhancements
