@@ -2,10 +2,10 @@
   "author": "Volkov Labs",
   "description": "Volkov Labs Application plugin",
   "devDependencies": {
-    "@grafana/data": "9.3.6",
-    "@grafana/runtime": "9.3.6",
-    "@grafana/toolkit": "9.3.6",
-    "@grafana/ui": "9.3.6",
+    "@grafana/data": "9.4.2",
+    "@grafana/runtime": "9.4.2",
+    "@grafana/toolkit": "9.4.2",
+    "@grafana/ui": "9.4.2",
     "@types/enzyme": "^3.10.12",
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "enzyme": "^3.11.0",
@@ -29,5 +29,5 @@
     "upgrade": "yarn upgrade --latest",
     "watch": "grafana-toolkit plugin:dev --watch"
   },
-  "version": "2.1.0"
+  "version": "2.2.0"
 }

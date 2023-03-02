@@ -2,7 +2,7 @@
 
 ![Application](https://raw.githubusercontent.com/volkovlabs/volkovlabs-app/main/img/app.png)
 
-![Grafana 9](https://img.shields.io/badge/Grafana-9.3.6-orange)
+![Grafana 9](https://img.shields.io/badge/Grafana-9.4.2-orange)
 [![YouTube](https://img.shields.io/badge/YouTube-Playlist-red)](https://youtube.com/playlist?list=PLPow72ygztmTm_zY_PYqJtRYpMPpZglYC)
 ![CI](https://github.com/volkovlabs/volkovlabs-app/workflows/CI/badge.svg)
 [![codecov](https://codecov.io/gh/VolkovLabs/volkovlabs-app/branch/main/graph/badge.svg)](https://codecov.io/gh/VolkovLabs/volkovlabs-app)
@@ -26,7 +26,7 @@ docker pull ghcr.io/volkovlabs/app:latest
 
 ## Bundle
 
-Application plugin includes:
+Application plugin includes.
 
 - [RSS/Atom data source](https://volkovlabs.io/plugins/volkovlabs-rss-datasource)
 - [Dynamic text panel](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel)
