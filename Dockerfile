@@ -15,7 +15,7 @@ ENV GF_PANELS_DISABLE_SANITIZE_HTML=true
 ## Disable Explore
 ENV GF_EXPLORE_ENABLED=false
 
-## Disble Alerting
+## Disable Alerting
 ENV GF_ALERTING_ENABLED=false
 ENV GF_UNIFIED_ALERTING_ENABLED=false
 
@@ -34,7 +34,11 @@ COPY entrypoint.sh /
 ## Copy Provisioning
 COPY --chown=grafana:root provisioning $GF_PATHS_PROVISIONING
 
-###### Customization ########################################
+##################################################################
+## Customization depends on the Grafana version
+## May work or not work for the version different from the current
+## Check GitHub file history for the previous Grafana versions
+##################################################################
 USER root
 
 ## Replace Favicon
@@ -74,7 +78,7 @@ RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|{target:"_b
 ## Remove Version in the Footer
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|{target:"_blank",id:"version",text:`v${d.version} (${d.commit})`,url:h?"https://github.com/grafana/grafana/blob/main/CHANGELOG.md":void 0}||g' {} \;
 
-#############################################################
+##################################################################
 
 USER grafana
 
