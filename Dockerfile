@@ -3,7 +3,7 @@ FROM grafana/grafana:9.4.3
 ## Set Grafana options
 ENV GF_ENABLE_GZIP=true
 ENV GF_USERS_DEFAULT_THEME=light
-ENV GF_FEATURE_TOGGLES_ENABLE=topnav
+ENV GF_FEATURE_TOGGLES_ENABLE=topnav,newPanelChromeUI
 
 ## Enable Anonymous Authentication
 ENV GF_AUTH_ANONYMOUS_ENABLED=true
