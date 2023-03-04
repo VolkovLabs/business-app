@@ -5,7 +5,7 @@
 ### Features / Enhancements
 
 - Update to Grafana 9.4.3 (#49)
-- Update JS updated in Dockerfile (#50)
+- Update JS updates in Dockerfile (#50)
 
 ## 2.2.0 (2023-03-02)
 
