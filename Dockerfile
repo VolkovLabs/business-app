@@ -80,6 +80,9 @@ RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|({target:"_
 
 ## Remove New Version is available in the Footer
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|({target:"_blank",id:"updateVersion",.*grafana_footer"})|()|g' {} \;
+
+## Update Search Place holder in the Top Navigation
+RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|("nav.search.placeholder","Search Grafana")|("nav.search.placeholder","Search")|g' {} \;
 ##################################################################
 
 USER grafana
