@@ -6,7 +6,7 @@ ENV GF_USERS_DEFAULT_THEME=light
 ENV GF_FEATURE_TOGGLES_ENABLE=topnav,newPanelChromeUI
 
 ## Enable Anonymous Authentication
-ENV GF_AUTH_ANONYMOUS_ENABLED=true
+ENV GF_AUTH_ANONYMOUS_ENABLED=false
 ENV GF_AUTH_BASIC_ENABLED=false
 
 ## Disable Sanitize
