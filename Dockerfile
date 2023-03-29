@@ -51,7 +51,7 @@ COPY src/img/logo.svg /usr/share/grafana/public/img/grafana_icon.svg
 COPY img/background.svg /usr/share/grafana/public/img/g8_login_dark.svg
 COPY img/background.svg /usr/share/grafana/public/img/g8_login_light.svg
 
-## Update Main Org. to Volkov Labs
+## Update Main Org. to Sakundi Dashboards
 ## Anonymous authentication will stop working as set for Main Org. by default
 # RUN sed -i 's|Main Org.|VolkovLab|g' /usr/share/grafana/bin/grafana-server
 
@@ -64,10 +64,10 @@ RUN sed -i "s|\[\[.NavTree\]\],|nav,|g; \
     /usr/share/grafana/public/views/index.html
 
 ## Update Title
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|AppTitle="Grafana"|AppTitle="Volkov Labs"|g' {} \;
+RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|AppTitle="Grafana"|AppTitle="Sakundi Dashboards"|g' {} \;
 
 ## Update Login Title
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|LoginTitle="Welcome to Grafana"|LoginTitle="Welcome to Volkov Labs"|g' {} \;
+RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|LoginTitle="Welcome to Grafana"|LoginTitle="Welcome to Sakundi Dashboards"|g' {} \;
 
 ## Remove Documentation, Support, Community in the Footer
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|\[{target:"_blank",id:"documentation".*grafana_footer"}\]|\[\]|g' {} \;
