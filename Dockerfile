@@ -1,13 +1,35 @@
 FROM grafana/grafana:9.4.3
 
+ARG EXPECT_CLAIMS
+
 ## Set Grafana options
 ENV GF_ENABLE_GZIP=true
 ENV GF_USERS_DEFAULT_THEME=light
 ENV GF_FEATURE_TOGGLES_ENABLE=topnav,newPanelChromeUI
 
+##auth
+ENV GF_AUTH_SIGNOUT_REDIRECT_URL=http://172.17.0.1:8088/oauth2/sign_out
+
+## security
+ENV GF_SECURITY_ALLOW_EMBEDDING=true
+
 ## Enable Anonymous Authentication
 ENV GF_AUTH_ANONYMOUS_ENABLED=false
-ENV GF_AUTH_BASIC_ENABLED=false
+ENV GF_AUTH_BASIC_ENABLED=true
+
+## Enable JWT Authentication
+ENV GF_AUTH_JWT_ENABLED=true
+ENV GF_AUTH_JWT_URL_LOGIN=true
+ENV GF_AUTH_JWT_JWK_SET_FILE=/etc/grafana/jwks.json
+ENV GF_AUTH_JWT_ENABLE_LOGIN_TOKEN=true
+ENV GF_AUTH_JWT_HEADER_NAME=X-Forwarded-Access-Token
+ENV GF_AUTH_JWT_EMAIL_CLAIM=sub
+ENV GF_AUTH_JWT_USERNAME_CLAIM=sub
+ENV GF_AUTH_JWT_EXPECT_CLAIMS='{"iss": "http://172.17.0.1:8087/realms/grafana", "azp": "grafana-oauth"}'
+ENV GF_AUTH_JWT_AUTO_SIGN_UP=true
+ENV GF_AUTH_JWT_ROLE_ATTRIBUTE_PATH='contains(roles[*], 'grafanaadmin') && 'GrafanaAdmin' || contains(roles[*], 'admin') && 'Admin' || contains(roles[*], 'editor') && 'Editor' || 'Viewer''
+ENV GF_AUTH_JWT_ROLE_ATTRIBUTE_STRICT=false
+ENV GF_AUTH_JWT_ALLOW_ASSIGN_GRAFANA_ADMIN=true
 
 ## Disable Sanitize
 ENV GF_PANELS_DISABLE_SANITIZE_HTML=true
