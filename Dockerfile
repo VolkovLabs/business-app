@@ -83,6 +83,79 @@ RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|({target:"_
 
 ## Update Search Place holder in the Top Navigation
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|("nav.search.placeholder","Search Grafana")|("nav.search.placeholder","Search")|g' {} \;
+
+##################################################################
+## Remove Native Data Sources
+##################################################################
+
+## Time series databases / Elasticsearch
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/elasticsearch
+RUN rm -rf /usr/share/grafana/public/build/elasticsearch*
+
+## Time series databases / Graphite
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/graphite
+RUN rm -rf /usr/share/grafana/public/build/graphite*
+
+## Time series databases / OpenTSDB
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/opentsdb
+RUN rm -rf /usr/share/grafana/public/build/opentsdb*
+
+## Time series databases / InfluxDB
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/influxdb
+RUN rm -rf /usr/share/grafana/public/build/influxdb*
+
+## SQL / Microsoft SQL Server
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/mssql
+RUN rm -rf /usr/share/grafana/public/build/mssql*
+
+## SQL / MySQL
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/mysql
+RUN rm -rf /usr/share/grafana/public/build/mysql*
+
+## Distributed tracing / Tempo
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/tempo
+RUN rm -rf /usr/share/grafana/public/build/tempo*
+
+## Distributed tracing / Jaeger
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/jaeger
+RUN rm -rf /usr/share/grafana/public/build/jaeger*
+
+## Distributed tracing / Zipkin
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/zipkin
+RUN rm -rf /usr/share/grafana/public/build/zipkin*
+
+## Cloud / Azure Monitor
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/grafana-azure-monitor-datasource
+RUN rm -rf /usr/share/grafana/public/build/azureMonitor*
+
+## Cloud / CloudWatch
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/cloudwatch
+RUN rm -rf /usr/share/grafana/public/build/cloudwatch*
+
+## Cloud / Google Cloud Monitoring
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/cloud-monitoring
+RUN rm -rf /usr/share/grafana/public/build/cloudMonitoring*
+
+## Profiling / Parca
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/parca
+RUN rm -rf /usr/share/grafana/public/build/parca*
+
+## Profiling / Phlare
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/phlare
+RUN rm -rf /usr/share/grafana/public/build/phlare*
+
+## Others / Alertmanager
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/alertmanager
+RUN rm -rf /usr/share/grafana/public/build/alertmanager*
+
+## Others / TestData
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/testdata
+RUN rm -rf /usr/share/grafana/public/build/testData*
+
+## Remove Cloud and Enterprise categories
+RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|e.id==="enterprise"|e.id==="notanenterprise"|g' {} \;
+RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|e.id==="cloud"|e.id==="notacloud"|g' {} \;
+
 ##################################################################
 
 USER grafana
