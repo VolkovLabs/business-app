@@ -1,11 +1,12 @@
 # Change Log
 
-## 2.3.0 (IN PROGRESS)
+## 2.3.0 (2023-04-07)
 
 ### Features / Enhancements
 
 - Update to Grafana 9.4.3 (#49)
 - Update JS updates in Dockerfile (#50)
+- Update to Grafana 9.4.7 (#51)
 
 ## 2.2.0 (2023-03-02)
 
