@@ -5,6 +5,7 @@ export * from './Calendar';
 export * from './DataManipulation';
 export * from './DynamicText';
 export * from './Environment';
+export * from './GrafanaAPI';
 export * from './Plugins';
 export * from './RSSAtom';
 export * from './Static';
