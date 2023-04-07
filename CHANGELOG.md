@@ -9,6 +9,7 @@
 - Update to Grafana 9.4.7 (#53)
 - Add Grafana HTTP API Data Source (#54)
 - Remove Native Data Sources (#55)
+- Remove Native Panels (#56)
 
 ## 2.2.0 (2023-03-02)
 
