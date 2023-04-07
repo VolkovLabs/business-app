@@ -6,6 +6,7 @@ import { Calendar } from './Calendar';
 import { DataManipulation } from './DataManipulation';
 import { DynamicText } from './DynamicText';
 import { Environment } from './Environment';
+import { GrafanaAPI } from './GrafanaAPI';
 import { RSSAtom } from './RSSAtom';
 import { Static } from './Static';
 
@@ -23,6 +24,7 @@ export class Plugins extends PureComponent {
         <DataManipulation />
         <DynamicText />
         <Environment />
+        <GrafanaAPI />
         <RSSAtom />
         <Static />
       </>

@@ -34,7 +34,6 @@ export class Balena extends PureComponent {
             </svg>
           </a>
         </Card.Figure>
-        <Card.Meta>grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-balena-app</Card.Meta>
         <Card.Tags>
           <TagList tags={['Application', 'Private']} />
         </Card.Tags>
@@ -67,7 +66,7 @@ export class Balena extends PureComponent {
             variant="secondary"
             icon="compass"
             target="_blank"
-            href="https://hub.balena.io/organizations/volkovlabs/projects/balena-app"
+            href="https://hub.balena.io/apps/1946473/balena-app"
           >
             balenaHub
           </LinkButton>
