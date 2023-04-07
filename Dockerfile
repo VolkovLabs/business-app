@@ -157,6 +157,37 @@ RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|e.id==="ent
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|e.id==="cloud"|e.id==="notacloud"|g' {} \;
 
 ##################################################################
+## Remove Native Panels
+##################################################################
+
+## Alert list
+RUN rm -rf /usr/share/grafana/public/app/plugins/panel/alertlist
+
+## Annotations list
+RUN rm -rf /usr/share/grafana/public/app/plugins/panel/annolist
+
+## Dashboard list
+RUN rm -rf /usr/share/grafana/public/app/plugins/panel/dashlist
+
+## News
+RUN rm -rf /usr/share/grafana/public/app/plugins/panel/news
+
+## Geomap
+RUN rm -rf /usr/share/grafana/public/app/plugins/panel/geomap
+
+## Table (old)
+RUN rm -rf /usr/share/grafana/public/app/plugins/panel/table-old
+
+## Traces
+RUN rm -rf /usr/share/grafana/public/app/plugins/panel/traces
+
+## Candlestick
+RUN rm -rf /usr/share/grafana/public/app/plugins/panel/candlestick
+
+## Node Graph
+RUN rm -rf /usr/share/grafana/public/app/plugins/panel/nodeGraph
+
+##################################################################
 
 USER grafana
 
