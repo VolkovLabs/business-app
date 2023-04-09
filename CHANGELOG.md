@@ -1,6 +1,6 @@
 # Change Log
 
-## 2.3.0 (2023-04-07)
+## 2.3.0 (2023-04-08)
 
 ### Features / Enhancements
 
@@ -10,6 +10,8 @@
 - Add Grafana HTTP API Data Source (#54)
 - Remove Native Data Sources (#55)
 - Remove Native Panels (#56)
+- Update RSS and Dynamic Text plugins (#58)
+- Enable Unified Alerting (#58)
 
 ## 2.2.0 (2023-03-02)
 
