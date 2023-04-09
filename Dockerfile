@@ -15,10 +15,6 @@ ENV GF_PANELS_DISABLE_SANITIZE_HTML=true
 ## Disable Explore
 ENV GF_EXPLORE_ENABLED=false
 
-## Disable Alerting
-ENV GF_ALERTING_ENABLED=false
-ENV GF_UNIFIED_ALERTING_ENABLED=false
-
 ## Set Home Dashboard
 ENV GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/etc/grafana/provisioning/dashboards/news.json
 

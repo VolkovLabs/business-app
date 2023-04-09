@@ -1,5 +1,14 @@
 # Change Log
 
+## 2.4.0 (2023-04-08)
+
+### Features / Enhancements
+
+- Update to Grafana 9.4.7 (#44)
+- Update CI and Release workflows (#45)
+- Update Documentation, Provisioning (#46)
+- Add URL parameters with variables support (#47, #48)
+
 ## 2.3.0 (2022-11-16)
 
 ### Features / Enhancements
