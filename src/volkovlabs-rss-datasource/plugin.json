@@ -15,12 +15,12 @@
     "keywords": ["rss", "atom", "news"],
     "links": [
       {
-        "name": "GitHub",
-        "url": "https://github.com/VolkovLabs/volkovlabs-rss-datasource"
+        "name": "Documentation",
+        "url": "https://volkovlabs.io/plugins/volkovlabs-rss-datasource/"
       },
       {
-        "name": "Website",
-        "url": "https://volkovlabs.io"
+        "name": "GitHub",
+        "url": "https://github.com/VolkovLabs/volkovlabs-rss-datasource"
       }
     ],
     "logos": {
@@ -31,14 +31,10 @@
       {
         "name": "Dashboard",
         "path": "img/dashboard.png"
-      },
-      {
-        "name": "Panel",
-        "path": "img/panel.png"
       }
     ],
-    "updated": "2022-11-17",
-    "version": "2.3.0"
+    "updated": "2023-04-08",
+    "version": "2.4.0"
   },
   "metrics": true,
   "name": "RSS/Atom",

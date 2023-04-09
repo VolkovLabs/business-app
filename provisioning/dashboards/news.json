@@ -65,14 +65,17 @@
       },
       "id": 3,
       "options": {
-        "content": "<table width=100% style='border:0'>\n  <tr>\n    <td style='border:0'>\n      <h3><a target=\"_blank\" style=\"color: blue\" href=\"{{link}}\">{{title}}</a></h3>\n    </td>\n    <td rowspan=2 style='border:0' width=200px>\n      <div style='max-width: 100%; display: inline; height: auto '><img width=200px src=\"{{media:group:media:thumbnail:url}}\">\n      </div>\n    </td>\n  </tr>\n  <tr>\n    <td style='border:0'><b>{{date updated 'MMM, DD YYYY'}} by {{author}}</b></td>\n</table>",
+        "content": "<table width=100% style='border:0'>\n  <tr>\n    <td width=\"*\" style='border:0'>\n      <h3><a target=\"_blank\" style=\"color: blue\" href=\"{{link}}\">{{title}}</a></h3>\n    </td>\n    <td width=\"30%\" rowspan=2 style='border:0'>\n      <img src=\"{{media:group:media:thumbnail:url}}\">\n    </td>\n  </tr>\n  <tr>\n    <td style='border:0'><b>{{date updated 'MMM, DD YYYY'}}</b></td>\n</table>",
         "defaultContent": "The query didn't return any results.",
         "editor": {
           "format": "auto",
           "height": 400,
           "language": "html"
         },
-        "everyRow": true
+        "editors": [],
+        "everyRow": true,
+        "helpers": "",
+        "styles": ""
       },
       "pluginVersion": "8.3.3",
       "targets": [
@@ -125,7 +128,10 @@
           "height": 400,
           "language": "html"
         },
-        "everyRow": true
+        "editors": [],
+        "everyRow": true,
+        "helpers": "",
+        "styles": ""
       },
       "pluginVersion": "8.3.3",
       "targets": [
@@ -160,7 +166,8 @@
     }
   ],
   "refresh": "",
-  "schemaVersion": 37,
+  "revision": 1,
+  "schemaVersion": 38,
   "style": "dark",
   "tags": [],
   "templating": {
