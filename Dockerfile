@@ -20,16 +20,13 @@ ENV GF_AUTH_BASIC_ENABLED=true
 ## Enable JWT Authentication
 ENV GF_AUTH_JWT_ENABLED=true
 ENV GF_AUTH_JWT_URL_LOGIN=true
-ENV GF_AUTH_JWT_JWK_SET_FILE=/etc/grafana/jwks.json
+ENV GF_AUTH_JWT_KEY_FILE=/etc/grafana/pubkey.pem
 ENV GF_AUTH_JWT_ENABLE_LOGIN_TOKEN=true
-ENV GF_AUTH_JWT_HEADER_NAME=X-Forwarded-Access-Token
-ENV GF_AUTH_JWT_EMAIL_CLAIM=sub
-ENV GF_AUTH_JWT_USERNAME_CLAIM=sub
-ENV GF_AUTH_JWT_EXPECT_CLAIMS='{"iss": "http://172.17.0.1:8087/realms/grafana", "azp": "grafana-oauth"}'
+ENV GF_AUTH_JWT_HEADER_NAME=X-JWT-Assertion
+ENV GF_AUTH_JWT_EMAIL_CLAIM=email
+ENV GF_AUTH_JWT_USERNAME_CLAIM=login
+ENV GF_AUTH_JWT_EXPECT_CLAIMS='{"iss": "https://jwt.io/"}'
 ENV GF_AUTH_JWT_AUTO_SIGN_UP=true
-ENV GF_AUTH_JWT_ROLE_ATTRIBUTE_PATH='contains(roles[*], 'grafanaadmin') && 'GrafanaAdmin' || contains(roles[*], 'admin') && 'Admin' || contains(roles[*], 'editor') && 'Editor' || 'Viewer''
-ENV GF_AUTH_JWT_ROLE_ATTRIBUTE_STRICT=false
-ENV GF_AUTH_JWT_ALLOW_ASSIGN_GRAFANA_ADMIN=true
 
 ## Disable Sanitize
 ENV GF_PANELS_DISABLE_SANITIZE_HTML=true
