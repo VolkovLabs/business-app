@@ -50,9 +50,12 @@ COPY src/img/logo.svg /usr/share/grafana/public/img/grafana_icon.svg
 COPY img/background.svg /usr/share/grafana/public/img/g8_login_dark.svg
 COPY img/background.svg /usr/share/grafana/public/img/g8_login_light.svg
 
-## Update Main Org. to Volkov Labs
+## Update Main Org. to AwesomeOg, have to be 9 symbols
 ## Anonymous authentication will stop working as set for Main Org. by default
-# RUN sed -i 's|Main Org.|VolkovLab|g' /usr/share/grafana/bin/grafana-server
+# RUN sed -i 's|Main Org.|AwesomeOg|g' /usr/share/grafana/bin/grafana-server
+
+# Update Title
+RUN sed -i 's|<title>\[\[.AppTitle\]\]</title>|<title>Volkov Labs</title>|g' /usr/share/grafana/public/views/index.html
 
 ## Update Help menu
 RUN sed -i "s|\[\[.NavTree\]\],|nav,|g; \
