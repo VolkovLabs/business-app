@@ -1,5 +1,9 @@
 FROM grafana/grafana:9.4.7
 
+##################################################################
+## CONFIGURATION
+##################################################################
+
 ## Set Grafana options
 ENV GF_ENABLE_GZIP=true
 ENV GF_USERS_DEFAULT_THEME=light
@@ -25,8 +29,11 @@ ENV GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/etc/grafana/provisioning/dashboar
 ENV GF_PATHS_PROVISIONING="/etc/grafana/provisioning"
 ENV GF_PATHS_PLUGINS="/var/lib/grafana/plugins"
 
-## Copy artifacts
+##################################################################
+## COPY ARTIFACTS
 ## Required for the Application plugin
+##################################################################
+
 COPY --chown=grafana:root dist /app
 COPY entrypoint.sh /
 
@@ -40,6 +47,10 @@ COPY --chown=grafana:root provisioning $GF_PATHS_PROVISIONING
 ##################################################################
 USER root
 
+##################################################################
+## VISUAL
+##################################################################
+
 ## Replace Favicon
 COPY img/fav32.png /usr/share/grafana/public/img
 
@@ -50,9 +61,9 @@ COPY src/img/logo.svg /usr/share/grafana/public/img/grafana_icon.svg
 COPY img/background.svg /usr/share/grafana/public/img/g8_login_dark.svg
 COPY img/background.svg /usr/share/grafana/public/img/g8_login_light.svg
 
-## Update Main Org. to AwesomeOg, have to be 9 symbols
-## Anonymous authentication will stop working as set for Main Org. by default
-# RUN sed -i 's|Main Org.|AwesomeOg|g' /usr/share/grafana/bin/grafana-server
+##################################################################
+## HANDS-ON
+##################################################################
 
 # Update Title
 RUN sed -i 's|<title>\[\[.AppTitle\]\]</title>|<title>Volkov Labs</title>|g' /usr/share/grafana/public/views/index.html
@@ -87,7 +98,7 @@ RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|({target:"_
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|("nav.search.placeholder","Search Grafana")|("nav.search.placeholder","Search")|g' {} \;
 
 ##################################################################
-## Remove Native Data Sources
+## CLEANING Remove Native Data Sources
 ##################################################################
 
 ## Time series databases / Elasticsearch
@@ -159,7 +170,7 @@ RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|e.id==="ent
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|e.id==="cloud"|e.id==="notacloud"|g' {} \;
 
 ##################################################################
-## Remove Native Panels
+## CLEANING Remove Native Panels
 ##################################################################
 
 ## Alert list
