@@ -10,11 +10,13 @@
 
 ## Introduction
 
-The Volkov Labs Application includes a Docker image and Application plugin with information about Volkov Labs maintained Grafana plugins.
+The Volkov Labs Application includes a Docker image with customized Grafana and an Application plugin with information about Volkov Labs maintained plugins.
 
-## Requirements
+## Customization
 
-- Grafana 9.0+ is required.
+Months of work bundled with deep expertise nicely wrapped into a 7-minute long video revealing simple steps to customize Grafana. In this tutorial, we answered all community questions we collected to this moment.
+
+![Customization](https://raw.githubusercontent.com/volkovlabs/volkovlabs-app/main/img/customize.png)
 
 ## Docker image
 
