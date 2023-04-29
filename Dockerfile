@@ -1,4 +1,4 @@
-FROM grafana/grafana:9.4.7
+FROM grafana/grafana:9.5.1
 
 ##################################################################
 ## CONFIGURATION
@@ -7,7 +7,6 @@ FROM grafana/grafana:9.4.7
 ## Set Grafana options
 ENV GF_ENABLE_GZIP=true
 ENV GF_USERS_DEFAULT_THEME=light
-ENV GF_FEATURE_TOGGLES_ENABLE=topnav,newPanelChromeUI
 
 ## Enable Anonymous Authentication
 ENV GF_AUTH_ANONYMOUS_ENABLED=true
@@ -18,9 +17,6 @@ ENV GF_PANELS_DISABLE_SANITIZE_HTML=true
 
 ## Disable Explore
 ENV GF_EXPLORE_ENABLED=false
-
-## Enable Unified Alerting
-ENV GF_UNIFIED_ALERTING_ENABLED=true
 
 ## Set Home Dashboard
 ENV GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/etc/grafana/provisioning/dashboards/news.json
@@ -68,6 +64,9 @@ COPY img/background.svg /usr/share/grafana/public/img/g8_login_light.svg
 # Update Title
 RUN sed -i 's|<title>\[\[.AppTitle\]\]</title>|<title>Volkov Labs</title>|g' /usr/share/grafana/public/views/index.html
 
+# Disable Connections
+RUN sed -i 's|# feature2 = false|dataConnectionsConsole = false|g' /usr/share/grafana/conf/defaults.ini
+
 ## Update Help menu
 RUN sed -i "s|\[\[.NavTree\]\],|nav,|g; \
     s|window.grafanaBootData = {| \
@@ -86,16 +85,13 @@ RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|LoginTitle=
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|\[{target:"_blank",id:"documentation".*grafana_footer"}\]|\[\]|g' {} \;
 
 ## Remove Edition in the Footer
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|({target:"_blank",id:"version",.*licenseUrl})|()|g' {} \;
+RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|({target:"_blank",id:"license",.*licenseUrl})|()|g' {} \;
 
 ## Remove Version in the Footer
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|({target:"_blank",id:"version",.*CHANGELOG.md":void 0})|()|g' {} \;
 
 ## Remove New Version is available in the Footer
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|({target:"_blank",id:"updateVersion",.*grafana_footer"})|()|g' {} \;
-
-## Update Search Place holder in the Top Navigation
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|("nav.search.placeholder","Search Grafana")|("nav.search.placeholder","Search")|g' {} \;
 
 ##################################################################
 ## CLEANING Remove Native Data Sources
@@ -138,7 +134,7 @@ RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/zipkin
 RUN rm -rf /usr/share/grafana/public/build/zipkin*
 
 ## Cloud / Azure Monitor
-RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/grafana-azure-monitor-datasource
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/azuremonitor
 RUN rm -rf /usr/share/grafana/public/build/azureMonitor*
 
 ## Cloud / CloudWatch
@@ -166,8 +162,8 @@ RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/testdata
 RUN rm -rf /usr/share/grafana/public/build/testData*
 
 ## Remove Cloud and Enterprise categories
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|e.id==="enterprise"|e.id==="notanenterprise"|g' {} \;
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|e.id==="cloud"|e.id==="notacloud"|g' {} \;
+RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|t.id==="enterprise"|t.id==="notanenterprise"|g' {} \;
+RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|t.id==="cloud"|t.id==="notacloud"|g' {} \;
 
 ##################################################################
 ## CLEANING Remove Native Panels
