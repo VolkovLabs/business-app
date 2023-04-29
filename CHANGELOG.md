@@ -1,10 +1,11 @@
 # Change Log
 
-## 2.4.0 (2023-04-28)
+## 2.4.0 (2023-04-29)
 
 ### Features / Enhancements
 
 - Update to Grafana 9.5.1 (#63)
+- Update Docker image 9.5.1 (#64)
 
 ## 2.3.0 (2023-04-08)
 
