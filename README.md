@@ -28,7 +28,7 @@ docker pull ghcr.io/volkovlabs/app:latest
 
 ## Bundle
 
-Application plugin includes.
+Application plugin includes:
 
 - [RSS/Atom data source](https://volkovlabs.io/plugins/volkovlabs-rss-datasource)
 - [Dynamic text panel](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel)
