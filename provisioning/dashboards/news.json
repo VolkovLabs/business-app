@@ -121,17 +121,17 @@
       },
       "id": 2,
       "options": {
-        "content": "<table width=100% style='border:0'>\n  <tr>\n    <td style='border:0'>\n      <h3><a target=\"_blank\" style=\"color: blue\" href=\"{{link}}\">{{title}}</a></h3>\n      <div>{{{description}}}</div>\n    </td>\n  </tr>\n  <tr>\n    <td style='border:0'><b>{{date pubDate 'MMM, DD YYYY'}} in {{category}}</b></td>\n  </tr>\n</table>",
+        "content": "<table id=\"dataTable\" width=\"100%\">\n  <tr>\n    <th>Title</th>\n    <th>Date</th>\n  </tr>\n  {{#each data}}\n  <tr>\n    <td><a target='_blank' href='{{link}}'>{{title}}</a></td>\n    <td>{{date pubDate 'MMM, DD YYYY'}}</td>\n  </tr>\n  {{/each}}\n</table>",
         "defaultContent": "The query didn't return any results.",
         "editor": {
           "format": "auto",
           "height": 400,
           "language": "html"
         },
-        "editors": [],
-        "everyRow": true,
-        "helpers": "",
-        "styles": ""
+        "editors": ["helpers", "styles"],
+        "everyRow": false,
+        "helpers": "const scrollWindow = () => {\n  parentWindow =\n    document.getElementById(\"dataTable\").parentElement.parentElement;\n  bottomOfWindow = parentWindow.scrollHeight - parentWindow.offsetHeight;\n\n  /**\n   * Scroll\n   */\n  if (parentWindow.scrollTop < bottomOfWindow) {\n    parentWindow.scrollBy(0, 1);\n    setTimeout(scrollWindow, 50);\n    return;\n  }\n\n  /**\n   * Scroll to the Top\n   */\n  setTimeout(function () {\n    parentWindow.scrollTo({ top: 0, behavior: \"smooth\" });\n  }, 1000);\n\n  /**\n   * Start scrolling again\n   */\n  setTimeout(scrollWindow, 1000);\n};\n\n$(() => {\n  dataTable = document.getElementById(\"dataTable\");\n\n  /**\n   * Avoid scrolling for short tables\n   */\n  if (\n    dataTable.parentElement.scrollHeight <\n    dataTable.parentElement.parentElement.offsetHeight\n  ) {\n    return;\n  }\n\n  /**\n   * Already set to scroll\n   */\n  if (dataTable.parentElement.parentElement.getAttribute(\"listener\")) {\n    return;\n  }\n\n  dataTable.parentElement.parentElement.setAttribute(\"listener\", true);\n  scrollWindow();\n});",
+        "styles": "a {\n  color: blue;\n}"
       },
       "pluginVersion": "8.3.3",
       "targets": [
@@ -181,6 +181,6 @@
   "timezone": "",
   "title": "Volkov Labs News",
   "uid": "O4tc_E6Gz",
-  "version": 1,
+  "version": 3,
   "weekStart": ""
 }

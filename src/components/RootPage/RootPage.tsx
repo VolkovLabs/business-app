@@ -1,9 +1,9 @@
-import { Plugins } from 'components/Plugins';
 import React, { PureComponent } from 'react';
 import { AppRootProps, NavModelItem } from '@grafana/data';
 import { Alert } from '@grafana/ui';
 import { Application } from '../../constants';
 import { GlobalSettings } from '../../types';
+import { Community, Development } from '../Plugins';
 
 /**
  * Properties
@@ -54,22 +54,38 @@ export class RootPage extends PureComponent<Props, State> {
   }
 
   /**
+   * Mount
+   */
+  async componentDidUpdate() {
+    this.updateNav();
+  }
+
+  /**
    * Navigation
    */
   updateNav() {
-    const { path, onNavChanged, meta } = this.props;
+    const { basename, path, onNavChanged, meta } = this.props;
     const tabs: NavModelItem[] = [];
 
     /**
      * Home
      */
-    tabs.push({
-      text: 'Plugins',
-      url: path,
-      id: 'home',
-      icon: 'apps',
-      active: true,
-    });
+    tabs.push(
+      {
+        text: 'Community',
+        url: `${basename}/community`,
+        id: 'community',
+        icon: 'apps',
+        active: path.includes('development') ? false : true,
+      },
+      {
+        text: 'Development',
+        url: `${basename}/development`,
+        id: 'development',
+        icon: 'fire',
+        active: path.includes('development') ? true : false,
+      }
+    );
 
     /**
      * Header
@@ -108,6 +124,13 @@ export class RootPage extends PureComponent<Props, State> {
       );
     }
 
-    return <Plugins />;
+    /**
+     * Development
+     */
+    if (this.props.path.includes('development')) {
+      return <Development />;
+    }
+
+    return <Community />;
   }
 }

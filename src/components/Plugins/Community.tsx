@@ -1,29 +1,25 @@
 import React, { PureComponent } from 'react';
 import { ApacheECharts } from './ApacheECharts';
-import { Balena } from './Balena';
 import { Base64Image } from './Base64Image';
 import { Calendar } from './Calendar';
 import { DataManipulation } from './DataManipulation';
 import { DynamicText } from './DynamicText';
-import { Environment } from './Environment';
 import { GrafanaAPI } from './GrafanaAPI';
 import { RSSAtom } from './RSSAtom';
 import { Static } from './Static';
 
 /**
- * Plugins
+ * Community
  */
-export class Plugins extends PureComponent {
+export class Community extends PureComponent {
   render() {
     return (
       <>
         <ApacheECharts />
-        <Balena />
         <Base64Image />
         <Calendar />
         <DataManipulation />
         <DynamicText />
-        <Environment />
         <GrafanaAPI />
         <RSSAtom />
         <Static />

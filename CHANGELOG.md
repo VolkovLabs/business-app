@@ -6,7 +6,8 @@
 
 - Update to Grafana 9.5.1 (#63)
 - Update Docker image 9.5.1 (#64)
-- Add Customization tutorial (#65)
+- Add Customization tutorial (#66)
+- Update Home Page and Plugins (#67)
 
 ## 2.3.0 (2023-04-08)
 

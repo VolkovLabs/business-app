@@ -35,6 +35,7 @@ const getMeta = (): AppPluginMeta => ({
 describe('RootPage', () => {
   const meta = getMeta();
   const path = '/app';
+  const basename = '/app';
   const onNavChangedMock = jest.fn();
 
   beforeAll(() => {
@@ -67,7 +68,7 @@ describe('RootPage', () => {
   describe('updateNav', () => {
     it('Should call onNavChanged prop', () => {
       const wrapper = shallow<RootPage>(
-        <RootPage basename="" meta={meta} path={path} query={null as any} onNavChanged={onNavChangedMock} />
+        <RootPage basename={basename} meta={meta} path={path} query={null as any} onNavChanged={onNavChangedMock} />
       );
       wrapper.instance().updateNav();
       const node = {
@@ -77,11 +78,18 @@ describe('RootPage', () => {
         url: path,
         children: [
           {
-            text: 'Plugins',
-            url: path,
-            id: 'home',
+            text: 'Community',
+            url: `${basename}/community`,
+            id: 'community',
             icon: 'apps',
-            active: true,
+            active: path.includes('development') ? false : true,
+          },
+          {
+            text: 'Development',
+            url: `${basename}/development`,
+            id: 'development',
+            icon: 'fire',
+            active: path.includes('development') ? true : false,
           },
         ],
       };
