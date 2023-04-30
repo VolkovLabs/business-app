@@ -121,7 +121,7 @@
       },
       "id": 2,
       "options": {
-        "content": "<table id=\"dataTable\" width=\"100%\">\n  <tr>\n    <th>Title</th>\n    <th>Date</th>\n  </tr>\n  {{#each data}}\n  <tr>\n    <td><a href='{{link}}'>{{title}}</a></td>\n    <td>{{date pubDate 'MMM, DD YYYY'}}</td>\n  </tr>\n  {{/each}}\n</table>",
+        "content": "<table id=\"dataTable\" width=\"100%\">\n  <tr>\n    <th>Title</th>\n    <th>Date</th>\n  </tr>\n  {{#each data}}\n  <tr>\n    <td><a target='_blank' href='{{link}}'>{{title}}</a></td>\n    <td>{{date pubDate 'MMM, DD YYYY'}}</td>\n  </tr>\n  {{/each}}\n</table>",
         "defaultContent": "The query didn't return any results.",
         "editor": {
           "format": "auto",
@@ -181,6 +181,6 @@
   "timezone": "",
   "title": "Volkov Labs News",
   "uid": "O4tc_E6Gz",
-  "version": 2,
+  "version": 3,
   "weekStart": ""
 }
