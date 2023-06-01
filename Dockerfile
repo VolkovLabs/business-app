@@ -1,4 +1,4 @@
-FROM grafana/grafana:9.5.1
+FROM grafana/grafana:9.5.2
 
 ##################################################################
 ## CONFIGURATION
@@ -156,10 +156,6 @@ RUN rm -rf /usr/share/grafana/public/build/phlare*
 ## Others / Alertmanager
 RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/alertmanager
 RUN rm -rf /usr/share/grafana/public/build/alertmanager*
-
-## Others / TestData
-RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/testdata
-RUN rm -rf /usr/share/grafana/public/build/testData*
 
 ## Remove Cloud and Enterprise categories
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|t.id==="enterprise"|t.id==="notanenterprise"|g' {} \;

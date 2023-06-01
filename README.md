@@ -2,7 +2,7 @@
 
 ![Application](https://raw.githubusercontent.com/volkovlabs/volkovlabs-app/main/img/app.png)
 
-![Grafana 9](https://img.shields.io/badge/Grafana-9.5.1-orange)
+![Grafana 9](https://img.shields.io/badge/Grafana-9.5.2-orange)
 [![YouTube](https://img.shields.io/badge/YouTube-Channel-red)](https://youtube.com/@volkovlabs)
 ![CI](https://github.com/volkovlabs/volkovlabs-app/workflows/CI/badge.svg)
 [![codecov](https://codecov.io/gh/VolkovLabs/volkovlabs-app/branch/main/graph/badge.svg)](https://codecov.io/gh/VolkovLabs/volkovlabs-app)
@@ -33,13 +33,9 @@ Application plugin includes:
 - [RSS/Atom data source](https://volkovlabs.io/plugins/volkovlabs-rss-datasource)
 - [Dynamic text panel](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel)
 
-## Feedback
+## Support
 
-We love to hear from you. There are various ways to get in touch with us:
-
-- Ask a question, request a new feature, and file a bug with [GitHub issues](https://github.com/volkovlabs/volkovlabs-app/issues/new/choose).
-- Sponsor our open-source plugins for Grafana with [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
-- Star the repository to show your support.
+We provide GitHub Discussions and Premium tier support for the development plugins available via [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
 
 ## License
 
