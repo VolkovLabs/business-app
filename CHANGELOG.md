@@ -5,6 +5,7 @@
 ### Features / Enhancements
 
 - Update to Grafana 9.5.2 (#68)
+- Remove bundle plugins to download from Grafana Catalog (#69)
 
 ## 2.4.0 (2023-04-29)
 

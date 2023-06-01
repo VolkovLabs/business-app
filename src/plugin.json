@@ -2,7 +2,20 @@
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
   "dependencies": {
     "grafanaDependency": ">=9.0.0",
-    "plugins": []
+    "plugins": [
+      {
+        "id": "volkovlabs-rss-datasource",
+        "name": "RSS/Atom Data Source",
+        "type": "datasource",
+        "version": "^2.4.0"
+      },
+      {
+        "id": "marcusolsson-dynamictext-panel",
+        "name": "Dynamic Text",
+        "type": "panel",
+        "version": "^3.1.0"
+      }
+    ]
   },
   "id": "volkovlabs-app",
   "info": {
@@ -11,11 +24,11 @@
       "url": "https://volkovlabs.io"
     },
     "description": "Volkov Labs Application plugin",
-    "keywords": ["template"],
+    "keywords": ["volkovlabs"],
     "links": [
       {
         "name": "Documentation",
-        "url": "https://docs.volkovlabs.io"
+        "url": "https://docs.volkovlabs.io/volkovlabs-app"
       },
       {
         "name": "GitHub",

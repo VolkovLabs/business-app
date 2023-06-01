@@ -26,13 +26,6 @@ We use custom build Docker image for all our projects and keep it up-to-date wit
 docker pull ghcr.io/volkovlabs/app:latest
 ```
 
-## Bundle
-
-Application plugin includes:
-
-- [RSS/Atom data source](https://volkovlabs.io/plugins/volkovlabs-rss-datasource)
-- [Dynamic text panel](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel)
-
 ## Support
 
 We provide GitHub Discussions and Premium tier support for the development plugins available via [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
