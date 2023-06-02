@@ -1,10 +1,13 @@
-import { shallow } from 'enzyme';
 import React from 'react';
-import { setImmediate } from 'timers';
 import { AppPluginMeta, PluginType } from '@grafana/data';
-import { Alert } from '@grafana/ui';
-import { Application } from '../../constants';
+import { act, render, screen } from '@testing-library/react';
+import { Application, TestIds } from '../../constants';
 import { RootPage } from './RootPage';
+
+jest.mock('../Plugins', () => ({
+  Development: jest.fn().mockImplementation(() => <div data-testid={TestIds.rootPage.development} />),
+  Community: jest.fn().mockImplementation(() => <div data-testid={TestIds.rootPage.community} />),
+}));
 
 /**
  * Meta
@@ -29,14 +32,11 @@ const getMeta = (): AppPluginMeta => ({
   },
 });
 
-/**
- * RootPage
- */
 describe('RootPage', () => {
   const meta = getMeta();
   const path = '/app';
-  const basename = '/app';
   const onNavChangedMock = jest.fn();
+  const basename = '/app';
 
   beforeAll(() => {
     Object.defineProperty(window, 'location', {
@@ -49,28 +49,16 @@ describe('RootPage', () => {
   });
 
   /**
-   * Mounting
+   * Navigation
    */
-  describe('Mounting', () => {
-    it('Should update navigation', () => {
-      const wrapper = shallow<RootPage>(
-        <RootPage basename="" meta={meta} path={path} query={null as any} onNavChanged={onNavChangedMock} />
+  describe('Navigation', () => {
+    it('Should update navigation on mount', async () => {
+      await act(() =>
+        render(
+          <RootPage basename={basename} meta={meta} path={path} query={null as any} onNavChanged={onNavChangedMock} />
+        )
       );
-      const testedMethod = jest.spyOn(wrapper.instance(), 'updateNav');
-      wrapper.instance().componentDidMount();
-      expect(testedMethod).toHaveBeenCalledTimes(1);
-    });
-  });
 
-  /**
-   * updateNav
-   */
-  describe('updateNav', () => {
-    it('Should call onNavChanged prop', () => {
-      const wrapper = shallow<RootPage>(
-        <RootPage basename={basename} meta={meta} path={path} query={null as any} onNavChanged={onNavChangedMock} />
-      );
-      wrapper.instance().updateNav();
       const node = {
         text: Application.name,
         img: meta.info.logos.large,
@@ -82,14 +70,14 @@ describe('RootPage', () => {
             url: `${basename}/community`,
             id: 'community',
             icon: 'apps',
-            active: path.includes('development') ? false : true,
+            active: !path.includes('development'),
           },
           {
             text: 'Development',
             url: `${basename}/development`,
             id: 'development',
             icon: 'fire',
-            active: path.includes('development') ? true : false,
+            active: path.includes('development'),
           },
         ],
       };
@@ -98,25 +86,79 @@ describe('RootPage', () => {
         main: node,
       });
     });
+
+    it('Should update navigation if path changed', async () => {
+      const onNavChanged = jest.fn();
+
+      const { rerender } = await act(() =>
+        render(<RootPage basename={basename} meta={meta} path={path} query={null as any} onNavChanged={onNavChanged} />)
+      );
+
+      onNavChanged.mockClear();
+
+      await act(() =>
+        rerender(
+          <RootPage
+            basename={basename}
+            meta={meta}
+            path={`${path}/development`}
+            query={null as any}
+            onNavChanged={onNavChanged}
+          />
+        )
+      );
+
+      expect(onNavChanged).toHaveBeenCalledWith(
+        expect.objectContaining({
+          main: expect.objectContaining({
+            children: expect.arrayContaining([
+              expect.objectContaining({
+                id: 'development',
+                active: true,
+              }),
+            ]),
+          }),
+        })
+      );
+    });
   });
 
   /**
    * Rendering
    */
   describe('rendering', () => {
-    it('Should show message if loading=true', (done) => {
-      const wrapper = shallow<RootPage>(
-        <RootPage basename="" meta={meta} path={path} query={null as any} onNavChanged={onNavChangedMock} />
+    it('Should render content only after nav changed', async () => {
+      await act(() =>
+        render(
+          <RootPage
+            basename=""
+            meta={meta}
+            path={`${path}/development`}
+            query={null as any}
+            onNavChanged={onNavChangedMock}
+          />
+        )
       );
-      wrapper.instance().componentDidMount();
 
-      setImmediate(() => {
-        const loadingMessageComponent = wrapper.findWhere(
-          (node) => node.is(Alert) && node.prop('title') === 'Loading...'
-        );
-        expect(loadingMessageComponent.exists()).not.toBeTruthy();
-        done();
-      });
+      expect(screen.queryByTestId(TestIds.rootPage.loadingIndicator)).not.toBeInTheDocument();
+      expect(screen.getByTestId(TestIds.rootPage.development)).toBeInTheDocument();
+    });
+
+    it('Should render community page', async () => {
+      await act(() =>
+        render(
+          <RootPage
+            basename=""
+            meta={meta}
+            path={`${path}/community`}
+            query={null as any}
+            onNavChanged={onNavChangedMock}
+          />
+        )
+      );
+
+      expect(screen.queryByTestId(TestIds.rootPage.loadingIndicator)).not.toBeInTheDocument();
+      expect(screen.getByTestId(TestIds.rootPage.community)).toBeInTheDocument();
     });
   });
 
