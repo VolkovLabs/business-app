@@ -4,10 +4,11 @@
 
 ### Features / Enhancements
 
-- Update to Grafana 9.5.2 (#68)
+- Update to Grafana 10.0.0 (#68, #72)
 - Update unit tests with testing-library/react (#70)
 - Migrate to Plugin Tools 1.5.2 (#71)
 - Update to Node 18 and npm (#71)
+- Update Docker image 10.0.0 (#72)
 
 ## 2.4.0 (2023-04-29)
 
