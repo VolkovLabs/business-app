@@ -1,4 +1,4 @@
-FROM grafana/grafana:9.5.2
+FROM grafana/grafana:10.0.0
 
 ##################################################################
 ## CONFIGURATION
@@ -158,8 +158,8 @@ RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/alertmanager
 RUN rm -rf /usr/share/grafana/public/build/alertmanager*
 
 ## Remove Cloud and Enterprise categories
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|t.id==="enterprise"|t.id==="notanenterprise"|g' {} \;
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|t.id==="cloud"|t.id==="notacloud"|g' {} \;
+RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|.id==="enterprise"|.id==="notanenterprise"|g' {} \;
+RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|.id==="cloud"|.id==="notacloud"|g' {} \;
 
 ##################################################################
 ## CLEANING Remove Native Panels
@@ -177,20 +177,11 @@ RUN rm -rf /usr/share/grafana/public/app/plugins/panel/dashlist
 ## News
 RUN rm -rf /usr/share/grafana/public/app/plugins/panel/news
 
-## Geomap
-RUN rm -rf /usr/share/grafana/public/app/plugins/panel/geomap
-
 ## Table (old)
 RUN rm -rf /usr/share/grafana/public/app/plugins/panel/table-old
 
 ## Traces
 RUN rm -rf /usr/share/grafana/public/app/plugins/panel/traces
-
-## Candlestick
-RUN rm -rf /usr/share/grafana/public/app/plugins/panel/candlestick
-
-## Node Graph
-RUN rm -rf /usr/share/grafana/public/app/plugins/panel/nodeGraph
 
 ##################################################################
 
