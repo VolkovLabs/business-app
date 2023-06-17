@@ -1,7 +1,7 @@
-import React, { PureComponent } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { AppRootProps, NavModelItem } from '@grafana/data';
 import { Alert } from '@grafana/ui';
-import { Application } from '../../constants';
+import { Application, TestIds } from '../../constants';
 import { GlobalSettings } from '../../types';
 import { Community, Development } from '../Plugins';
 
@@ -11,60 +11,18 @@ import { Community, Development } from '../Plugins';
 interface Props extends AppRootProps<GlobalSettings> {}
 
 /**
- * State
- */
-interface State {
-  /**
-   * Loading
-   *
-   * @type {boolean}
-   */
-  loading: boolean;
-}
-
-/**
  * Root Page
  */
-export class RootPage extends PureComponent<Props, State> {
+export const RootPage: React.FC<Props> = ({ path, onNavChanged, basename, meta }) => {
   /**
-   * Constructor
-   *
-   * @param props {Props} Properties
+   * State
    */
-  constructor(props: Props) {
-    super(props);
-
-    this.state = {
-      loading: true,
-    };
-  }
+  const [loading, setLoading] = useState(true);
 
   /**
-   * Mount
+   * Update Navigation
    */
-  async componentDidMount() {
-    this.updateNav();
-
-    /**
-     * Set state
-     */
-    this.setState({
-      loading: false,
-    });
-  }
-
-  /**
-   * Mount
-   */
-  async componentDidUpdate() {
-    this.updateNav();
-  }
-
-  /**
-   * Navigation
-   */
-  updateNav() {
-    const { basename, path, onNavChanged, meta } = this.props;
+  const updateNav = useCallback(() => {
     const tabs: NavModelItem[] = [];
 
     /**
@@ -76,14 +34,14 @@ export class RootPage extends PureComponent<Props, State> {
         url: `${basename}/community`,
         id: 'community',
         icon: 'apps',
-        active: path.includes('development') ? false : true,
+        active: !path.includes('development'),
       },
       {
         text: 'Development',
         url: `${basename}/development`,
         id: 'development',
         icon: 'fire',
-        active: path.includes('development') ? true : false,
+        active: path.includes('development'),
       }
     );
 
@@ -105,32 +63,37 @@ export class RootPage extends PureComponent<Props, State> {
       node: node,
       main: node,
     });
+  }, [basename, meta.info.logos.large, onNavChanged, path]);
+
+  /**
+   * Update nav
+   */
+  useEffect(() => {
+    updateNav();
+
+    /**
+     * Set loading
+     */
+    setLoading(false);
+  }, [updateNav]);
+
+  /**
+   * Loading
+   */
+  if (loading) {
+    return (
+      <Alert title="Loading..." severity="info" data-testid={TestIds.rootPage.loadingIndicator}>
+        <p>Loading...</p>
+      </Alert>
+    );
   }
 
   /**
-   * Render
+   * Development
    */
-  render() {
-    const { loading } = this.state;
-
-    /**
-     * Loading
-     */
-    if (loading) {
-      return (
-        <Alert title="Loading..." severity="info">
-          <p>Loading...</p>
-        </Alert>
-      );
-    }
-
-    /**
-     * Development
-     */
-    if (this.props.path.includes('development')) {
-      return <Development />;
-    }
-
-    return <Community />;
+  if (path.includes('development')) {
+    return <Development />;
   }
-}
+
+  return <Community />;
+};
