@@ -1,7 +1,7 @@
 /**
- * Global Settings
+ * Application Settings
  */
-export interface GlobalSettings {}
+export interface AppSettings {}
 
 /**
  * SVG

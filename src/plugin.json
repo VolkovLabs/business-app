@@ -10,12 +10,12 @@
       "name": "Volkov Labs",
       "url": "https://volkovlabs.io"
     },
-    "description": "Volkov Labs Application plugin",
+    "description": "Plugin development for Grafana",
     "keywords": ["template"],
     "links": [
       {
         "name": "Documentation",
-        "url": "https://docs.volkovlabs.io"
+        "url": "https://volkovlabs.io/plugins/volkovlabs-app/"
       },
       {
         "name": "GitHub",
@@ -33,17 +33,25 @@
   "includes": [
     {
       "addToNav": true,
-      "name": "News",
-      "path": "/d/O4tc_E6Gz",
+      "defaultNav": true,
+      "name": "Community",
+      "path": "/a/volkovlabs-app/",
       "role": "Viewer",
+      "icon": "apps",
       "type": "page"
     },
     {
       "addToNav": true,
-      "defaultNav": true,
-      "icon": "home-alt",
-      "name": "Plugins",
-      "path": "/a/volkovlabs-app/",
+      "name": "Development",
+      "path": "/a/volkovlabs-app/development",
+      "role": "Viewer",
+      "icon": "fire",
+      "type": "page"
+    },
+    {
+      "addToNav": true,
+      "name": "News",
+      "path": "/d/O4tc_E6Gz",
       "role": "Viewer",
       "type": "page"
     }
