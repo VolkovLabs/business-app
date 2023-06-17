@@ -1,6 +1,6 @@
 # Change Log
 
-## 2.5.0 (IN PROGRESS)
+## 2.5.0 (2023-06-17)
 
 ### Features / Enhancements
 
@@ -10,6 +10,7 @@
 - Update to Node 18 and npm (#71)
 - Update Docker image 10.0.0 (#72)
 - Add Application Router (#73)
+- Add E2E Cypress testing (#74)
 
 ## 2.4.0 (2023-04-29)
 
