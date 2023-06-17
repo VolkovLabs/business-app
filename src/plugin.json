@@ -23,8 +23,8 @@
       }
     ],
     "logos": {
-      "large": "img/app-logo.svg",
-      "small": "img/app-logo.svg"
+      "large": "img/logo.svg",
+      "small": "img/logo.svg"
     },
     "screenshots": [],
     "updated": "%TODAY%",
