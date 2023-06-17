@@ -4,5 +4,12 @@
 export const Application = {
   name: 'Volkov Labs',
   root: '/a/volkovlabs-app',
-  subTitle: 'Plugin development for Grafana',
+};
+
+/**
+ * Routes
+ */
+export const Routes = {
+  community: `${Application.root}`,
+  development: `${Application.root}/development`,
 };

@@ -9,6 +9,7 @@
 - Migrate to Plugin Tools 1.5.2 (#71)
 - Update to Node 18 and npm (#71)
 - Update Docker image 10.0.0 (#72)
+- Add Application Router (#73)
 
 ## 2.4.0 (2023-04-29)
 

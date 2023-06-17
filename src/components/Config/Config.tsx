@@ -2,12 +2,12 @@ import React from 'react';
 import { AppPluginMeta, PluginConfigPageProps } from '@grafana/data';
 import { FieldSet } from '@grafana/ui';
 import { Application, TestIds } from '../../constants';
-import { GlobalSettings } from '../../types';
+import { AppSettings } from '../../types';
 
 /**
  * Page Properties
  */
-interface Props extends PluginConfigPageProps<AppPluginMeta<GlobalSettings>> {}
+interface Props extends PluginConfigPageProps<AppPluginMeta<AppSettings>> {}
 
 /**
  * Config component
