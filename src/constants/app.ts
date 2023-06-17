@@ -2,7 +2,7 @@
  * Application
  */
 export const Application = {
-    root: '/a/volkovlabs-app',
-    name: 'Volkov Labs',
-    subTitle: 'Plugin development for Grafana',
+  name: 'Volkov Labs',
+  root: '/a/volkovlabs-app',
+  subTitle: 'Plugin development for Grafana',
 };

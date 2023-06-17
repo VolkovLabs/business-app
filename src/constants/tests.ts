@@ -6,8 +6,8 @@ export const TestIds = {
     root: 'data-testid config',
   },
   rootPage: {
-    loadingIndicator: 'data-testid root-page loading-indicator',
-    development: 'data-testid root-page development',
     community: 'data-testid root-page community',
+    development: 'data-testid root-page development',
+    loadingIndicator: 'data-testid root-page loading-indicator',
   },
 };

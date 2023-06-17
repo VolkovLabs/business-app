@@ -4,6 +4,9 @@ import { act, render, screen } from '@testing-library/react';
 import { Application, TestIds } from '../../constants';
 import { RootPage } from './RootPage';
 
+/**
+ * Plugins
+ */
 jest.mock('../Plugins', () => ({
   Development: jest.fn().mockImplementation(() => <div data-testid={TestIds.rootPage.development} />),
   Community: jest.fn().mockImplementation(() => <div data-testid={TestIds.rootPage.community} />),
@@ -32,6 +35,9 @@ const getMeta = (): AppPluginMeta => ({
   },
 });
 
+/**
+ * Root Page
+ */
 describe('RootPage', () => {
   const meta = getMeta();
   const path = '/app';

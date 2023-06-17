@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { AppRootProps, NavModelItem } from '@grafana/data';
 import { Alert } from '@grafana/ui';
 import { Application, TestIds } from '../../constants';
