@@ -75,6 +75,12 @@ RUN sed -i "s|\[\[.NavTree\]\],|nav,|g; \
     window.grafanaBootData = {|g" \
     /usr/share/grafana/public/views/index.html
 
+## Add News to the Mega Menu
+RUN sed -i "s|window.grafanaBootData = {| \
+    nav.push({\"id\":\"my-dashboard\",\"text\":\"Volkov Labs News\",\"icon\":\"play\",\"url\":\"/d/O4tc_E6Gz\",\"sortWeight\":-2000}); \
+    window.grafanaBootData = {|g" \
+    /usr/share/grafana/public/views/index.html
+
 ## Update Title
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|AppTitle="Grafana"|AppTitle="Volkov Labs"|g' {} \;
 
