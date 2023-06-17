@@ -23,8 +23,8 @@
       }
     ],
     "logos": {
-      "large": "img/app-logo.svg",
-      "small": "img/app-logo.svg"
+      "large": "img/logo.svg",
+      "small": "img/logo.svg"
     },
     "screenshots": [],
     "updated": "%TODAY%",
@@ -46,13 +46,6 @@
       "path": "/a/volkovlabs-app/development",
       "role": "Viewer",
       "icon": "fire",
-      "type": "page"
-    },
-    {
-      "addToNav": true,
-      "name": "News",
-      "path": "/d/O4tc_E6Gz",
-      "role": "Viewer",
       "type": "page"
     }
   ],

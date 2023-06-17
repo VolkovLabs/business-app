@@ -51,7 +51,7 @@ USER root
 COPY img/fav32.png /usr/share/grafana/public/img
 
 ## Replace Logo
-COPY src/img/logo.svg /usr/share/grafana/public/img/grafana_icon.svg
+COPY img/logo.svg /usr/share/grafana/public/img/grafana_icon.svg
 
 ## Update Background
 COPY img/background.svg /usr/share/grafana/public/img/g8_login_dark.svg
@@ -72,6 +72,12 @@ RUN sed -i "s|\[\[.NavTree\]\],|nav,|g; \
     s|window.grafanaBootData = {| \
     let nav = [[.NavTree]]; \
     nav[nav.length -1]['subTitle'] = 'Application'; \
+    window.grafanaBootData = {|g" \
+    /usr/share/grafana/public/views/index.html
+
+## Add News to the Mega Menu
+RUN sed -i "s|window.grafanaBootData = {| \
+    nav.push({\"id\":\"my-dashboard\",\"text\":\"Volkov Labs News\",\"icon\":\"play\",\"url\":\"/d/O4tc_E6Gz\",\"sortWeight\":-2000}); \
     window.grafanaBootData = {|g" \
     /usr/share/grafana/public/views/index.html
 
