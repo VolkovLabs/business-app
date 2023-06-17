@@ -1,4 +1,4 @@
-# Volkov Labs Application for Grafana
+# Volkov Labs App for Grafana
 
 ![Application](https://raw.githubusercontent.com/volkovlabs/volkovlabs-app/main/img/app.png)
 
@@ -11,7 +11,7 @@
 
 ## Introduction
 
-The Volkov Labs Application includes a Docker image with customized Grafana and an Application plugin with information about Volkov Labs maintained plugins.
+The Volkov Labs App includes a Docker image with customized Grafana and an Application plugin with information about Volkov Labs maintained plugins.
 
 ## Customization
 
