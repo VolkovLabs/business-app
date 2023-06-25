@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { AppPluginMeta, PluginType } from '@grafana/data';
 import { render, screen } from '@testing-library/react';
-import { Application, TestIds } from '../../constants';
+import { AppInfo, TestIds } from '../../constants';
 import { App } from './App';
 
 /**
@@ -29,9 +29,9 @@ const getMeta = (): AppPluginMeta => ({
 });
 
 /**
- * Application
+ * App
  */
-describe('Application', () => {
+describe('App', () => {
   const meta = getMeta();
 
   /**
@@ -41,13 +41,7 @@ describe('Application', () => {
     it('Should render community page', async () => {
       render(
         <BrowserRouter>
-          <App
-            basename={Application.root}
-            meta={meta}
-            path={null as any}
-            query={null as any}
-            onNavChanged={jest.fn()}
-          />
+          <App basename={AppInfo.root} meta={meta} path={null as any} query={null as any} onNavChanged={jest.fn()} />
         </BrowserRouter>
       );
 

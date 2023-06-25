@@ -1,7 +1,7 @@
 /**
- * Application
+ * App Information
  */
-export const Application = {
+export const AppInfo = {
   name: 'Volkov Labs',
   root: '/a/volkovlabs-app',
 };
@@ -10,6 +10,6 @@ export const Application = {
  * Routes
  */
 export const Routes = {
-  community: `${Application.root}`,
-  development: `${Application.root}/development`,
+  community: `${AppInfo.root}`,
+  development: `${AppInfo.root}/development`,
 };

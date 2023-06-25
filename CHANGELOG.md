@@ -1,5 +1,12 @@
 # Change Log
 
+## 3.0.0 (2023-06-25)
+
+### Features / Enhancements
+
+- Update to Grafana 10.0.1 (#75)
+- Remove Grafana 9 support (#75)
+
 ## 2.5.0 (2023-06-17)
 
 ### Features / Enhancements
@@ -88,7 +95,7 @@
 - Update plugins included in Grafana Catalog (#18)
 - Update to Grafana 9.1.0 (#19)
 - Update to Grafana 9.1.1 (#20)
-- Add Balena Application YouTube video (#20)
+- Add Balena App YouTube video (#20)
 - Update to Grafana 9.1.4 (#21)
 - Update YouTube playlists (#22)
 - Update RSS Data Source 2.2.0 (#23)
@@ -105,7 +112,7 @@
 ### Features / Enhancements
 
 - Add ECharts and update plugins (#7)
-- Add Balena Application (#8)
+- Add Balena App (#8)
 - Add RSS Dashboard as Home (#9)
 - Fix LGTM The value of the id attribute must not contain any space characters (#10)
 - Add RSS Data Source 2.1.0 (#11)
