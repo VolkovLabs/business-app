@@ -43,7 +43,7 @@ export const DataManipulation: React.FC = () => {
               fill="white"
             />
           </svg>
-        </a>{' '}
+        </a>
       </Card.Figure>
       <Card.Tags>
         <TagList tags={['Panel']} />
@@ -59,7 +59,7 @@ export const DataManipulation: React.FC = () => {
         </LinkButton>
         <LinkButton
           variant="secondary"
-          icon="star"
+          icon="github"
           target="_blank"
           href="https://github.com/volkovlabs/volkovlabs-form-panel"
         >

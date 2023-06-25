@@ -8,3 +8,4 @@ export * from './Environment';
 export * from './GrafanaAPI';
 export * from './RSSAtom';
 export * from './Static';
+export * from './Variable';

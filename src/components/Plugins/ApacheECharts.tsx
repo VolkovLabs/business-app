@@ -52,7 +52,7 @@ export const ApacheECharts: React.FC = () => {
         </LinkButton>
         <LinkButton
           variant="secondary"
-          icon="star"
+          icon="github"
           target="_blank"
           href="https://github.com/volkovlabs/volkovlabs-echarts-panel"
         >

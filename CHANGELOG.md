@@ -6,6 +6,7 @@
 
 - Update to Grafana 10.0.1 (#75)
 - Remove Grafana 9 support (#75)
+- Add Variable Panel (#76)
 
 ## 2.5.0 (2023-06-17)
 

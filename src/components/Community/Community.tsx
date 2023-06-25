@@ -10,6 +10,7 @@ import {
   GrafanaAPI,
   RSSAtom,
   Static,
+  Variable,
 } from '../Plugins';
 
 /**
@@ -32,6 +33,7 @@ export const Community: React.FC<Props> = () => {
         <GrafanaAPI />
         <RSSAtom />
         <Static />
+        <Variable />
       </div>
     </PluginPage>
   );
