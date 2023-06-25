@@ -40,7 +40,6 @@ export const Environment: React.FC = () => {
           </svg>
         </a>{' '}
       </Card.Figure>
-      <Card.Meta>grafana-cli --repo https://volkovlabs.io/plugins plugins install volkovlabs-env-datasource</Card.Meta>
       <Card.Tags>
         <TagList tags={['Data Source']} />
       </Card.Tags>
@@ -55,7 +54,7 @@ export const Environment: React.FC = () => {
         </LinkButton>
         <LinkButton
           variant="secondary"
-          icon="star"
+          icon="github"
           target="_blank"
           href="https://github.com/volkovlabs/volkovlabs-env-datasource"
         >

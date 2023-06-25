@@ -59,7 +59,7 @@ export const DataManipulation: React.FC = () => {
         </LinkButton>
         <LinkButton
           variant="secondary"
-          icon="star"
+          icon="github"
           target="_blank"
           href="https://github.com/volkovlabs/volkovlabs-form-panel"
         >

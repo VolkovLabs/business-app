@@ -45,7 +45,7 @@ export const Base64Image: React.FC = () => {
         <LinkButton
           variant="secondary"
           target="_blank"
-          icon="star"
+          icon="github"
           href="https://github.com/volkovlabs/volkovlabs-image-panel"
         >
           GitHub
