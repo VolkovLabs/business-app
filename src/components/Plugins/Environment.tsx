@@ -38,7 +38,7 @@ export const Environment: React.FC = () => {
               fill="#FF5656"
             />
           </svg>
-        </a>{' '}
+        </a>
       </Card.Figure>
       <Card.Tags>
         <TagList tags={['Data Source']} />

@@ -43,7 +43,7 @@ export const DataManipulation: React.FC = () => {
               fill="white"
             />
           </svg>
-        </a>{' '}
+        </a>
       </Card.Figure>
       <Card.Tags>
         <TagList tags={['Panel']} />
