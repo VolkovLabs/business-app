@@ -1,4 +1,4 @@
-FROM grafana/grafana:10.0.0
+FROM grafana/grafana:10.0.1
 
 ##################################################################
 ## CONFIGURATION
@@ -27,7 +27,7 @@ ENV GF_PATHS_PLUGINS="/var/lib/grafana/plugins"
 
 ##################################################################
 ## COPY ARTIFACTS
-## Required for the Application plugin
+## Required for the App plugin
 ##################################################################
 
 COPY --chown=grafana:root dist /app

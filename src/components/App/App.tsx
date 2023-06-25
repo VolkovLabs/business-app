@@ -12,7 +12,7 @@ import { Development } from '../Development';
 interface Props extends AppRootProps<AppSettings> {}
 
 /**
- * Application
+ * App
  */
 export const App: React.FC<Props> = () => {
   return (

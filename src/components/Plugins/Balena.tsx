@@ -2,19 +2,19 @@ import React from 'react';
 import { Card, LinkButton, TagList } from '@grafana/ui';
 
 /**
- * Balena Application
+ * Balena App
  */
 export const Balena: React.FC = () => {
   return (
     <Card>
-      <Card.Heading>Balena Application</Card.Heading>
+      <Card.Heading>Balena App</Card.Heading>
       <Card.Description>Display device information and manage services using Balena Supervisor API.</Card.Description>
       <Card.Figure>
         <a
           target="_blank"
           rel="noreferrer"
           href="https://volkovlabs.io/plugins/volkovlabs-balena-app"
-          title="Balena Application"
+          title="Balena App"
         >
           <svg id="Balena" width={40} height={40} viewBox="0 0 201 169">
             <path
@@ -31,7 +31,7 @@ export const Balena: React.FC = () => {
         </a>
       </Card.Figure>
       <Card.Tags>
-        <TagList tags={['Application']} />
+        <TagList tags={['App']} />
       </Card.Tags>
       <Card.Actions>
         <LinkButton

@@ -1,6 +1,6 @@
 # Volkov Labs App for Grafana
 
-![Application](https://raw.githubusercontent.com/volkovlabs/volkovlabs-app/main/img/app.png)
+![App](https://raw.githubusercontent.com/volkovlabs/volkovlabs-app/main/img/app.png)
 
 ![Grafana 10](https://img.shields.io/badge/Grafana-10.0.0-orange)
 [![YouTube](https://img.shields.io/badge/YouTube-Channel-red)](https://youtube.com/@volkovlabs)
@@ -11,7 +11,7 @@
 
 ## Introduction
 
-The Volkov Labs App includes a Docker image with customized Grafana and an Application plugin with information about Volkov Labs maintained plugins.
+The Volkov Labs App includes a Docker image with customized Grafana and an App plugin with information about Volkov Labs maintained plugins.
 
 ## Customization
 
@@ -29,7 +29,7 @@ docker pull ghcr.io/volkovlabs/app:latest
 
 ## Bundle
 
-Application plugin includes:
+App plugin includes:
 
 - [RSS/Atom data source](https://volkovlabs.io/plugins/volkovlabs-rss-datasource)
 - [Dynamic text panel](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel)

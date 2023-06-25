@@ -1,5 +1,5 @@
 /**
- * Application Settings
+ * App Settings
  */
 export interface AppSettings {}
 

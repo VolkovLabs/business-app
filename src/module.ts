@@ -3,7 +3,7 @@ import { App, Config } from './components';
 import { AppSettings } from './types';
 
 /**
- * Application Plugin
+ * App Plugin
  */
 export const plugin = new AppPlugin<AppSettings>().setRootPage(App).addConfigPage({
   title: 'Configuration',
