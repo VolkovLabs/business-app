@@ -37,7 +37,7 @@ App plugin includes:
 ## Support
 
 - Subscribe to our [YouTube Channel](https://www.youtube.com/@volkovlabs) and add a comment.
-- Premium tier support for the development plugins is available via [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
+- Premium support for the development plugins is available via [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
 
 ## License
 
