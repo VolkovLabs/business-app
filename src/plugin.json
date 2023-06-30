@@ -1,17 +1,39 @@
 {
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
+  "autoEnabled": true,
   "dependencies": {
     "grafanaDependency": ">=10.0.0",
     "plugins": []
   },
   "id": "volkovlabs-app",
+  "includes": [
+    {
+      "addToNav": true,
+      "defaultNav": true,
+      "icon": "apps",
+      "name": "Community",
+      "path": "/a/volkovlabs-app/",
+      "role": "Viewer",
+      "type": "page"
+    },
+    {
+      "addToNav": true,
+      "icon": "fire",
+      "name": "Development",
+      "path": "/a/volkovlabs-app/development",
+      "role": "Viewer",
+      "type": "page"
+    }
+  ],
   "info": {
     "author": {
       "name": "Volkov Labs",
       "url": "https://volkovlabs.io"
     },
     "description": "Plugin development for Grafana",
-    "keywords": ["template"],
+    "keywords": [
+      "template"
+    ],
     "links": [
       {
         "name": "Documentation",
@@ -30,26 +52,6 @@
     "updated": "%TODAY%",
     "version": "%VERSION%"
   },
-  "includes": [
-    {
-      "addToNav": true,
-      "defaultNav": true,
-      "name": "Community",
-      "path": "/a/volkovlabs-app/",
-      "role": "Viewer",
-      "icon": "apps",
-      "type": "page"
-    },
-    {
-      "addToNav": true,
-      "name": "Development",
-      "path": "/a/volkovlabs-app/development",
-      "role": "Viewer",
-      "icon": "fire",
-      "type": "page"
-    }
-  ],
-  "autoEnabled": true,
   "name": "Volkov Labs",
   "type": "app"
 }
