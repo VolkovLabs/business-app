@@ -99,6 +99,9 @@ RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|({target:"_
 ## Remove New Version is available in the Footer
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|({target:"_blank",id:"updateVersion",.*grafana_footer"})|()|g' {} \;
 
+## Remove News icon
+RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|..createElement(....,{className:.,onClick:.,iconOnly:!0,icon:"rss","aria-label":"News"})|null|g' {} \;
+
 ##################################################################
 ## CLEANING Remove Native Data Sources
 ##################################################################
