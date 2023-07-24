@@ -4,8 +4,10 @@
 
 ### Features / Enhancements
 
-- Update ESLint configuration (#77)
-- Update to Grafana 10.0.2 (#78)
+- Add YouTube to support (#77)
+- Remove News icon (#78)
+- Update ESLint configuration (#79)
+- Update to Grafana 10.0.2 (#80)
 
 ## 3.0.0 (2023-06-25)
 
