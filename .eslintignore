@@ -1,0 +1,13 @@
+# Configuration files
+jest-setup.js
+jest.config.js
+webpack.config.ts
+
+# Development folders
+coverage/
+cypress/
+dist/
+
+# Bundled plugins
+src/marcusolsson-dynamictext-panel
+src/volkovlabs-rss-datasource

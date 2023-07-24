@@ -1,5 +1,11 @@
 # Change Log
 
+## 3.1.0 (IN PROGRESS)
+
+### Features / Enhancements
+
+- Update ESLint configuration (#77)
+
 ## 3.0.0 (2023-06-25)
 
 ### Features / Enhancements
