@@ -1,4 +1,4 @@
-FROM grafana/grafana:10.0.1
+FROM grafana/grafana:10.0.2
 
 ##################################################################
 ## CONFIGURATION

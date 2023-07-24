@@ -60,6 +60,14 @@ export const Variable: React.FC = () => {
         >
           GitHub
         </LinkButton>
+        <LinkButton
+          variant="success"
+          icon="cloud-download"
+          target="_blank"
+          href="https://grafana.com/grafana/plugins/volkovlabs-variable-panel/"
+        >
+          Grafana
+        </LinkButton>
       </Card.Actions>
     </Card>
   );
