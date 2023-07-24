@@ -5,6 +5,7 @@
 ### Features / Enhancements
 
 - Update ESLint configuration (#77)
+- Update to Grafana 10.0.2 (#78)
 
 ## 3.0.0 (2023-06-25)
 
