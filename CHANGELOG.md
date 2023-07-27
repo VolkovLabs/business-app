@@ -1,13 +1,13 @@
 # Change Log
 
-## 3.1.0 (IN PROGRESS)
+## 3.1.0 (2023-07-26)
 
 ### Features / Enhancements
 
 - Add YouTube to support (#77)
 - Remove News icon (#78)
 - Update ESLint configuration (#79)
-- Update to Grafana 10.0.2 (#80)
+- Update to Grafana 10.0.3 (#80, #81)
 
 ## 3.0.0 (2023-06-25)
 
