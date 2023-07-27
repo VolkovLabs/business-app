@@ -68,6 +68,9 @@ RUN sed -i 's|<title>\[\[.AppTitle\]\]</title>|<title>Volkov Labs</title>|g' /us
 # Disable Connections
 RUN sed -i 's|# feature2 = false|dataConnectionsConsole = false|g' /usr/share/grafana/conf/defaults.ini
 
+# Move Volkov Labs App to navigation root section
+RUN sed -i 's|\[navigation.app_sections\]|\[navigation.app_sections\]\nvolkovlabs-app=root|g' /usr/share/grafana/conf/defaults.ini
+
 ## Update Help menu
 RUN sed -i "s|\[\[.NavTree\]\],|nav,|g; \
     s|window.grafanaBootData = {| \
@@ -76,7 +79,7 @@ RUN sed -i "s|\[\[.NavTree\]\],|nav,|g; \
     window.grafanaBootData = {|g" \
     /usr/share/grafana/public/views/index.html
 
-## Add News to the Mega Menu
+## Add News dashboard to the Mega Menu
 RUN sed -i "s|window.grafanaBootData = {| \
     nav.push({\"id\":\"my-dashboard\",\"text\":\"Volkov Labs News\",\"icon\":\"play\",\"url\":\"/d/O4tc_E6Gz\",\"sortWeight\":-2000}); \
     window.grafanaBootData = {|g" \
