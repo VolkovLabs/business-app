@@ -1,5 +1,12 @@
 # Change Log
 
+## 3.2.0 (IN PROGRESS)
+
+### Features / Enhancements
+
+- Move App plugin to Root (#82)
+- Update logo and background (#83)
+
 ## 3.1.0 (2023-07-26)
 
 ### Features / Enhancements

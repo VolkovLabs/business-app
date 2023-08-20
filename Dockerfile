@@ -75,7 +75,8 @@ RUN sed -i 's|\[navigation.app_sections\]|\[navigation.app_sections\]\nvolkovlab
 RUN sed -i "s|\[\[.NavTree\]\],|nav,|g; \
     s|window.grafanaBootData = {| \
     let nav = [[.NavTree]]; \
-    nav[nav.length -1]['subTitle'] = 'Application'; \
+    const help = nav.find((element) => element.id === 'help'); \
+    if (help) { help['subTitle'] = 'Application';} \
     window.grafanaBootData = {|g" \
     /usr/share/grafana/public/views/index.html
 
