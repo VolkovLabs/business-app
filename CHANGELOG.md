@@ -1,11 +1,12 @@
 # Change Log
 
-## 3.2.0 (IN PROGRESS)
+## 3.2.0 (2023-10-03)
 
 ### Features / Enhancements
 
 - Move App plugin to Root (#82)
 - Update logo and background (#83)
+- Update to Grafana 10.1.4 (#84)
 
 ## 3.1.0 (2023-07-26)
 

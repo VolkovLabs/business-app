@@ -2,7 +2,7 @@
 
 ![App](https://raw.githubusercontent.com/volkovlabs/volkovlabs-app/main/img/app.png)
 
-![Grafana 10](https://img.shields.io/badge/Grafana-10.0-orange)
+![Grafana 10](https://img.shields.io/badge/Grafana-10.1-orange)
 [![YouTube](https://img.shields.io/badge/YouTube-Channel-red)](https://youtube.com/@volkovlabs)
 ![CI](https://github.com/volkovlabs/volkovlabs-app/workflows/CI/badge.svg)
 ![E2E](https://github.com/volkovlabs/volkovlabs-app/workflows/E2E/badge.svg)

@@ -1,4 +1,4 @@
-FROM grafana/grafana:10.0.3
+FROM grafana/grafana:10.1.4
 
 ##################################################################
 ## CONFIGURATION
@@ -77,12 +77,6 @@ RUN sed -i "s|\[\[.NavTree\]\],|nav,|g; \
     let nav = [[.NavTree]]; \
     const help = nav.find((element) => element.id === 'help'); \
     if (help) { help['subTitle'] = 'Application';} \
-    window.grafanaBootData = {|g" \
-    /usr/share/grafana/public/views/index.html
-
-## Add News dashboard to the Mega Menu
-RUN sed -i "s|window.grafanaBootData = {| \
-    nav.push({\"id\":\"my-dashboard\",\"text\":\"Volkov Labs News\",\"icon\":\"play\",\"url\":\"/d/O4tc_E6Gz\",\"sortWeight\":-2000}); \
     window.grafanaBootData = {|g" \
     /usr/share/grafana/public/views/index.html
 
