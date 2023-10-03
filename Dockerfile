@@ -1,4 +1,4 @@
-FROM grafana/grafana:10.0.3
+FROM grafana/grafana:10.1.4
 
 ##################################################################
 ## CONFIGURATION
@@ -17,6 +17,10 @@ ENV GF_PANELS_DISABLE_SANITIZE_HTML=true
 
 ## Disable Explore
 ENV GF_EXPLORE_ENABLED=false
+
+# Updates Check
+ENV GF_ANALYTICS_CHECK_FOR_UPDATES=false
+#ENV GF_ANALYTICS_CHECK_FOR_PLUGIN_UPDATES=false
 
 ## Set Home Dashboard
 ENV GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/etc/grafana/provisioning/dashboards/news.json
@@ -65,9 +69,6 @@ COPY img/background.svg /usr/share/grafana/public/img/g8_login_light.svg
 # Update Title
 RUN sed -i 's|<title>\[\[.AppTitle\]\]</title>|<title>Volkov Labs</title>|g' /usr/share/grafana/public/views/index.html
 
-# Disable Connections
-RUN sed -i 's|# feature2 = false|dataConnectionsConsole = false|g' /usr/share/grafana/conf/defaults.ini
-
 # Move Volkov Labs App to navigation root section
 RUN sed -i 's|\[navigation.app_sections\]|\[navigation.app_sections\]\nvolkovlabs-app=root|g' /usr/share/grafana/conf/defaults.ini
 
@@ -75,14 +76,14 @@ RUN sed -i 's|\[navigation.app_sections\]|\[navigation.app_sections\]\nvolkovlab
 RUN sed -i "s|\[\[.NavTree\]\],|nav,|g; \
     s|window.grafanaBootData = {| \
     let nav = [[.NavTree]]; \
+    const alerting = nav.find((element) => element.id === 'alerting'); \
+    if (alerting) { alerting['url'] = '/alerting/list'; } \
+    const dashboards = nav.find((element) => element.id === 'dashboards/browse'); \
+    if (dashboards) { dashboards['children'] = [];} \
+    const connections = nav.find((element) => element.id === 'connections'); \
+    if (connections) { connections['url'] = '/datasources'; connections['children'].shift(); } \
     const help = nav.find((element) => element.id === 'help'); \
-    if (help) { help['subTitle'] = 'Application';} \
-    window.grafanaBootData = {|g" \
-    /usr/share/grafana/public/views/index.html
-
-## Add News dashboard to the Mega Menu
-RUN sed -i "s|window.grafanaBootData = {| \
-    nav.push({\"id\":\"my-dashboard\",\"text\":\"Volkov Labs News\",\"icon\":\"play\",\"url\":\"/d/O4tc_E6Gz\",\"sortWeight\":-2000}); \
+    if (help) { help['subTitle'] = 'Grafana OSS'; help['children'] = [];} \
     window.grafanaBootData = {|g" \
     /usr/share/grafana/public/views/index.html
 
@@ -106,6 +107,9 @@ RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|({target:"_
 
 ## Remove News icon
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|..createElement(....,{className:.,onClick:.,iconOnly:!0,icon:"rss","aria-label":"News"})|null|g' {} \;
+
+## Remove Open Source icon
+RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|.push({target:"_blank",id:"version",text:`${..edition}${.}`,url:..licenseUrl,icon:"external-link-alt"})||g' {} \;
 
 ##################################################################
 ## CLEANING Remove Native Data Sources
@@ -167,6 +171,10 @@ RUN rm -rf /usr/share/grafana/public/build/parca*
 RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/phlare
 RUN rm -rf /usr/share/grafana/public/build/phlare*
 
+## Profiling / Pyroscope
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/grafana-pyroscope-datasource
+RUN rm -rf /usr/share/grafana/public/build/pyroscope*
+
 ## Others / Alertmanager
 RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/alertmanager
 RUN rm -rf /usr/share/grafana/public/build/alertmanager*
@@ -196,6 +204,9 @@ RUN rm -rf /usr/share/grafana/public/app/plugins/panel/table-old
 
 ## Traces
 RUN rm -rf /usr/share/grafana/public/app/plugins/panel/traces
+
+## Flamegraph
+RUN rm -rf /usr/share/grafana/public/app/plugins/panel/flamegraph
 
 ##################################################################
 
