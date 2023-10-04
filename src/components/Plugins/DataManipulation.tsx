@@ -79,7 +79,7 @@ export const DataManipulation: React.FC = () => {
           target="_blank"
           href="https://grafana.com/grafana/plugins/volkovlabs-form-panel/"
         >
-          Grafana
+          Grafana Catalog
         </LinkButton>
       </Card.Actions>
     </Card>

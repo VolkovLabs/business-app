@@ -56,7 +56,7 @@ export const DynamicText: React.FC = () => {
           target="_blank"
           href="https://grafana.com/grafana/plugins/marcusolsson-dynamictext-panel/"
         >
-          Grafana
+          Grafana Catalog
         </LinkButton>
       </Card.Actions>
     </Card>

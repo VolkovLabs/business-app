@@ -72,7 +72,7 @@ export const ApacheECharts: React.FC = () => {
           target="_blank"
           href="https://grafana.com/grafana/plugins/volkovlabs-echarts-panel/"
         >
-          Grafana
+          Grafana Catalog
         </LinkButton>
         <LinkButton variant="secondary" icon="building" target="_blank" href="https://echarts.volkovlabs.io">
           Examples

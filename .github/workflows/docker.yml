@@ -28,7 +28,7 @@ jobs:
       - name: Sign plugin
         run: npm run sign
         env:
-          GRAFANA_API_KEY: ${{ secrets.GRAFANA_API_KEY }}
+          GRAFANA_ACCESS_POLICY_TOKEN: ${{ secrets.GRAFANA_ACCESS_POLICY_TOKEN }}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
