@@ -6,9 +6,10 @@
 
 - Move App plugin to Root (#82)
 - Update logo and background (#83)
-- Update to Grafana 10.1.4 (#84)
-- Update to Plugin Tools 2.0.2 (#84)
-- Use Grafana Access Policy to sign plugin (#84)
+- Update background (#84)
+- Update to Grafana 10.1.4 (#85)
+- Update to Plugin Tools 2.0.2 (#86)
+- Use Grafana Access Policy to sign plugin (#86)
 
 ## 3.1.0 (2023-07-26)
 
