@@ -8,29 +8,29 @@ Hash: SHA512
   "signedByOrg": "marcusolsson",
   "signedByOrgName": "Marcus Olsson",
   "plugin": "marcusolsson-dynamictext-panel",
-  "version": "3.1.0",
-  "time": 1678654716386,
+  "version": "4.1.0",
+  "time": 1689555003840,
   "keyId": "7e4d0c6a708866e7",
   "files": {
-    "plugin.json": "8401fc1b6da02885966366dccd71df3a3d77e30db97bebc67eef9c4cb3c39a29",
+    "plugin.json": "a9075197646d063b5492f8224bfd44e75073edb395f6343a4a8d23d437a9c824",
+    "module.js.LICENSE.txt": "e8c02c32db0a1df801e3d57aab9722d00cf899e5a1b469795e18d19dc3b9f1c4",
+    "CHANGELOG.md": "45c6ff3d8b62f855b737b0a17160532fa4edc9dcc720082115068e15cbada3a0",
+    "LICENSE": "f61b4f79d7a9894e10398b6fd55ce533b206a27df5e045a58eca3ea788cc9119",
     "img/logo.svg": "655cfc72eec8d19bda8f74d9fa3449b7b133b5ee66c7bd3db407fdfeada1cbd1",
     "img/screenshot.png": "68d355ffafe66ce4855566ccd7bf393e4c0dad66bddb3a2d2adb5e3eb057f50c",
-    "LICENSE": "f61b4f79d7a9894e10398b6fd55ce533b206a27df5e045a58eca3ea788cc9119",
-    "module.js": "e203fb2d6d881aaac15c528ffe4f2d380c2d76075181bca6ff32ecee9bd40f34",
-    "README.md": "38e95894cb71e5d9182e65dd765b523f96c62570fd7755eb74616a53d2573c71",
-    "CHANGELOG.md": "9c59f30fac7806026d5cd2ae596b01d90c94bdd9654adfa68c194f2ecbcdc080",
-    "module.js.LICENSE.txt": "e8c02c32db0a1df801e3d57aab9722d00cf899e5a1b469795e18d19dc3b9f1c4",
-    "module.js.map": "277095b780daaa96f36d019880df8a48cb311cebf0c822ffddd26d974f75c751"
+    "README.md": "6c9088f42f49bb573abd81e105f18477c49f8c202a188ebaa231d3850523f32d",
+    "module.js.map": "81d754a5b71d662b08dc7cc4f2b8f72e9956ae78aaae38891f5a51c81456f395",
+    "module.js": "7059e5cb445236590f70ae6b127a6f5f236021fd0867e8abcdff1a9c0384bf7d"
   }
 }
 -----BEGIN PGP SIGNATURE-----
 Version: OpenPGP.js v4.10.10
 Comment: https://openpgpjs.org
 
-wrcEARMKAAYFAmQOPPwAIQkQfk0ManCIZucWIQTzOyW2kQdOhGNlcPN+TQxq
-cIhm50xvAgjiImOzjjCwJS3imXUFw1EOWz1nMOAs6FZ7KtKU4PPFsYFeCSOh
-0akC99KOAcCq+c83UWsbkKxTx5+9ahg3UGOl0gIIqsCWxQQ67uhjFkYu/4ao
-QJYIJCKgHvTsyADa/LuIygJ8myP7M4YXqL+rJjzry+tLxzD1q12FNZxnk2U1
-aBlKuDQ=
-=IPWm
+wrkEARMKAAYFAmS0kDwAIQkQfk0ManCIZucWIQTzOyW2kQdOhGNlcPN+TQxq
+cIhm54ljAgkBu6BkbM7cqsP0g4hcfe4pRNMqgHHahok4p0q0PgplejItqIoL
+kfgolAibXj9ma06jQiDCi2lCEZ+vM8SlVoLe0KECCQEYSNwx+Y5YPjTg4QIv
+94vIPENV5uv1aOIaUdnUwHzmFbK+3wC0klzzmPTVdZ4CCVr4PCZtWst7Z+jo
+15gp4yemEw==
+=FMRh
 -----END PGP SIGNATURE-----
