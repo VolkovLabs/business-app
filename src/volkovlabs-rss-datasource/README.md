@@ -2,8 +2,9 @@
 
 ![Dashboard](https://raw.githubusercontent.com/VolkovLabs/volkovlabs-rss-datasource/main/src/img/dashboard.png)
 
-[![Grafana 9](https://img.shields.io/badge/Grafana-9.4.7-orange)](https://www.grafana.com)
+![Grafana](https://img.shields.io/badge/Grafana-10.0-orange)
 ![CI](https://github.com/volkovlabs/volkovlabs-rss-datasource/workflows/CI/badge.svg)
+![E2E](https://github.com/volkovlabs/volkovlabs-rss-datasource/workflows/E2E/badge.svg)
 [![codecov](https://codecov.io/gh/VolkovLabs/volkovlabs-rss-datasource/branch/main/graph/badge.svg?token=2W9VR0PG5N)](https://codecov.io/gh/VolkovLabs/volkovlabs-rss-datasource)
 [![CodeQL](https://github.com/VolkovLabs/volkovlabs-rss-datasource/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/VolkovLabs/volkovlabs-rss-datasource/actions/workflows/codeql-analysis.yml)
 
@@ -15,8 +16,9 @@ The RSS/Atom data source is a plugin for Grafana that retrieves RSS/Atom feeds a
 
 ## Requirements
 
-- **Grafana 8.5+**, **Grafana 9.0+** is required for major version 2.
-- **Grafana 8.0+** is required for major version 1.
+- **Grafana 9** and **Grafana 10** are required for major version 3.
+- **Grafana 8.5** and **Grafana 9** are required for major version 2.
+- **Grafana 8** is required for major version 1.
 
 ## Getting Started
 
@@ -28,7 +30,7 @@ For the latter, use the following command.
 grafana-cli plugins install volkovlabs-rss-datasource
 ```
 
-## Features
+## Highlights
 
 - Supports RSS 2.0, RSS 1.0 and Atom.
 - Works great with Dynamic Text visualization panel.
@@ -53,6 +55,7 @@ grafana-cli plugins install volkovlabs-rss-datasource
 We love to hear from you. There are various ways to get in touch with us.
 
 - Ask a question, request a new feature, and file a bug with [GitHub issues](https://github.com/volkovlabs/volkovlabs-rss-datasource/issues/new/choose).
+- Subscribe to our [YouTube Channel](https://www.youtube.com/@volkovlabs) and add a comment.
 - Sponsor our open-source plugins for Grafana with [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
 - Star the repository to show your support.
 

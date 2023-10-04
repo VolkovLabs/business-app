@@ -2,8 +2,9 @@
 
 ![Text](https://github.com/VolkovLabs/volkovlabs-dynamictext-panel/raw/main/src/img/screenshot.png)
 
-[![Grafana](https://img.shields.io/badge/Grafana-9.4.3-orange)](https://www.grafana.com)
+![Grafana](https://img.shields.io/badge/Grafana-10.0.2-orange)
 ![CI](https://github.com/volkovlabs/volkovlabs-dynamictext-panel/workflows/CI/badge.svg)
+![E2E](https://github.com/volkovlabs/volkovlabs-dynamictext-panel/workflows/E2E/badge.svg)
 [![codecov](https://codecov.io/gh/VolkovLabs/volkovlabs-dynamictext-panel/branch/main/graph/badge.svg?token=0m6f0ktUar)](https://codecov.io/gh/VolkovLabs/volkovlabs-dynamictext-panel)
 [![CodeQL](https://github.com/VolkovLabs/volkovlabs-dynamictext-panel/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/VolkovLabs/volkovlabs-dynamictext-panel/actions/workflows/codeql-analysis.yml)
 
@@ -17,8 +18,9 @@ The Dynamic Text visualization panel lets you define a text template using the d
 
 ## Requirements
 
-- **Grafana 8.5+**, **Grafana 9.0+** is required for major versions 2 and 3.
-- **Grafana 7.0+** is required for major version 1.
+- **Grafana 9** and **Grafana 10** are required for major version 4.
+- **Grafana 8.5** and **Grafana 9** are required for major versions 2 and 3.
+- **Grafana 7** is required for major version 1.
 
 ## Getting Started
 
@@ -30,9 +32,9 @@ For the latter, use the following command.
 grafana-cli plugins install marcusolsson-dynamictext-panel
 ```
 
-## Features
+## Highlights
 
-- Uses Monaco Code Editor with Auto formatting to update Templates,  JavaScript Code and Styles.
+- Uses Monaco Code Editor with Auto formatting to update Templates, JavaScript Code and Styles.
 - Supports [Markdown](https://commonmark.org/help/) and [Handlebars](https://handlebarsjs.com/guide/expressions.html#basic-usage).
 - Uses [markdown-it](https://github.com/markdown-it/markdown-it) for rendering Markdown to HTML.
   - Supports Code syntax highlight using a11y styles.
@@ -43,25 +45,15 @@ grafana-cli plugins install marcusolsson-dynamictext-panel
 - Allows displaying Time global variables (`__to` and `__from`) as seconds, ISO, and formatted using `dayjs`.
 - Allows adding Handlebars helpers and Event handlers.
 - Allows adding CSS styles.
-- Supports Internationalization using custom helpers.
 
 ## Documentation
 
 | Section                  | Description                                                    |
 | ------------------------ | -------------------------------------------------------------- |
-| [Content](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel/content)       | Explains how to create a visualization template for your data. |
-| [Recipes](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel/recipes)      | Useful snippets that you can use in your templates.                                        |
-| [Release Notes](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel/release) | Stay up to date with the latest features and updates.          |
-
-### Features
-
-| Section                 | Description                                                                                |
-| ----------------------- | ------------------------------------------------------------------------------------------ |
-| [Data](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel/data)            | Demonstrates how to use the Every Row and All Rows options.                                |
-| [JavaScript Code](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel/code) | Demonstrates how to add Handlebars helpers and Event handlers.                             |
-| [Styles](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel/styles)        | Demonstrates how to add CSS styles.                                                        |
-| [Helpers](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel/helpers)      | Helpers are functions that let you perform basic text transformation within your template. |
-| [Variables](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel/variables)  | Demonstrates how to use variables.                                                         |
+| [Content](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel/content/)       | Explains how to create a visualization template for your data. |
+| [Recipes](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel/recipes/)      | Useful snippets that you can use in your templates.                                        |
+| [Features](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel/features/)      | Demonstrates panel features.templates.                                        |
+| [Release Notes](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel/release/) | Stay up to date with the latest features and updates.          |
 
 ## Tutorial
 
@@ -78,6 +70,7 @@ Three plugins that make Grafana complete. Dynamic Text, Data Manipulation, and A
 We love to hear from you. There are various ways to get in touch with us.
 
 - Ask a question, request a new feature, and file a bug with [GitHub issues](https://github.com/volkovlabs/volkovlabs-dynamictext-panel/issues/new/choose).
+- Subscribe to our [YouTube Channel](https://www.youtube.com/@volkovlabs) and add a comment.
 - Sponsor our open-source plugins for Grafana with [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
 - Star the repository to show your support.
 

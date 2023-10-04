@@ -10,6 +10,7 @@
 - Update to Grafana 10.1.4 (#85)
 - Update to Plugin Tools 2.0.2 (#86)
 - Use Grafana Access Policy to sign plugin (#86)
+- Update Dynamic Text Panel 4.1.0 and RSS/Atom Data Source 3.0.1 (#87)
 
 ## 3.1.0 (2023-07-26)
 
