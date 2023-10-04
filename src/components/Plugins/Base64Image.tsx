@@ -56,7 +56,7 @@ export const Base64Image: React.FC = () => {
           target="_blank"
           href="https://grafana.com/grafana/plugins/volkovlabs-image-panel/"
         >
-          Grafana
+          Grafana Catalog
         </LinkButton>
       </Card.Actions>
     </Card>

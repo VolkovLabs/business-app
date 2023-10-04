@@ -10,6 +10,15 @@
     {
       "addToNav": true,
       "defaultNav": true,
+      "icon": "play",
+      "name": "News",
+      "path": "/d/O4tc_E6Gz",
+      "role": "Viewer",
+      "type": "page"
+    },
+    {
+      "addToNav": true,
+      "defaultNav": false,
       "icon": "apps",
       "name": "Community",
       "path": "/a/volkovlabs-app/",
@@ -31,9 +40,7 @@
       "url": "https://volkovlabs.io"
     },
     "description": "Plugin development for Grafana",
-    "keywords": [
-      "template"
-    ],
+    "keywords": ["template"],
     "links": [
       {
         "name": "Documentation",

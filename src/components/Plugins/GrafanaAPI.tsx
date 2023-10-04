@@ -50,7 +50,7 @@ export const GrafanaAPI: React.FC = () => {
           target="_blank"
           href="https://grafana.com/grafana/plugins/volkovlabs-grapi-datasource/"
         >
-          Grafana
+          Grafana Catalog
         </LinkButton>
       </Card.Actions>
     </Card>

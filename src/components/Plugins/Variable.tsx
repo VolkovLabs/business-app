@@ -66,7 +66,7 @@ export const Variable: React.FC = () => {
           target="_blank"
           href="https://grafana.com/grafana/plugins/volkovlabs-variable-panel/"
         >
-          Grafana
+          Grafana Catalog
         </LinkButton>
       </Card.Actions>
     </Card>

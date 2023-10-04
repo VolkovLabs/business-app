@@ -51,7 +51,7 @@ export const Static: React.FC = () => {
           target="_blank"
           href="https://grafana.com/grafana/plugins/marcusolsson-static-datasource/"
         >
-          Grafana
+          Grafana Catalog
         </LinkButton>
       </Card.Actions>
     </Card>
