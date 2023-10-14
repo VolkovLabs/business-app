@@ -1,5 +1,11 @@
 # Change Log
 
+## 3.3.0 (IN PROGRESS)
+
+### Features / Enhancements
+
+- Update to Grafana 10.1.5 (#88)
+
 ## 3.2.0 (2023-10-04)
 
 ### Features / Enhancements
