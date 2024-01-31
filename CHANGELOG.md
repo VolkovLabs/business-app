@@ -5,6 +5,7 @@
 ### Features / Enhancements
 
 - Update to Grafana 10.1.5 (#88)
+- Update to Grafana 10.3.1
 
 ## 3.2.0 (2023-10-04)
 

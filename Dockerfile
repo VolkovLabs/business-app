@@ -1,4 +1,4 @@
-FROM grafana/grafana:10.1.5
+FROM grafana/grafana-oss:10.3.1
 
 ##################################################################
 ## CONFIGURATION
@@ -20,7 +20,6 @@ ENV GF_EXPLORE_ENABLED=false
 
 # Updates Check
 ENV GF_ANALYTICS_CHECK_FOR_UPDATES=false
-#ENV GF_ANALYTICS_CHECK_FOR_PLUGIN_UPDATES=false
 
 ## Set Home Dashboard
 ENV GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/etc/grafana/provisioning/dashboards/news.json
@@ -102,9 +101,6 @@ RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|({target:"_
 ## Remove Version in the Footer
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|({target:"_blank",id:"version",.*CHANGELOG.md":void 0})|()|g' {} \;
 
-## Remove New Version is available in the Footer
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|({target:"_blank",id:"updateVersion",.*grafana_footer"})|()|g' {} \;
-
 ## Remove News icon
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|..createElement(....,{className:.,onClick:.,iconOnly:!0,icon:"rss","aria-label":"News"})|null|g' {} \;
 
@@ -174,10 +170,6 @@ RUN rm -rf /usr/share/grafana/public/build/phlare*
 ## Profiling / Pyroscope
 RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/grafana-pyroscope-datasource
 RUN rm -rf /usr/share/grafana/public/build/pyroscope*
-
-## Others / Alertmanager
-RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/alertmanager
-RUN rm -rf /usr/share/grafana/public/build/alertmanager*
 
 ## Remove Cloud and Enterprise categories
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|.id==="enterprise"|.id==="notanenterprise"|g' {} \;
