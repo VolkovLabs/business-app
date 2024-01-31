@@ -6,7 +6,7 @@ export interface AppSettings {}
 /**
  * SVG
  */
-export interface SVGProps extends React.HTMLAttributes<SVGElement> {
+export interface SvgProps extends React.HTMLAttributes<SVGElement> {
   /**
    * Size
    *

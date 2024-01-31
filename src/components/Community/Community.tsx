@@ -1,14 +1,15 @@
-import React from 'react';
 import { PluginPage, PluginPageProps } from '@grafana/runtime';
-import { TestIds } from '../../constants';
+import React from 'react';
+
+import { TEST_IDS } from '../../constants';
 import {
-  ApacheECharts,
+  ApacheEcharts,
   Base64Image,
   Calendar,
   DataManipulation,
   DynamicText,
-  GrafanaAPI,
-  RSSAtom,
+  GrafanaApi,
+  RssAtom,
   Static,
   Variable,
 } from '../Plugins';
@@ -24,14 +25,14 @@ interface Props extends PluginPageProps {}
 export const Community: React.FC<Props> = () => {
   return (
     <PluginPage>
-      <div data-testid={TestIds.community.root}>
-        <ApacheECharts />
+      <div data-testid={TEST_IDS.community.root}>
+        <ApacheEcharts />
         <Base64Image />
         <Calendar />
         <DataManipulation />
         <DynamicText />
-        <GrafanaAPI />
-        <RSSAtom />
+        <GrafanaApi />
+        <RssAtom />
         <Static />
         <Variable />
       </div>

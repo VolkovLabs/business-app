@@ -1,6 +1,7 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { TestIds } from '../../constants';
+import React from 'react';
+
+import { TEST_IDS } from '../../constants';
 import { Config } from './Config';
 
 /*
@@ -23,6 +24,6 @@ describe('Config', () => {
 
     render(<Config plugin={plugin} query={null as any} />);
 
-    expect(screen.getByTestId(TestIds.config.root)).toBeInTheDocument();
+    expect(screen.getByTestId(TEST_IDS.config.root)).toBeInTheDocument();
   });
 });

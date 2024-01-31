@@ -1,6 +1,7 @@
-import React from 'react';
 import { PluginPage, PluginPageProps } from '@grafana/runtime';
-import { TestIds } from '../../constants';
+import React from 'react';
+
+import { TEST_IDS } from '../../constants';
 import { Balena, Environment } from '../Plugins';
 
 /**
@@ -14,7 +15,7 @@ interface Props extends PluginPageProps {}
 export const Development: React.FC<Props> = () => {
   return (
     <PluginPage>
-      <div data-testid={TestIds.development.root}>
+      <div data-testid={TEST_IDS.development.root}>
         <Balena />
         <Environment />
       </div>

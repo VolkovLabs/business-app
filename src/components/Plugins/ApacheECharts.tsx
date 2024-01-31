@@ -1,10 +1,10 @@
-import React from 'react';
 import { Card, LinkButton, TagList } from '@grafana/ui';
+import React from 'react';
 
 /**
  * Apache ECharts
  */
-export const ApacheECharts: React.FC = () => {
+export const ApacheEcharts: React.FC = () => {
   return (
     <Card>
       <Card.Heading>Apache ECharts Panel</Card.Heading>

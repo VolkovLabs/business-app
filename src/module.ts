@@ -1,4 +1,5 @@
 import { AppPlugin } from '@grafana/data';
+
 import { App, Config } from './components';
 import { AppSettings } from './types';
 

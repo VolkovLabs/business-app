@@ -1,7 +1,8 @@
+import { AppRootProps } from '@grafana/data';
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { AppRootProps } from '@grafana/data';
-import { Routes } from '../../constants';
+
+import { APP_ROUTES } from '../../constants';
 import { AppSettings } from '../../types';
 import { Community } from '../Community';
 import { Development } from '../Development';
@@ -17,7 +18,7 @@ interface Props extends AppRootProps<AppSettings> {}
 export const App: React.FC<Props> = () => {
   return (
     <Switch>
-      <Route exact path={Routes.development} component={Development} />
+      <Route exact path={APP_ROUTES.development} component={Development} />
       <Route component={Community} />
     </Switch>
   );
