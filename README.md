@@ -2,7 +2,7 @@
 
 ![App](https://raw.githubusercontent.com/volkovlabs/volkovlabs-app/main/img/app.png)
 
-![Grafana 10](https://img.shields.io/badge/Grafana-10.1-orange)
+![Grafana 10](https://img.shields.io/badge/Grafana-10.3-orange)
 [![YouTube](https://img.shields.io/badge/YouTube-Channel-red)](https://youtube.com/@volkovlabs)
 ![CI](https://github.com/volkovlabs/volkovlabs-app/workflows/CI/badge.svg)
 ![E2E](https://github.com/volkovlabs/volkovlabs-app/workflows/E2E/badge.svg)
@@ -34,10 +34,9 @@ App plugin includes:
 - [RSS/Atom data source](https://volkovlabs.io/plugins/volkovlabs-rss-datasource)
 - [Dynamic text panel](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel)
 
-## Support
+## Feedback
 
-- Subscribe to our [YouTube Channel](https://www.youtube.com/@volkovlabs) and add a comment.
-- Premium support for the development plugins is available via [GitHub Sponsor](https://github.com/sponsors/VolkovLabs).
+Subscribe to our [YouTube Channel](https://www.youtube.com/@volkovlabs) and leave a comment.
 
 ## License
 
