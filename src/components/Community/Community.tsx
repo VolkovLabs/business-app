@@ -8,6 +8,7 @@ import {
   Calendar,
   DataManipulation,
   DynamicText,
+  Environment,
   GrafanaApi,
   RssAtom,
   Static,
@@ -31,6 +32,7 @@ export const Community: React.FC<Props> = () => {
         <Calendar />
         <DataManipulation />
         <DynamicText />
+        <Environment />
         <GrafanaApi />
         <RssAtom />
         <Static />

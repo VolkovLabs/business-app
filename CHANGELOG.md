@@ -7,6 +7,7 @@
 - Update to Grafana 10.1.5 (#88)
 - Update to Grafana 10.3.1 (#90)
 - Update ESLint configuration and refactoring (#91)
+- Update Application plugins (#92)
 
 ## 3.2.0 (2023-10-04)
 
