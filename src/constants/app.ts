@@ -10,6 +10,5 @@ export const APP_INFO = {
  * Routes
  */
 export const APP_ROUTES = {
-  community: `${APP_INFO.root}`,
-  development: `${APP_INFO.root}/development`,
+  plugins: `${APP_INFO.root}`,
 };

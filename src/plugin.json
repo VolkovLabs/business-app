@@ -10,26 +10,9 @@
     {
       "addToNav": true,
       "defaultNav": true,
-      "icon": "play",
-      "name": "News",
-      "path": "/d/O4tc_E6Gz",
-      "role": "Viewer",
-      "type": "page"
-    },
-    {
-      "addToNav": true,
-      "defaultNav": false,
       "icon": "apps",
-      "name": "Community",
+      "name": "Plugins",
       "path": "/a/volkovlabs-app/",
-      "role": "Viewer",
-      "type": "page"
-    },
-    {
-      "addToNav": true,
-      "icon": "fire",
-      "name": "Development",
-      "path": "/a/volkovlabs-app/development",
       "role": "Viewer",
       "type": "page"
     }
@@ -44,11 +27,11 @@
     "links": [
       {
         "name": "Documentation",
-        "url": "https://volkovlabs.io/plugins/volkovlabs-app/"
+        "url": "https://docs.volkovlabs.io"
       },
       {
         "name": "GitHub",
-        "url": "https://github.com/VolkovLabs/volkovlabs-app"
+        "url": "https://github.com/VolkovLabs"
       }
     ],
     "logos": {

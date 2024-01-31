@@ -8,6 +8,7 @@ import {
   Calendar,
   DataManipulation,
   DynamicText,
+  Environment,
   GrafanaApi,
   RssAtom,
   Static,
@@ -20,17 +21,18 @@ import {
 interface Props extends PluginPageProps {}
 
 /**
- * Community
+ * Plugins
  */
-export const Community: React.FC<Props> = () => {
+export const PluginsPage: React.FC<Props> = () => {
   return (
     <PluginPage>
-      <div data-testid={TEST_IDS.community.root}>
+      <div data-testid={TEST_IDS.plugins.root}>
         <ApacheEcharts />
         <Base64Image />
         <Calendar />
         <DataManipulation />
         <DynamicText />
+        <Environment />
         <GrafanaApi />
         <RssAtom />
         <Static />
