@@ -39,15 +39,14 @@ describe('App', () => {
    * Rendering
    */
   describe('rendering', () => {
-    it('Should render community page', async () => {
+    it('Should render plugins page', async () => {
       render(
         <BrowserRouter>
           <App basename={APP_INFO.root} meta={meta} path={null as any} query={null as any} onNavChanged={jest.fn()} />
         </BrowserRouter>
       );
 
-      expect(screen.queryByTestId(TEST_IDS.development.root)).not.toBeInTheDocument();
-      expect(screen.getByTestId(TEST_IDS.community.root)).toBeInTheDocument();
+      expect(screen.getByTestId(TEST_IDS.plugins.root)).toBeInTheDocument();
     });
   });
 

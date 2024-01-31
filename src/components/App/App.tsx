@@ -3,7 +3,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import { AppSettings } from '../../types';
-import { Community } from '../Community';
+import { PluginsPage } from './Plugins.page';
 
 /**
  * Properties
@@ -16,7 +16,7 @@ interface Props extends AppRootProps<AppSettings> {}
 export const App: React.FC<Props> = () => {
   return (
     <Switch>
-      <Route component={Community} />
+      <Route component={PluginsPage} />
     </Switch>
   );
 };
