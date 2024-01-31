@@ -1,10 +1,10 @@
-import React from 'react';
 import { Card, LinkButton, TagList } from '@grafana/ui';
+import React from 'react';
 
 /**
  * RSS/Atom
  */
-export const RSSAtom: React.FC = () => {
+export const RssAtom: React.FC = () => {
   return (
     <Card>
       <Card.Heading>RSS/Atom Data Source</Card.Heading>

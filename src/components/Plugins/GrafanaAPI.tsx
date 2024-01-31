@@ -1,10 +1,10 @@
-import React from 'react';
 import { Card, LinkButton, TagList } from '@grafana/ui';
+import React from 'react';
 
 /**
  * Grafana HTTP API
  */
-export const GrafanaAPI: React.FC = () => {
+export const GrafanaApi: React.FC = () => {
   return (
     <Card>
       <Card.Heading>Grafana HTTP API Data Source</Card.Heading>

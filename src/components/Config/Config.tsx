@@ -1,7 +1,8 @@
-import React from 'react';
 import { AppPluginMeta, PluginConfigPageProps } from '@grafana/data';
 import { FieldSet } from '@grafana/ui';
-import { AppInfo, TestIds } from '../../constants';
+import React from 'react';
+
+import { APP_INFO, TEST_IDS } from '../../constants';
 import { AppSettings } from '../../types';
 
 /**
@@ -14,8 +15,8 @@ interface Props extends PluginConfigPageProps<AppPluginMeta<AppSettings>> {}
  */
 export const Config: React.FC<Props> = () => {
   return (
-    <FieldSet data-testid={TestIds.config.root}>
-      <h2>{AppInfo.name}</h2>
+    <FieldSet data-testid={TEST_IDS.config.root}>
+      <h2>{APP_INFO.name}</h2>
       <p>
         The Volkov Labs App includes Docker image and App plugin with information about Volkov Labs supported Grafana
         plugins.

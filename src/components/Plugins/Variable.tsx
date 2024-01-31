@@ -1,5 +1,5 @@
-import React from 'react';
 import { Card, LinkButton, TagList } from '@grafana/ui';
+import React from 'react';
 
 /**
  * Variable

@@ -1,8 +1,9 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import { AppPluginMeta, PluginType } from '@grafana/data';
 import { render, screen } from '@testing-library/react';
-import { AppInfo, TestIds } from '../../constants';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+
+import { APP_INFO, TEST_IDS } from '../../constants';
 import { App } from './App';
 
 /**
@@ -41,12 +42,12 @@ describe('App', () => {
     it('Should render community page', async () => {
       render(
         <BrowserRouter>
-          <App basename={AppInfo.root} meta={meta} path={null as any} query={null as any} onNavChanged={jest.fn()} />
+          <App basename={APP_INFO.root} meta={meta} path={null as any} query={null as any} onNavChanged={jest.fn()} />
         </BrowserRouter>
       );
 
-      expect(screen.queryByTestId(TestIds.development.root)).not.toBeInTheDocument();
-      expect(screen.getByTestId(TestIds.community.root)).toBeInTheDocument();
+      expect(screen.queryByTestId(TEST_IDS.development.root)).not.toBeInTheDocument();
+      expect(screen.getByTestId(TEST_IDS.community.root)).toBeInTheDocument();
     });
   });
 
