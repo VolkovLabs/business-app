@@ -1,6 +1,6 @@
 # Change Log
 
-## 3.3.0 (IN PROGRESS)
+## 3.3.0 (2023-01-31)
 
 ### Features / Enhancements
 
@@ -8,6 +8,8 @@
 - Update to Grafana 10.3.1 (#90)
 - Update ESLint configuration and refactoring (#91)
 - Update Application plugins (#92)
+- Update to Node 20 (#93)
+- Update dependencies and Actions (#93)
 
 ## 3.2.0 (2023-10-04)
 
