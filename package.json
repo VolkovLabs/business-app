@@ -10,7 +10,7 @@
     "react-router-dom": "^5.3.4",
     "tslib": "^2.6.2"
   },
-  "description": "Volkov Labs App plugin",
+  "description": "Volkov Labs App",
   "devDependencies": {
     "@babel/core": "^7.23.9",
     "@grafana/e2e": "^10.3.1",
