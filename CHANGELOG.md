@@ -1,6 +1,6 @@
 # Change Log
 
-## 3.3.0 (2023-01-31)
+## 3.3.0 (2023-02-01)
 
 ### Features / Enhancements
 
@@ -9,7 +9,7 @@
 - Update ESLint configuration and refactoring (#91)
 - Update Application plugins (#92)
 - Update to Node 20 (#93)
-- Update dependencies and Actions (#93)
+- Update dependencies and Actions (#93, #94)
 
 ## 3.2.0 (2023-10-04)
 
