@@ -8,7 +8,6 @@ services:
       - 3000:3000/tcp
     environment:
       - GF_USERS_DEFAULT_THEME=light
-      - GF_INSTALL_PLUGINS=marcusolsson-dynamictext-panel
     volumes:
       - ../dist:/var/lib/grafana/plugins/volkovlabs-app
       - ../provisioning:/etc/grafana/provisioning
