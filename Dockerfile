@@ -67,6 +67,10 @@ COPY src/img/logo.svg /usr/share/grafana/public/img/grafana_icon.svg
 COPY img/background.svg /usr/share/grafana/public/img/g8_login_dark.svg
 COPY img/background.svg /usr/share/grafana/public/img/g8_login_light.svg
 
+## Replace custom alert templates
+COPY custom/ng_alert_notification.html /usr/share/grafana/public/emails/ng_alert_notification.html
+COPY custom/ng_alert_notification.txt /usr/share/grafana/public/emails/ng_alert_notification.txt
+
 ## Update Main Org. to Sakundi Dashboards
 ## Anonymous authentication will stop working as set for Main Org. by default
 # RUN sed -i 's|Main Org.|VolkovLab|g' /usr/share/grafana/bin/grafana-server
