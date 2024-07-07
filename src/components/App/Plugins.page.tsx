@@ -3,9 +3,9 @@ import React from 'react';
 
 import { TEST_IDS } from '../../constants';
 import {
+  BusinessCalendar,
   BusinessCharts,
   BusinessMedia,
-  Calendar,
   DataManipulation,
   DynamicText,
   Environment,
@@ -27,9 +27,9 @@ export const PluginsPage: React.FC<Props> = () => {
   return (
     <PluginPage>
       <div data-testid={TEST_IDS.plugins.root}>
+        <BusinessCalendar />
         <BusinessCharts />
         <BusinessMedia />
-        <Calendar />
         <DataManipulation />
         <DynamicText />
         <Environment />

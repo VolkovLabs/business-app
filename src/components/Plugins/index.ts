@@ -1,6 +1,6 @@
+export * from './BusinessCalendar';
 export * from './BusinessCharts';
 export * from './BusinessMedia';
-export * from './Calendar';
 export * from './DataManipulation';
 export * from './DynamicText';
 export * from './Environment';
