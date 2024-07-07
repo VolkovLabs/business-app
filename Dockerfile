@@ -1,7 +1,7 @@
-FROM grafana/grafana-oss:10.3.1
+FROM grafana/grafana-oss:11.1.0
 
 ##################################################################
-## CONFIGURATION
+## Configuration
 ##################################################################
 
 ## Set Grafana options
@@ -15,9 +15,6 @@ ENV GF_AUTH_BASIC_ENABLED=false
 ## Disable Sanitize
 ENV GF_PANELS_DISABLE_SANITIZE_HTML=true
 
-## Disable Explore
-ENV GF_EXPLORE_ENABLED=false
-
 # Updates Check
 ENV GF_ANALYTICS_CHECK_FOR_UPDATES=false
 
@@ -29,7 +26,7 @@ ENV GF_PATHS_PROVISIONING="/etc/grafana/provisioning"
 ENV GF_PATHS_PLUGINS="/var/lib/grafana/plugins"
 
 ##################################################################
-## COPY ARTIFACTS
+## Copy Artifacts
 ## Required for the App plugin
 ##################################################################
 
@@ -47,7 +44,7 @@ COPY --chown=grafana:root provisioning $GF_PATHS_PROVISIONING
 USER root
 
 ##################################################################
-## VISUAL
+## Update Image files
 ##################################################################
 
 ## Replace Favicon and Apple Touch
@@ -62,14 +59,12 @@ COPY img/background.svg /usr/share/grafana/public/img/g8_login_dark.svg
 COPY img/background.svg /usr/share/grafana/public/img/g8_login_light.svg
 
 ##################################################################
-## HANDS-ON
+## Update HTML, INI files
 ##################################################################
 
 # Update Title
 RUN sed -i 's|<title>\[\[.AppTitle\]\]</title>|<title>Business Suite</title>|g' /usr/share/grafana/public/views/index.html
-
-# Move Business Suite App to navigation root section
-RUN sed -i 's|\[navigation.app_sections\]|\[navigation.app_sections\]\nvolkovlabs-app=root|g' /usr/share/grafana/conf/defaults.ini
+RUN sed -i 's|Loading Grafana|Loading Business Suite|g' /usr/share/grafana/public/views/index.html
 
 ## Update Help menu
 RUN sed -i "s|\[\[.NavTree\]\],|nav,|g; \
@@ -82,123 +77,70 @@ RUN sed -i "s|\[\[.NavTree\]\],|nav,|g; \
     const connections = nav.find((element) => element.id === 'connections'); \
     if (connections) { connections['url'] = '/datasources'; connections['children'].shift(); } \
     const help = nav.find((element) => element.id === 'help'); \
-    if (help) { help['subTitle'] = 'Grafana OSS'; help['children'] = [];} \
+    if (help) { help['subTitle'] = 'Business Suite 4.0.0'; help['children'] = [];} \
     window.grafanaBootData = {|g" \
     /usr/share/grafana/public/views/index.html
 
+# Move Business Suite App to navigation root section
+RUN sed -i 's|\[navigation.app_sections\]|\[navigation.app_sections\]\nvolkovlabs-app=root|g' /usr/share/grafana/conf/defaults.ini
+
+##################################################################
+## Update JavaScript files
+##################################################################
+
+RUN find /usr/share/grafana/public/build/ -name *.js \
 ## Update Title
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|AppTitle="Grafana"|AppTitle="Business Suite"|g' {} \;
-
+    -exec sed -i 's|AppTitle="Grafana"|AppTitle="Business Suite"|g' {} \; \
 ## Update Login Title
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|LoginTitle="Welcome to Grafana"|LoginTitle="Welcome to Business Suite"|g' {} \;
-
+    -exec sed -i 's|LoginTitle="Welcome to Grafana"|LoginTitle="Business Suite for Grafana"|g' {} \; \
 ## Remove Documentation, Support, Community in the Footer
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|\[{target:"_blank",id:"documentation".*grafana_footer"}\]|\[\]|g' {} \;
-
+    -exec sed -i 's|\[{target:"_blank",id:"documentation".*grafana_footer"}\]|\[\]|g' {} \; \
 ## Remove Edition in the Footer
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|({target:"_blank",id:"license",.*licenseUrl})|()|g' {} \;
-
+    -exec sed -i 's|({target:"_blank",id:"license",.*licenseUrl})|()|g' {} \; \
 ## Remove Version in the Footer
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|({target:"_blank",id:"version",.*CHANGELOG.md":void 0})|()|g' {} \;
-
+    -exec sed -i 's|({target:"_blank",id:"version",.*CHANGELOG.md":void 0})|()|g' {} \; \
 ## Remove News icon
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|..createElement(....,{className:.,onClick:.,iconOnly:!0,icon:"rss","aria-label":"News"})|null|g' {} \;
-
+    -exec sed -i 's|..createElement(....,{className:.,onClick:.,iconOnly:!0,icon:"rss","aria-label":"News"})|null|g' {} \; \
 ## Remove Open Source icon
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|.push({target:"_blank",id:"version",text:`${..edition}${.}`,url:..licenseUrl,icon:"external-link-alt"})||g' {} \;
+    -exec sed -i 's|.push({target:"_blank",id:"version",text:`${..edition}${.}`,url:..licenseUrl,icon:"external-link-alt"})||g' {} \;
 
 ##################################################################
-## CLEANING Remove Native Data Sources
+## Remove Native Data Sources
 ##################################################################
 
-## Time series databases / Elasticsearch
-RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/elasticsearch
-RUN rm -rf /usr/share/grafana/public/build/elasticsearch*
-
-## Time series databases / Graphite
-RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/graphite
-RUN rm -rf /usr/share/grafana/public/build/graphite*
-
-## Time series databases / OpenTSDB
-RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/opentsdb
-RUN rm -rf /usr/share/grafana/public/build/opentsdb*
-
-## Time series databases / InfluxDB
-RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/influxdb
-RUN rm -rf /usr/share/grafana/public/build/influxdb*
-
-## SQL / Microsoft SQL Server
-RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/mssql
-RUN rm -rf /usr/share/grafana/public/build/mssql*
-
-## SQL / MySQL
-RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/mysql
-RUN rm -rf /usr/share/grafana/public/build/mysql*
-
-## Distributed tracing / Tempo
-RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/tempo
-RUN rm -rf /usr/share/grafana/public/build/tempo*
-
-## Distributed tracing / Jaeger
-RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/jaeger
-RUN rm -rf /usr/share/grafana/public/build/jaeger*
-
-## Distributed tracing / Zipkin
-RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/zipkin
-RUN rm -rf /usr/share/grafana/public/build/zipkin*
-
-## Cloud / Azure Monitor
-RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/azuremonitor
-RUN rm -rf /usr/share/grafana/public/build/azureMonitor*
-
-## Cloud / CloudWatch
-RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/cloudwatch
-RUN rm -rf /usr/share/grafana/public/build/cloudwatch*
-
-## Cloud / Google Cloud Monitoring
-RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/cloud-monitoring
-RUN rm -rf /usr/share/grafana/public/build/cloudMonitoring*
-
-## Profiling / Parca
-RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/parca
-RUN rm -rf /usr/share/grafana/public/build/parca*
-
-## Profiling / Phlare
-RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/phlare
-RUN rm -rf /usr/share/grafana/public/build/phlare*
-
-## Profiling / Pyroscope
-RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/grafana-pyroscope-datasource
-RUN rm -rf /usr/share/grafana/public/build/pyroscope*
+RUN rm -rf /usr/share/grafana/public/app/plugins/datasource/elasticsearch /usr/share/grafana/public/build/elasticsearch* \
+    /usr/share/grafana/public/app/plugins/datasource/graphite /usr/share/grafana/public/build/graphite* \
+    /usr/share/grafana/public/app/plugins/datasource/opentsdb /usr/share/grafana/public/build/opentsdb* \
+    /usr/share/grafana/public/app/plugins/datasource/influxdb /usr/share/grafana/public/build/influxdb* \
+    /usr/share/grafana/public/app/plugins/datasource/mssql /usr/share/grafana/public/build/mssql* \
+    /usr/share/grafana/public/app/plugins/datasource/mysql /usr/share/grafana/public/build/mysql* \
+    /usr/share/grafana/public/app/plugins/datasource/tempo /usr/share/grafana/public/build/tempo* \
+    /usr/share/grafana/public/app/plugins/datasource/jaeger /usr/share/grafana/public/build/jaeger* \
+    /usr/share/grafana/public/app/plugins/datasource/zipkin /usr/share/grafana/public/build/zipkin* \
+    /usr/share/grafana/public/app/plugins/datasource/azuremonitor /usr/share/grafana/public/build/azureMonitor* \
+    /usr/share/grafana/public/app/plugins/datasource/cloudwatch /usr/share/grafana/public/build/cloudwatch* \
+    /usr/share/grafana/public/app/plugins/datasource/cloud-monitoring /usr/share/grafana/public/build/cloudMonitoring* \
+    /usr/share/grafana/public/app/plugins/datasource/parca /usr/share/grafana/public/build/parca* \
+    /usr/share/grafana/public/app/plugins/datasource/phlare /usr/share/grafana/public/build/phlare* \
+    /usr/share/grafana/public/app/plugins/datasource/grafana-pyroscope-datasource /usr/share/grafana/public/build/pyroscope*
 
 ## Remove Cloud and Enterprise categories
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|.id==="enterprise"|.id==="notanenterprise"|g' {} \;
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|.id==="cloud"|.id==="notacloud"|g' {} \;
+RUN find /usr/share/grafana/public/build/ -name *.js \
+    -exec sed -i 's|.id==="enterprise"|.id==="notanenterprise"|g' {} \; \
+    -exec sed -i 's|.id==="cloud"|.id==="notacloud"|g' {} \;
 
 ##################################################################
-## CLEANING Remove Native Panels
+## Remove Native Panels
 ##################################################################
 
-## Alert list
-RUN rm -rf /usr/share/grafana/public/app/plugins/panel/alertlist
-
-## Annotations list
-RUN rm -rf /usr/share/grafana/public/app/plugins/panel/annolist
-
-## Dashboard list
-RUN rm -rf /usr/share/grafana/public/app/plugins/panel/dashlist
-
-## News
-RUN rm -rf /usr/share/grafana/public/app/plugins/panel/news
-
-## Table (old)
-RUN rm -rf /usr/share/grafana/public/app/plugins/panel/table-old
-
-## Traces
-RUN rm -rf /usr/share/grafana/public/app/plugins/panel/traces
-
-## Flamegraph
-RUN rm -rf /usr/share/grafana/public/app/plugins/panel/flamegraph
+RUN rm -rf /usr/share/grafana/public/app/plugins/panel/alertlist \
+    /usr/share/grafana/public/app/plugins/panel/annolist \
+    /usr/share/grafana/public/app/plugins/panel/dashlist \
+    /usr/share/grafana/public/app/plugins/panel/news \
+    /usr/share/grafana/public/app/plugins/panel/geomap \
+    /usr/share/grafana/public/app/plugins/panel/table-old \
+    /usr/share/grafana/public/app/plugins/panel/traces \
+    /usr/share/grafana/public/app/plugins/panel/flamegraph
 
 ##################################################################
 
