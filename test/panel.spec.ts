@@ -1,7 +1,7 @@
 import { test, expect } from '@grafana/plugin-e2e';
 
-test.describe('Volkovlabs APP', () => {
-  test('Should display a Dynamic Text Panel', async ({ gotoDashboardPage, dashboardPage, page }) => {
+test.describe('Business Suite', () => {
+  test('Should display a Canvas Panel', async ({ gotoDashboardPage, dashboardPage, page }) => {
     /**
      * Go To panels dashboard panels.json
      * return dashboardPage
@@ -17,7 +17,6 @@ test.describe('Volkovlabs APP', () => {
      * Find panel by title with data
      * Should be visible
      */
-    await expect(dashboardPage.getPanelByTitle('YouTube').locator).toBeVisible();
-    await expect(dashboardPage.getPanelByTitle('Blog').locator).toBeVisible();
+    await expect(dashboardPage.getPanelById('1').locator).toBeVisible();
   });
 });

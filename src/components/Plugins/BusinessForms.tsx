@@ -2,21 +2,16 @@ import { Card, LinkButton, TagList } from '@grafana/ui';
 import React from 'react';
 
 /**
- * Data Manipulation
+ * Business Forms
  */
-export const DataManipulation: React.FC = () => {
+export const BusinessForms: React.FC = () => {
   return (
     <Card>
-      <Card.Heading>Data Manipulation Panel</Card.Heading>
+      <Card.Heading>Business Forms</Card.Heading>
       <Card.Description>Insert, update application data, and modify configuration.</Card.Description>
       <Card.Figure>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://volkovlabs.io/plugins/volkovlabs-form-panel/"
-          title="Data Manipulation Panel"
-        >
-          <svg id="DataManipulation" width={40} height={40} viewBox="0 0 79 58">
+        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-form-panel/">
+          <svg width={40} height={40} viewBox="0 0 79 58">
             <rect width="78.0361" height="57.8978" fill="#9D70F9" />
             <rect y="5.03455" width="78.0361" height="0.629324" fill="white" />
             <circle cx="68.5467" cy="2.73838" r="1.05454" fill="white" />

@@ -22,7 +22,7 @@ ENV GF_EXPLORE_ENABLED=false
 ENV GF_ANALYTICS_CHECK_FOR_UPDATES=false
 
 ## Set Home Dashboard
-ENV GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/etc/grafana/provisioning/dashboards/news.json
+ENV GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/etc/grafana/provisioning/dashboards/business.json
 
 ## Paths
 ENV GF_PATHS_PROVISIONING="/etc/grafana/provisioning"
@@ -66,9 +66,9 @@ COPY img/background.svg /usr/share/grafana/public/img/g8_login_light.svg
 ##################################################################
 
 # Update Title
-RUN sed -i 's|<title>\[\[.AppTitle\]\]</title>|<title>Volkov Labs</title>|g' /usr/share/grafana/public/views/index.html
+RUN sed -i 's|<title>\[\[.AppTitle\]\]</title>|<title>Business Suite</title>|g' /usr/share/grafana/public/views/index.html
 
-# Move Volkov Labs App to navigation root section
+# Move Business Suite App to navigation root section
 RUN sed -i 's|\[navigation.app_sections\]|\[navigation.app_sections\]\nvolkovlabs-app=root|g' /usr/share/grafana/conf/defaults.ini
 
 ## Update Help menu
@@ -87,10 +87,10 @@ RUN sed -i "s|\[\[.NavTree\]\],|nav,|g; \
     /usr/share/grafana/public/views/index.html
 
 ## Update Title
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|AppTitle="Grafana"|AppTitle="Volkov Labs"|g' {} \;
+RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|AppTitle="Grafana"|AppTitle="Business Suite"|g' {} \;
 
 ## Update Login Title
-RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|LoginTitle="Welcome to Grafana"|LoginTitle="Welcome to Volkov Labs"|g' {} \;
+RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|LoginTitle="Welcome to Grafana"|LoginTitle="Welcome to Business Suite"|g' {} \;
 
 ## Remove Documentation, Support, Community in the Footer
 RUN find /usr/share/grafana/public/build/ -name *.js -exec sed -i 's|\[{target:"_blank",id:"documentation".*grafana_footer"}\]|\[\]|g' {} \;

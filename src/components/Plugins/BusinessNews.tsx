@@ -2,21 +2,16 @@ import { Card, LinkButton, TagList } from '@grafana/ui';
 import React from 'react';
 
 /**
- * RSS/Atom
+ * Business News
  */
-export const RssAtom: React.FC = () => {
+export const BusinessNews: React.FC = () => {
   return (
     <Card>
-      <Card.Heading>RSS/Atom Data Source</Card.Heading>
-      <Card.Description>Visualize RSS/Atom feeds using Dynamic Text.</Card.Description>
+      <Card.Heading>Business News</Card.Heading>
+      <Card.Description>Visualize RSS/Atom feeds.</Card.Description>
       <Card.Figure>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://volkovlabs.io/plugins/volkovlabs-rss-datasource/"
-          title="RSS/Atom Data Source"
-        >
-          <svg id="RSSAtom" width={40} height={40} viewBox="0 0 65 65">
+        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-rss-datasource/">
+          <svg width={40} height={40} viewBox="0 0 65 65">
             <path
               d="M1.89882e-05 0C8.50048 1.01367e-07 16.9177 1.67429 24.7711 4.92728C32.6245 8.18026 39.7603 12.9482 45.771 18.959C51.7818 24.9697 56.5497 32.1055 59.8027 39.9589C63.0557 47.8123 64.73 56.2295 64.73 64.73H51.9693C51.9693 57.9053 50.6251 51.1474 48.0134 44.8422C45.4017 38.537 41.5737 32.8079 36.7479 27.9821C31.9221 23.1563 26.193 19.3283 19.8878 16.7166C13.5826 14.1049 6.82472 12.7607 1.8836e-05 12.7607L1.89882e-05 0Z"
               fill="#9D70F9"

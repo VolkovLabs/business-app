@@ -2,20 +2,15 @@ import { Card, LinkButton, TagList } from '@grafana/ui';
 import React from 'react';
 
 /**
- * Dynamic Text
+ * Business Text
  */
-export const DynamicText: React.FC = () => {
+export const BusinessText: React.FC = () => {
   return (
     <Card>
-      <Card.Heading>Dynamic Text Panel</Card.Heading>
+      <Card.Heading>Business Text</Card.Heading>
       <Card.Description>Dynamic, data-driven text.</Card.Description>
       <Card.Figure>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel/"
-          title="Dynamic Text"
-        >
+        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel/">
           <svg width={40} height={40} viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="47.5" cy="47.5" r="47.5" fill="#9D70F9" />
             <path

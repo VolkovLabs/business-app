@@ -1,16 +1,16 @@
 # Configuration files
+
 jest-setup.js
 jest.config.js
 webpack.config.ts
 
 # Development folders
+
 coverage/
 dist/
 
-# Bundled plugins
-src/marcusolsson-dynamictext-panel
-src/volkovlabs-rss-datasource
-
 # Playwright tests
+
 playwright.config.ts
 test/panel.spec.ts
+playwright-report

@@ -17,10 +17,7 @@ export const Config: React.FC<Props> = () => {
   return (
     <FieldSet data-testid={TEST_IDS.config.root}>
       <h2>{APP_INFO.name}</h2>
-      <p>
-        The Volkov Labs App includes Docker image and App plugin with information about Volkov Labs supported Grafana
-        plugins.
-      </p>
+      <p>The Volkov Labs App includes Docker image and App plugin with information about Business Suite for Grafana.</p>
     </FieldSet>
   );
 };
