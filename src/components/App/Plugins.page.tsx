@@ -6,11 +6,11 @@ import {
   BusinessCalendar,
   BusinessCharts,
   BusinessForms,
+  BusinessInput,
   BusinessMedia,
   BusinessNews,
   BusinessSatellite,
   BusinessText,
-  BusinessInput,
   BusinessVariable,
 } from '../Plugins';
 
