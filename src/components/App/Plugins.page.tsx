@@ -5,11 +5,10 @@ import { TEST_IDS } from '../../constants';
 import {
   BusinessCalendar,
   BusinessCharts,
+  BusinessForms,
   BusinessMedia,
-  DataManipulation,
-  DynamicText,
-  Environment,
-  GrafanaApi,
+  BusinessSatellite,
+  BusinessText,
   RssAtom,
   Static,
   Variable,
@@ -30,10 +29,9 @@ export const PluginsPage: React.FC<Props> = () => {
         <BusinessCalendar />
         <BusinessCharts />
         <BusinessMedia />
-        <DataManipulation />
-        <DynamicText />
-        <Environment />
-        <GrafanaApi />
+        <BusinessForms />
+        <BusinessText />
+        <BusinessSatellite />
         <RssAtom />
         <Static />
         <Variable />
