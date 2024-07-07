@@ -1,4 +1,4 @@
-FROM grafana/grafana-oss:10.3.1
+FROM grafana/grafana-oss:11.1.0
 
 ##################################################################
 ## CONFIGURATION
