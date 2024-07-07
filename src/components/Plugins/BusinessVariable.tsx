@@ -7,7 +7,7 @@ import React from 'react';
 export const BusinessVariable: React.FC = () => {
   return (
     <Card>
-      <Card.Heading>Variable Panel</Card.Heading>
+      <Card.Heading>Business Variable</Card.Heading>
       <Card.Description>Update dashboard variables.</Card.Description>
       <Card.Figure>
         <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-variable-panel/">
