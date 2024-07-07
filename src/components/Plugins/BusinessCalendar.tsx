@@ -7,7 +7,7 @@ import React from 'react';
 export const BusinessCalendar: React.FC = () => {
   return (
     <Card>
-      <Card.Heading>Business Calendar Panel</Card.Heading>
+      <Card.Heading>Business Calendar</Card.Heading>
       <Card.Description>Display events and change time range.</Card.Description>
       <Card.Figure>
         <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-calendar-panel/">

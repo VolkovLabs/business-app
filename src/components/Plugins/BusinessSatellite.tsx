@@ -7,7 +7,7 @@ import React from 'react';
 export const BusinessSatellite: React.FC = () => {
   return (
     <Card>
-      <Card.Heading>Business Satellite Data Source</Card.Heading>
+      <Card.Heading>Business Satellite</Card.Heading>
       <Card.Description>Connect to Local and Remote Grafana instances.</Card.Description>
       <Card.Figure>
         <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-grapi-datasource/">

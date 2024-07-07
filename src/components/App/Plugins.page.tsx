@@ -7,11 +7,11 @@ import {
   BusinessCharts,
   BusinessForms,
   BusinessMedia,
+  BusinessNews,
   BusinessSatellite,
   BusinessText,
-  RssAtom,
-  Static,
-  Variable,
+  BusinessInput,
+  BusinessVariable,
 } from '../Plugins';
 
 /**
@@ -28,13 +28,13 @@ export const PluginsPage: React.FC<Props> = () => {
       <div data-testid={TEST_IDS.plugins.root}>
         <BusinessCalendar />
         <BusinessCharts />
-        <BusinessMedia />
         <BusinessForms />
-        <BusinessText />
+        <BusinessInput />
+        <BusinessMedia />
+        <BusinessNews />
         <BusinessSatellite />
-        <RssAtom />
-        <Static />
-        <Variable />
+        <BusinessText />
+        <BusinessVariable />
       </div>
     </PluginPage>
   );

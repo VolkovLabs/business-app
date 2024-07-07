@@ -7,7 +7,7 @@ import React from 'react';
 export const BusinessCharts: React.FC = () => {
   return (
     <Card>
-      <Card.Heading>Business Charts Panel</Card.Heading>
+      <Card.Heading>Business Charts</Card.Heading>
       <Card.Description>Powerful visualizations powered by Apache ECharts.</Card.Description>
       <Card.Figure>
         <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-echarts-panel/">

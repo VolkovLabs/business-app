@@ -7,7 +7,7 @@ import React from 'react';
 export const BusinessForms: React.FC = () => {
   return (
     <Card>
-      <Card.Heading>Business Forms Panel</Card.Heading>
+      <Card.Heading>Business Forms</Card.Heading>
       <Card.Description>Insert, update application data, and modify configuration.</Card.Description>
       <Card.Figure>
         <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-form-panel/">

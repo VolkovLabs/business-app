@@ -7,7 +7,7 @@ import React from 'react';
 export const BusinessText: React.FC = () => {
   return (
     <Card>
-      <Card.Heading>Business Text Panel</Card.Heading>
+      <Card.Heading>Business Text</Card.Heading>
       <Card.Description>Dynamic, data-driven text.</Card.Description>
       <Card.Figure>
         <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel/">

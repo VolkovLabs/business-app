@@ -2,20 +2,15 @@ import { Card, LinkButton, TagList } from '@grafana/ui';
 import React from 'react';
 
 /**
- * Variable
+ * Business Variable
  */
-export const Variable: React.FC = () => {
+export const BusinessVariable: React.FC = () => {
   return (
     <Card>
       <Card.Heading>Variable Panel</Card.Heading>
       <Card.Description>Update dashboard variables.</Card.Description>
       <Card.Figure>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://volkovlabs.io/plugins/volkovlabs-variable-panel/"
-          title="Variable"
-        >
+        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-variable-panel/">
           <svg width="40" height="40" viewBox="0 0 135 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="134.309" height="99.6489" fill="#9D70F9" />
             <rect y="8.66528" width="134.309" height="1.08314" fill="white" />

@@ -7,7 +7,7 @@ import React from 'react';
 export const BusinessMedia: React.FC = () => {
   return (
     <Card>
-      <Card.Heading>Business Media Panel</Card.Heading>
+      <Card.Heading>Business Media</Card.Heading>
       <Card.Description>Display media files.</Card.Description>
       <Card.Figure>
         <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-image-panel/">
