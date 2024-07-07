@@ -10,13 +10,8 @@ export const BusinessCharts: React.FC = () => {
       <Card.Heading>Business Charts Panel</Card.Heading>
       <Card.Description>Powerful visualizations powered by Apache ECharts.</Card.Description>
       <Card.Figure>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://volkovlabs.io/plugins/volkovlabs-echarts-panel/"
-          title="Business Charts"
-        >
-          <svg id="Business Charts" width={40} height={40} viewBox="0 0 107 94">
+        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-echarts-panel/">
+          <svg width={40} height={40} viewBox="0 0 107 94">
             <rect x="27" y="73" width="16" height="15" fill="#5F3DC4" />
             <rect x="27" y="73" width="16" height="15" fill="#FA5252" />
             <rect x="27" y="73" width="16" height="15" fill="#FA5252" />

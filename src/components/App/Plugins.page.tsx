@@ -3,8 +3,8 @@ import React from 'react';
 
 import { TEST_IDS } from '../../constants';
 import {
-  Base64Image,
   BusinessCharts,
+  BusinessMedia,
   Calendar,
   DataManipulation,
   DynamicText,
@@ -28,7 +28,7 @@ export const PluginsPage: React.FC<Props> = () => {
     <PluginPage>
       <div data-testid={TEST_IDS.plugins.root}>
         <BusinessCharts />
-        <Base64Image />
+        <BusinessMedia />
         <Calendar />
         <DataManipulation />
         <DynamicText />
