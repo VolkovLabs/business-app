@@ -32,6 +32,25 @@
         "type": "volkovlabs-rss-datasource",
         "uid": "rZAdZdf82"
       },
+      "fieldConfig": {
+        "defaults": {
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unitScale": true
+        },
+        "overrides": []
+      },
       "gridPos": {
         "h": 32,
         "w": 12,
@@ -49,6 +68,8 @@
         },
         "editors": [],
         "everyRow": true,
+        "externalScripts": [],
+        "externalStyles": [],
         "helpers": "",
         "styles": ""
       },
@@ -88,6 +109,25 @@
         "type": "volkovlabs-rss-datasource",
         "uid": "rZAdZdf7a"
       },
+      "fieldConfig": {
+        "defaults": {
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unitScale": true
+        },
+        "overrides": []
+      },
       "gridPos": {
         "h": 32,
         "w": 12,
@@ -105,6 +145,8 @@
         },
         "editors": ["helpers", "styles"],
         "everyRow": false,
+        "externalScripts": [],
+        "externalStyles": [],
         "helpers": "const scrollWindow = () => {\n  parentWindow =\n    document.getElementById(\"dataTable\").parentElement.parentElement;\n  bottomOfWindow = parentWindow.scrollHeight - parentWindow.offsetHeight;\n\n  /**\n   * Scroll\n   */\n  if (parentWindow.scrollTop < bottomOfWindow) {\n    parentWindow.scrollBy(0, 1);\n    setTimeout(scrollWindow, 50);\n    return;\n  }\n\n  /**\n   * Scroll to the Top\n   */\n  setTimeout(function () {\n    parentWindow.scrollTo({ top: 0, behavior: \"smooth\" });\n  }, 1000);\n\n  /**\n   * Start scrolling again\n   */\n  setTimeout(scrollWindow, 1000);\n};\n\n$(() => {\n  dataTable = document.getElementById(\"dataTable\");\n\n  /**\n   * Avoid scrolling for short tables\n   */\n  if (\n    dataTable.parentElement.scrollHeight <\n    dataTable.parentElement.parentElement.offsetHeight\n  ) {\n    return;\n  }\n\n  /**\n   * Already set to scroll\n   */\n  if (dataTable.parentElement.parentElement.getAttribute(\"listener\")) {\n    return;\n  }\n\n  dataTable.parentElement.parentElement.setAttribute(\"listener\", true);\n  scrollWindow();\n});",
         "styles": "a {\n  color: blue;\n}"
       },
@@ -142,8 +184,7 @@
   ],
   "refresh": "",
   "revision": 1,
-  "schemaVersion": 38,
-  "style": "dark",
+  "schemaVersion": 39,
   "tags": [],
   "templating": {
     "list": []
@@ -156,6 +197,6 @@
   "timezone": "",
   "title": "Volkov Labs News",
   "uid": "O4tc_E6Gz",
-  "version": 3,
+  "version": 1,
   "weekStart": ""
 }

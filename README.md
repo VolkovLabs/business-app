@@ -11,7 +11,7 @@
 
 ## Introduction
 
-The Volkov Labs App includes a Docker image with customized Grafana and an App plugin with information about Volkov Labs maintained plugins.
+The Volkov Labs App includes a Docker image with customized Grafana and an App plugin with information about Business Suite for Grafana.
 
 ## Customization
 
@@ -21,7 +21,7 @@ Months of work bundled with deep expertise nicely wrapped into a 7-minute long v
 
 ## Docker image
 
-We use custom build Docker image for all our projects and keep it up-to-date with the latest version of Grafana.
+We use the custom Docker image for all our projects and keep it up-to-date with the latest version of Grafana.
 
 ```sh
 docker pull ghcr.io/volkovlabs/app:latest
@@ -31,8 +31,8 @@ docker pull ghcr.io/volkovlabs/app:latest
 
 App plugin includes:
 
-- [RSS/Atom data source](https://volkovlabs.io/plugins/volkovlabs-rss-datasource)
-- [Dynamic text panel](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel)
+- [Business News data source](https://volkovlabs.io/plugins/volkovlabs-rss-datasource)
+- [Business Text panel](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel)
 
 ## Feedback
 
