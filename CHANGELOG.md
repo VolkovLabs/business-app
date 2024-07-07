@@ -1,12 +1,13 @@
 # Change Log
 
-## 4.0.0 (IN PROGRESS)
+## 4.0.0 (2024-07-07)
 
 ### Features / Enhancements
 
 - Add plugin e2e tests and remove cypress (#95)
 - Update to Grafana 11.1 dependencies (#97)
 - Update to Business Suite (#98)
+- Update to Grafana 11.1.0 image (#99)
 
 ## 3.3.0 (2023-02-01)
 

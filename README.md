@@ -1,8 +1,8 @@
-# Volkov Labs App for Grafana
+# Business Suite App for Grafana
 
 ![App](https://raw.githubusercontent.com/volkovlabs/volkovlabs-app/main/img/app.png)
 
-![Grafana 10](https://img.shields.io/badge/Grafana-10.3-orange)
+![Grafana](https://img.shields.io/badge/Grafana-11.1-orange)
 [![YouTube](https://img.shields.io/badge/YouTube-Channel-red)](https://youtube.com/@volkovlabs)
 ![CI](https://github.com/volkovlabs/volkovlabs-app/workflows/CI/badge.svg)
 ![E2E](https://github.com/volkovlabs/volkovlabs-app/workflows/E2E/badge.svg)
@@ -11,7 +11,7 @@
 
 ## Introduction
 
-The Volkov Labs App includes a Docker image with customized Grafana and an App plugin with information about Business Suite for Grafana.
+The Business Suite App includes a Docker image with customized Grafana and an application plugin.
 
 ## Customization
 
@@ -26,13 +26,6 @@ We use the custom Docker image for all our projects and keep it up-to-date with 
 ```sh
 docker pull ghcr.io/volkovlabs/app:latest
 ```
-
-## Bundle
-
-App plugin includes:
-
-- [Business News data source](https://volkovlabs.io/plugins/volkovlabs-rss-datasource)
-- [Business Text panel](https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel)
 
 ## Feedback
 
