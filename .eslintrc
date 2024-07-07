@@ -4,14 +4,14 @@
   "parserOptions": {
     "ecmaVersion": "latest",
     "project": "./tsconfig.json",
-    "sourceType": "module"
+    "sourceType": "module",
   },
   "overrides": [
     {
       "files": ["**/*.test.tsx", "**/*.test.ts"],
       "rules": {
-        "@typescript-eslint/no-explicit-any": "off"
-      }
-    }
-  ]
+        "@typescript-eslint/no-explicit-any": "off",
+      },
+    },
+  ],
 }

@@ -1,6 +1,6 @@
-export * from './ApacheECharts';
 export * from './Balena';
 export * from './Base64Image';
+export * from './BusinessCharts';
 export * from './Calendar';
 export * from './DataManipulation';
 export * from './DynamicText';

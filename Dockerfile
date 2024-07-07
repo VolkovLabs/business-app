@@ -22,7 +22,7 @@ ENV GF_EXPLORE_ENABLED=false
 ENV GF_ANALYTICS_CHECK_FOR_UPDATES=false
 
 ## Set Home Dashboard
-ENV GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/etc/grafana/provisioning/dashboards/news.json
+ENV GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/etc/grafana/provisioning/dashboards/business.json
 
 ## Paths
 ENV GF_PATHS_PROVISIONING="/etc/grafana/provisioning"

@@ -1,6 +1,6 @@
 import { test, expect } from '@grafana/plugin-e2e';
 
-test.describe('Volkovlabs APP', () => {
+test.describe('Business Suite', () => {
   test('Should display a Dynamic Text Panel', async ({ gotoDashboardPage, dashboardPage, page }) => {
     /**
      * Go To panels dashboard panels.json

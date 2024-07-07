@@ -3,8 +3,8 @@ import React from 'react';
 
 import { TEST_IDS } from '../../constants';
 import {
-  ApacheEcharts,
   Base64Image,
+  BusinessCharts,
   Calendar,
   DataManipulation,
   DynamicText,
@@ -27,7 +27,7 @@ export const PluginsPage: React.FC<Props> = () => {
   return (
     <PluginPage>
       <div data-testid={TEST_IDS.plugins.root}>
-        <ApacheEcharts />
+        <BusinessCharts />
         <Base64Image />
         <Calendar />
         <DataManipulation />
