@@ -1,7 +1,7 @@
 FROM grafana/grafana-oss:11.1.0
 
 ##################################################################
-## Configuration
+## CONFIGURATION
 ##################################################################
 
 ## Set Grafana options
@@ -44,6 +44,7 @@ COPY --chown=grafana:root provisioning $GF_PATHS_PROVISIONING
 USER root
 
 ##################################################################
+## VISUAL
 ## Update Image files
 ##################################################################
 
@@ -59,6 +60,7 @@ COPY img/background.svg /usr/share/grafana/public/img/g8_login_dark.svg
 COPY img/background.svg /usr/share/grafana/public/img/g8_login_light.svg
 
 ##################################################################
+## HANDS-ON
 ## Update HTML, INI files
 ##################################################################
 
@@ -85,6 +87,7 @@ RUN sed -i "s|\[\[.NavTree\]\],|nav,|g; \
 RUN sed -i 's|\[navigation.app_sections\]|\[navigation.app_sections\]\nvolkovlabs-app=root|g' /usr/share/grafana/conf/defaults.ini
 
 ##################################################################
+## HANDS-ON
 ## Update JavaScript files
 ##################################################################
 
@@ -105,6 +108,7 @@ RUN find /usr/share/grafana/public/build/ -name *.js \
     -exec sed -i 's|.push({target:"_blank",id:"version",text:`${..edition}${.}`,url:..licenseUrl,icon:"external-link-alt"})||g' {} \;
 
 ##################################################################
+## CLEANING
 ## Remove Native Data Sources
 ##################################################################
 
@@ -130,6 +134,7 @@ RUN find /usr/share/grafana/public/build/ -name *.js \
     -exec sed -i 's|.id==="cloud"|.id==="notacloud"|g' {} \;
 
 ##################################################################
+## CLEANING
 ## Remove Native Panels
 ##################################################################
 
