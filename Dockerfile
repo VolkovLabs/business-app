@@ -15,8 +15,11 @@ ENV GF_AUTH_BASIC_ENABLED=false
 ## Disable Sanitize
 ENV GF_PANELS_DISABLE_SANITIZE_HTML=true
 
-# Updates Check
+## Check for Updates
 ENV GF_ANALYTICS_CHECK_FOR_UPDATES=false
+
+## Scenes-engine Dashboards
+#ENV GF_FEATURE_TOGGLES_ENABLE=dashboardScene
 
 ## Set Home Dashboard
 ENV GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/etc/grafana/provisioning/dashboards/business.json
@@ -68,7 +71,7 @@ COPY img/background.svg /usr/share/grafana/public/img/g8_login_light.svg
 RUN sed -i 's|<title>\[\[.AppTitle\]\]</title>|<title>Business Suite</title>|g' /usr/share/grafana/public/views/index.html
 RUN sed -i 's|Loading Grafana|Loading Business Suite|g' /usr/share/grafana/public/views/index.html
 
-## Update Help menu
+## Update Mega and Help menu
 RUN sed -i "s|\[\[.NavTree\]\],|nav,|g; \
     s|window.grafanaBootData = {| \
     let nav = [[.NavTree]]; \

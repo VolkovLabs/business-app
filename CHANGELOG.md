@@ -1,5 +1,13 @@
 # Change Log
 
+## 4.1.0 (IN PROGRESS)
+
+### Features / Enhancements
+
+- Updated Dockerfile to separate categories (#101)
+- Updated background and image (#102)
+- Updated Dockerfile description (#103)
+
 ## 4.0.0 (2024-07-07)
 
 ### Features / Enhancements
