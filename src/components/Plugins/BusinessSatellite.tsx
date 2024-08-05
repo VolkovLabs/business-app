@@ -41,7 +41,7 @@ export const BusinessSatellite: React.FC = () => {
           variant="secondary"
           icon="github"
           target="_blank"
-          href="https://github.com/volkovlabs/volkovlabs-grapi-datasource"
+          href="https://github.com/volkovlabs/business-satellite"
         >
           GitHub
         </LinkButton>

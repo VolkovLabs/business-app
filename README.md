@@ -45,4 +45,4 @@ We're looking forward to hearing from you. You can use different ways to get in 
 
 ## License
 
-Apache License Version 2.0, see [LICENSE](https://github.com/volkovlabs/volkovlabs-app/blob/main/LICENSE).
+Apache License Version 2.0, see [LICENSE](https://github.com/volkovlabs/business-suite/blob/main/LICENSE).

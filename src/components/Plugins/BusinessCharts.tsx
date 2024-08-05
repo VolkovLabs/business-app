@@ -63,7 +63,7 @@ export const BusinessCharts: React.FC = () => {
           variant="secondary"
           icon="github"
           target="_blank"
-          href="https://github.com/volkovlabs/volkovlabs-echarts-panel"
+          href="https://github.com/volkovlabs/business-charts"
         >
           GitHub
         </LinkButton>

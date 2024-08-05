@@ -41,7 +41,7 @@ export const BusinessText: React.FC = () => {
           variant="secondary"
           icon="github"
           target="_blank"
-          href="https://github.com/volkovlabs/volkovlabs-dynamictext-panel"
+          href="https://github.com/volkovlabs/business-text"
         >
           GitHub
         </LinkButton>
