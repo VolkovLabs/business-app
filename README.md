@@ -1,13 +1,13 @@
 # Business Suite App for Grafana
 
-![App](https://raw.githubusercontent.com/volkovlabs/volkovlabs-app/main/img/app.png)
+![App](https://raw.githubusercontent.com/volkovlabs/business-suite/main/img/app.png)
 
 ![Grafana](https://img.shields.io/badge/Grafana-11.1-orange)
 [![YouTube](https://img.shields.io/badge/YouTube-Channel-red)](https://youtube.com/@volkovlabs)
-![CI](https://github.com/volkovlabs/volkovlabs-app/workflows/CI/badge.svg)
-![E2E](https://github.com/volkovlabs/volkovlabs-app/workflows/E2E/badge.svg)
-[![codecov](https://codecov.io/gh/VolkovLabs/volkovlabs-app/branch/main/graph/badge.svg)](https://codecov.io/gh/VolkovLabs/volkovlabs-app)
-[![CodeQL](https://github.com/VolkovLabs/volkovlabs-app/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/VolkovLabs/volkovlabs-app/actions/workflows/codeql-analysis.yml)
+![CI](https://github.com/volkovlabs/business-suite/workflows/CI/badge.svg)
+![E2E](https://github.com/volkovlabs/business-suite/workflows/E2E/badge.svg)
+[![codecov](https://codecov.io/gh/VolkovLabs/business-suite/branch/main/graph/badge.svg)](https://codecov.io/gh/VolkovLabs/business-suite)
+[![CodeQL](https://github.com/VolkovLabs/business-suite/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/VolkovLabs/business-suite/actions/workflows/codeql-analysis.yml)
 
 ## Introduction
 
