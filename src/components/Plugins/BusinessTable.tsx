@@ -10,7 +10,7 @@ export const BusinessTable: React.FC = () => {
       <Card.Heading>Business Table</Card.Heading>
       <Card.Description>Summarize large amounts of data.</Card.Description>
       <Card.Figure>
-        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel/">
+        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-table-panel/">
           <svg width={40} height={40} viewBox="0 0 104 84" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="50.6396" y="14.9995" width="25" height="20" fill="#C5A8FF" />
             <rect x="3.15918" y="14.9995" width="45" height="20" fill="#A67CFF" />
