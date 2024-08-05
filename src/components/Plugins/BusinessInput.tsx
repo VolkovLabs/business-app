@@ -48,7 +48,7 @@ export const BusinessInput: React.FC = () => {
           variant="secondary"
           icon="github"
           target="_blank"
-          href="https://github.com/volkovlabs/volkovlabs-static-datasource"
+          href="https://github.com/volkovlabs/business-input"
         >
           GitHub
         </LinkButton>

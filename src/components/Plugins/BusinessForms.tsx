@@ -56,7 +56,7 @@ export const BusinessForms: React.FC = () => {
           variant="secondary"
           icon="github"
           target="_blank"
-          href="https://github.com/volkovlabs/volkovlabs-form-panel"
+          href="https://github.com/volkovlabs/business-forms"
         >
           GitHub
         </LinkButton>

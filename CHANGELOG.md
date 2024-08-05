@@ -1,5 +1,13 @@
 # Change Log
 
+## 4.2.0 (2024-08-05)
+
+### Features / Enhancements
+
+- Updated customization video link (#105)
+- Updated GitHub repository (#106)
+- Added Business Table plugin (#107)
+
 ## 4.1.0 (2024-07-25)
 
 ### Features / Enhancements

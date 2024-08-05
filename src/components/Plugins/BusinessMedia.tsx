@@ -39,7 +39,7 @@ export const BusinessMedia: React.FC = () => {
           variant="secondary"
           target="_blank"
           icon="github"
-          href="https://github.com/volkovlabs/volkovlabs-image-panel"
+          href="https://github.com/volkovlabs/business-media"
         >
           GitHub
         </LinkButton>

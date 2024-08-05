@@ -10,6 +10,7 @@ import {
   BusinessMedia,
   BusinessNews,
   BusinessSatellite,
+  BusinessTable,
   BusinessText,
   BusinessVariable,
 } from '../Plugins';
@@ -33,6 +34,7 @@ export const PluginsPage: React.FC<Props> = () => {
         <BusinessMedia />
         <BusinessNews />
         <BusinessSatellite />
+        <BusinessTable />
         <BusinessText />
         <BusinessVariable />
       </div>

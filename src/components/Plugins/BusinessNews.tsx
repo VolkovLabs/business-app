@@ -43,7 +43,7 @@ export const BusinessNews: React.FC = () => {
           variant="secondary"
           icon="github"
           target="_blank"
-          href="https://github.com/volkovlabs/volkovlabs-rss-datasource"
+          href="https://github.com/volkovlabs/business-news"
         >
           GitHub
         </LinkButton>

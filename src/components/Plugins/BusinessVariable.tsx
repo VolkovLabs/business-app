@@ -51,7 +51,7 @@ export const BusinessVariable: React.FC = () => {
           variant="secondary"
           icon="github"
           target="_blank"
-          href="https://github.com/volkovlabs/volkovlabs-variable-panel"
+          href="https://github.com/volkovlabs/business-variable"
         >
           GitHub
         </LinkButton>
