@@ -10,7 +10,7 @@ export const BusinessCalendar: React.FC = () => {
       <Card.Heading>Business Calendar</Card.Heading>
       <Card.Description>Display events and change time range.</Card.Description>
       <Card.Figure>
-        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-calendar-panel/">
+        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/business-calendar/">
           <svg width="40" height="40" viewBox="0 0 310 322" fill="none">
             <path d="M0.530273 44.5103H309.954V321.606H0.530273V44.5103Z" fill="#9D70F9" />
             <path d="M0.530273 44.5103H309.954V118.402H0.530273V44.5103Z" fill="#FF5656" />
@@ -49,7 +49,7 @@ export const BusinessCalendar: React.FC = () => {
           variant="primary"
           icon="book-open"
           target="_blank"
-          href="https://volkovlabs.io/plugins/volkovlabs-calendar-panel/"
+          href="https://volkovlabs.io/plugins/business-calendar/"
         >
           Documentation
         </LinkButton>

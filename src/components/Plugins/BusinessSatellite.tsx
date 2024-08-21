@@ -10,7 +10,7 @@ export const BusinessSatellite: React.FC = () => {
       <Card.Heading>Business Satellite</Card.Heading>
       <Card.Description>Connect to Local and Remote Grafana instances.</Card.Description>
       <Card.Figure>
-        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-grapi-datasource/">
+        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/business-satellite/">
           <svg width={40} height={40} viewBox="0 0 150 98" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               fillRule="evenodd"
@@ -33,7 +33,7 @@ export const BusinessSatellite: React.FC = () => {
           variant="primary"
           icon="book-open"
           target="_blank"
-          href="https://volkovlabs.io/plugins/volkovlabs-grapi-datasource/"
+          href="https://volkovlabs.io/plugins/business-satellite/"
         >
           Documentation
         </LinkButton>

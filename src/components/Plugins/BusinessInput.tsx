@@ -10,7 +10,7 @@ export const BusinessInput: React.FC = () => {
       <Card.Heading>Business Input</Card.Heading>
       <Card.Description>Store and create your data.</Card.Description>
       <Card.Figure>
-        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-static-datasource/">
+        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/business-input/">
           <svg width={40} height={40} viewBox="0 0 121 83" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="22.627" y="18.9824" width="98.1561" height="63.6777" fill="#9D70F9" />
             <rect x="22.627" width="98.1561" height="18.9824" fill="black" />
@@ -40,7 +40,7 @@ export const BusinessInput: React.FC = () => {
           variant="primary"
           icon="book-open"
           target="_blank"
-          href="https://volkovlabs.io/plugins/volkovlabs-static-datasource/"
+          href="https://volkovlabs.io/plugins/business-input/"
         >
           Documentation
         </LinkButton>
