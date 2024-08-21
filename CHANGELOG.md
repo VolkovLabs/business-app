@@ -4,7 +4,7 @@
 
 ### Features / Enhancements
 
-- Update to Grafana 11.1.4 image
+- Update to Grafana 11.1.4 image (#108)
 
 ## 4.2.0 (2024-08-05)
 
