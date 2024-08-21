@@ -10,7 +10,7 @@ export const BusinessText: React.FC = () => {
       <Card.Heading>Business Text</Card.Heading>
       <Card.Description>Dynamic, data-driven text.</Card.Description>
       <Card.Figure>
-        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel/">
+        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/business-text/">
           <svg width={40} height={40} viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="47.5" cy="47.5" r="47.5" fill="#9D70F9" />
             <path
@@ -33,7 +33,7 @@ export const BusinessText: React.FC = () => {
           variant="primary"
           icon="book-open"
           target="_blank"
-          href="https://volkovlabs.io/plugins/volkovlabs-dynamictext-panel/"
+          href="https://volkovlabs.io/plugins/business-text/"
         >
           Documentation
         </LinkButton>

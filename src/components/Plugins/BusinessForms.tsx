@@ -10,7 +10,7 @@ export const BusinessForms: React.FC = () => {
       <Card.Heading>Business Forms</Card.Heading>
       <Card.Description>Insert, update application data, and modify configuration.</Card.Description>
       <Card.Figure>
-        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-form-panel/">
+        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/business-forms/">
           <svg width={40} height={40} viewBox="0 0 79 58">
             <rect width="78.0361" height="57.8978" fill="#9D70F9" />
             <rect y="5.03455" width="78.0361" height="0.629324" fill="white" />
@@ -48,7 +48,7 @@ export const BusinessForms: React.FC = () => {
           variant="primary"
           icon="book-open"
           target="_blank"
-          href="https://volkovlabs.io/plugins/volkovlabs-form-panel/"
+          href="https://volkovlabs.io/plugins/business-forms/"
         >
           Documentation
         </LinkButton>

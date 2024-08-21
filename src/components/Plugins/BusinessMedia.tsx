@@ -10,7 +10,7 @@ export const BusinessMedia: React.FC = () => {
       <Card.Heading>Business Media</Card.Heading>
       <Card.Description>Display media files.</Card.Description>
       <Card.Figure>
-        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/volkovlabs-image-panel/">
+        <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/business-media/">
           <svg width={40} height={40} viewBox="0 0 88 62">
             <rect x="0.837646" y="0.64502" width="86.7975" height="61.1037" fill="#FF5656" />
             <circle cx="69.5012" cy="19.302" r="9.13037" fill="#F5F6F9" />
@@ -31,7 +31,7 @@ export const BusinessMedia: React.FC = () => {
           variant="primary"
           icon="book-open"
           target="_blank"
-          href="https://volkovlabs.io/plugins/volkovlabs-image-panel/"
+          href="https://volkovlabs.io/plugins/business-media/"
         >
           Documentation
         </LinkButton>
