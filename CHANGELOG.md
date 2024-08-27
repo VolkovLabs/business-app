@@ -6,7 +6,7 @@
 
 - Updated to Grafana 11.1.4 image (#108)
 - Updated to Business App (#109)
-- Updated to Grafana 11.2.0 image with Scenes (#110)
+- Updated to Grafana 11.2.0 image (#110)
 
 ## 4.2.0 (2024-08-05)
 

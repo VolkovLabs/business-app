@@ -19,7 +19,7 @@ ENV GF_PANELS_DISABLE_SANITIZE_HTML=true
 ENV GF_ANALYTICS_CHECK_FOR_UPDATES=false
 
 ## Scenes-engine Dashboards
-ENV GF_FEATURE_TOGGLES_ENABLE=dashboardScene
+# ENV GF_FEATURE_TOGGLES_ENABLE=dashboardScene
 
 ## Set Home Dashboard
 ENV GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/etc/grafana/provisioning/dashboards/business.json
