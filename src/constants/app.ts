@@ -2,7 +2,7 @@
  * App Information
  */
 export const APP_INFO = {
-  name: 'Business Suite',
+  name: 'Business App',
   root: '/a/volkovlabs-app',
 };
 

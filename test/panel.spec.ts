@@ -1,6 +1,6 @@
 import { test, expect } from '@grafana/plugin-e2e';
 
-test.describe('Business Suite', () => {
+test.describe('Business App', () => {
   test('Should display a Canvas Panel', async ({ gotoDashboardPage, dashboardPage, page }) => {
     /**
      * Go To panels dashboard panels.json
