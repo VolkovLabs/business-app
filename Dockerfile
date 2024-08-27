@@ -1,4 +1,4 @@
-FROM grafana/grafana-oss:11.1.4
+FROM grafana/grafana-oss:11.2.0
 
 ##################################################################
 ## CONFIGURATION
@@ -19,7 +19,7 @@ ENV GF_PANELS_DISABLE_SANITIZE_HTML=true
 ENV GF_ANALYTICS_CHECK_FOR_UPDATES=false
 
 ## Scenes-engine Dashboards
-#ENV GF_FEATURE_TOGGLES_ENABLE=dashboardScene
+ENV GF_FEATURE_TOGGLES_ENABLE=dashboardScene
 
 ## Set Home Dashboard
 ENV GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/etc/grafana/provisioning/dashboards/business.json
@@ -106,7 +106,7 @@ RUN find /usr/share/grafana/public/build/ -name *.js \
 ## Remove Version in the Footer
     -exec sed -i 's|({target:"_blank",id:"version",.*CHANGELOG.md":void 0})|()|g' {} \; \
 ## Remove News icon
-    -exec sed -i 's|..createElement(....,{className:.,onClick:.,iconOnly:!0,icon:"rss","aria-label":"News"})|null|g' {} \; \
+    -exec sed -i 's|(.,.....)(....,{className:.,onClick:.,iconOnly:!0,icon:"rss","aria-label":"News"})|null|g' {} \; \
 ## Remove Open Source icon
     -exec sed -i 's|.push({target:"_blank",id:"version",text:`${..edition}${.}`,url:..licenseUrl,icon:"external-link-alt"})||g' {} \;
 

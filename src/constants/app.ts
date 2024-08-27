@@ -5,10 +5,3 @@ export const APP_INFO = {
   name: 'Business App',
   root: '/a/business-app',
 };
-
-/**
- * Routes
- */
-export const APP_ROUTES = {
-  plugins: `${APP_INFO.root}`,
-};
