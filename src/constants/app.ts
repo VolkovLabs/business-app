@@ -3,7 +3,7 @@
  */
 export const APP_INFO = {
   name: 'Business App',
-  root: '/a/volkovlabs-app',
+  root: '/a/business-app',
 };
 
 /**

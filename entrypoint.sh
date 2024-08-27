@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 SRC="/app"
-GRAFANA_APP_PATH="${GF_PATHS_PLUGINS}/volkovlabs-app"
+GRAFANA_APP_PATH="${GF_PATHS_PLUGINS}/business-app"
 
 ## Replace App
 rm -rf $GRAFANA_APP_PATH

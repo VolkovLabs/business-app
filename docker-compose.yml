@@ -10,5 +10,5 @@ services:
     environment:
       - GF_DEFAULT_APP_MODE=development
     volumes:
-      - ./dist:/var/lib/grafana/plugins/volkovlabs-app
+      - ./dist:/var/lib/grafana/plugins/business-app
       - ./provisioning:/etc/grafana/provisioning

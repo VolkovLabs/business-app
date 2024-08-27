@@ -5,14 +5,14 @@
     "grafanaDependency": ">=11.0.0",
     "plugins": []
   },
-  "id": "volkovlabs-app",
+  "id": "business-app",
   "includes": [
     {
       "addToNav": true,
       "defaultNav": true,
       "icon": "apps",
       "name": "Plugins",
-      "path": "/a/volkovlabs-app/",
+      "path": "/a/business-app/",
       "role": "Viewer",
       "type": "page"
     }
