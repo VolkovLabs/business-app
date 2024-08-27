@@ -17,7 +17,7 @@ export const Config: React.FC<Props> = () => {
   return (
     <FieldSet data-testid={TEST_IDS.config.root}>
       <h2>{APP_INFO.name}</h2>
-      <p>The Business Suite App includes Docker image and an application plugin.</p>
+      <p>The Business App includes Docker image and an application plugin.</p>
     </FieldSet>
   );
 };

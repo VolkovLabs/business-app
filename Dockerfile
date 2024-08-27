@@ -68,8 +68,8 @@ COPY img/background.svg /usr/share/grafana/public/img/g8_login_light.svg
 ##################################################################
 
 # Update Title
-RUN sed -i 's|<title>\[\[.AppTitle\]\]</title>|<title>Business Suite</title>|g' /usr/share/grafana/public/views/index.html
-RUN sed -i 's|Loading Grafana|Loading Business Suite|g' /usr/share/grafana/public/views/index.html
+RUN sed -i 's|<title>\[\[.AppTitle\]\]</title>|<title>Business App</title>|g' /usr/share/grafana/public/views/index.html
+RUN sed -i 's|Loading Grafana|Loading Business App|g' /usr/share/grafana/public/views/index.html
 
 ## Update Mega and Help menu
 RUN sed -i "s|\[\[.NavTree\]\],|nav,|g; \
@@ -82,12 +82,12 @@ RUN sed -i "s|\[\[.NavTree\]\],|nav,|g; \
     const connections = nav.find((element) => element.id === 'connections'); \
     if (connections) { connections['url'] = '/datasources'; connections['children'].shift(); } \
     const help = nav.find((element) => element.id === 'help'); \
-    if (help) { help['subTitle'] = 'Business Suite 4.2.0'; help['children'] = [];} \
+    if (help) { help['subTitle'] = 'Business App 4.3.0'; help['children'] = [];} \
     window.grafanaBootData = {|g" \
     /usr/share/grafana/public/views/index.html
 
-# Move Business Suite App to navigation root section
-RUN sed -i 's|\[navigation.app_sections\]|\[navigation.app_sections\]\nvolkovlabs-app=root|g' /usr/share/grafana/conf/defaults.ini
+# Move Business App to navigation root section
+RUN sed -i 's|\[navigation.app_sections\]|\[navigation.app_sections\]\nbusiness-app=root|g' /usr/share/grafana/conf/defaults.ini
 
 ##################################################################
 ## HANDS-ON
@@ -96,9 +96,9 @@ RUN sed -i 's|\[navigation.app_sections\]|\[navigation.app_sections\]\nvolkovlab
 
 RUN find /usr/share/grafana/public/build/ -name *.js \
 ## Update Title
-    -exec sed -i 's|AppTitle="Grafana"|AppTitle="Business Suite"|g' {} \; \
+    -exec sed -i 's|AppTitle="Grafana"|AppTitle="Business App"|g' {} \; \
 ## Update Login Title
-    -exec sed -i 's|LoginTitle="Welcome to Grafana"|LoginTitle="Business Suite for Grafana"|g' {} \; \
+    -exec sed -i 's|LoginTitle="Welcome to Grafana"|LoginTitle="Business App for Grafana"|g' {} \; \
 ## Remove Documentation, Support, Community in the Footer
     -exec sed -i 's|\[{target:"_blank",id:"documentation".*grafana_footer"}\]|\[\]|g' {} \; \
 ## Remove Edition in the Footer

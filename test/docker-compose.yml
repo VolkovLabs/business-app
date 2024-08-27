@@ -8,5 +8,5 @@ services:
     environment:
       - GF_USERS_DEFAULT_THEME=light
     volumes:
-      - ../dist:/var/lib/grafana/plugins/volkovlabs-app
+      - ../dist:/var/lib/grafana/plugins/business-app
       - ../provisioning:/etc/grafana/provisioning

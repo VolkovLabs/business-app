@@ -1,5 +1,5 @@
 apiVersion: 1
 
 apps:
-  - type: volkovlabs-app
+  - type: business-app
     disabled: false

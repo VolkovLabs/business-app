@@ -10,7 +10,7 @@
     "react-router-dom": "^5.3.4",
     "tslib": "^2.6.3"
   },
-  "description": "Business Suite for Grafana",
+  "description": "Business App for Grafana",
   "devDependencies": {
     "@babel/core": "^7.24.7",
     "@grafana/eslint-config": "^7.0.0",
