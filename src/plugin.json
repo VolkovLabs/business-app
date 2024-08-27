@@ -42,6 +42,6 @@
     "updated": "%TODAY%",
     "version": "%VERSION%"
   },
-  "name": "Business App",
+  "name": "Business Suite",
   "type": "app"
 }
