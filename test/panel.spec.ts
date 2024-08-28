@@ -15,8 +15,12 @@ test.describe('Business App', () => {
 
     /**
      * Find panel by title with data
+     */
+    const locator = dashboardPage.getPanelByTitle('Business App').locator;
+
+    /**
      * Should be visible
      */
-    await expect(dashboardPage.getPanelById('1').locator).toBeVisible();
+    await expect(locator).toBeVisible();
   });
 });
