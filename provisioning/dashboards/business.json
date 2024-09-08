@@ -50,8 +50,7 @@
                 "value": 80
               }
             ]
-          },
-          "unitScale": true
+          }
         },
         "overrides": []
       },
@@ -63,6 +62,7 @@
       },
       "id": 1,
       "options": {
+        "infinitePan": false,
         "inlineEditing": false,
         "panZoom": false,
         "root": {
@@ -88,6 +88,7 @@
           },
           "elements": [],
           "name": "Element 1720372446038",
+          "oneClickMode": "off",
           "placement": {
             "height": 100,
             "left": 0,
@@ -98,8 +99,7 @@
         },
         "showAdvancedTypes": false
       },
-      "pluginVersion": "10.3.1",
-      "title": "Business App",
+      "pluginVersion": "11.2.0",
       "type": "canvas"
     }
   ],
@@ -116,7 +116,7 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "Business Suite",
+  "title": "Business App",
   "uid": "O4tc_E6Gz",
   "version": 1,
   "weekStart": ""
