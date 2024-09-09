@@ -582,11 +582,31 @@
           },
           {
             "selected": false,
+            "text": "Business Forms",
+            "value": "business-forms"
+          },
+          {
+            "selected": false,
+            "text": "Business Media",
+            "value": "business-media"
+          },
+          {
+            "selected": false,
             "text": "Business News",
             "value": "business-news"
+          },
+          {
+            "selected": false,
+            "text": "Business Table",
+            "value": "business-table"
+          },
+          {
+            "selected": false,
+            "text": "Business Text",
+            "value": "business-text"
           }
         ],
-        "query": "Business Suite : business-suite, Business Calendar : business-calendar, Business Charts : business-charts, Business News : business-news",
+        "query": "Business Suite : business-suite, Business Calendar : business-calendar, Business Charts : business-charts, Business Forms : business-forms, Business Media : business-media, Business News : business-news, Business Table : business-table, Business Text : business-text",
         "skipUrlSync": false,
         "type": "custom"
       },
@@ -619,7 +639,7 @@
             ],
             "meta": {
               "custom": {
-                "customCode": "let id = 'fdtmkjc238a2oe';\n\nswitch (`${plugin}`) {\n  case 'business-calendar':\n    id = 'cdtmkqipv7mdcc';\n    break;\n  case 'business-charts':\n    id = 'edtmwjirtfny8d';\n    break;\n  case 'business-news':\n    id = 'ddtpy13k0obggc';\n    break;\n};\n\nconst result = {\n  ...frame,\n  fields: frame.fields.map((field) => ({\n    ...field,\n    values: [id]\n  }))\n}\n\nreturn Promise.resolve(result);",
+                "customCode": "let id = 'fdtmkjc238a2oe';\n\nswitch (`${plugin}`) {\n  case 'business-calendar':\n    id = 'cdtmkqipv7mdcc';\n    break;\n  case 'business-charts':\n    id = 'edtmwjirtfny8d';\n    break;\n  case 'business-news':\n    id = 'ddtpy13k0obggc';\n    break;\n  case 'business-text':\n    id = 'cdtmkqipv7mdc1';\n    break;\n  case 'business-media':\n    id = 'cdtmkqipv7mdc2';\n    break;\n  case 'business-forms':\n    id = 'edtmwjirtfny8e';\n    break;\n  case 'business-table':\n    id = 'edtmwjirtfny8k';\n    break;\n};\n\nconst result = {\n  ...frame,\n  fields: frame.fields.map((field) => ({\n    ...field,\n    values: [id]\n  }))\n}\n\nreturn Promise.resolve(result);",
                 "valuesEditor": "custom"
               }
             },
@@ -642,6 +662,6 @@
   "timezone": "browser",
   "title": "Business Suite",
   "uid": "fdtmkjc238a2oe",
-  "version": 8,
+  "version": 14,
   "weekStart": ""
 }
