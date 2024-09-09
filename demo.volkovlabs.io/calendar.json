@@ -68,7 +68,7 @@
         "afterRender": "",
         "content": "```json\n{{{json @root}}}\n```",
         "contentPartials": [],
-        "defaultContent": "# Business Calendar\n\nThe Business Calendar panel is a Grafana plugin that displays events in a stylish calendar format. The data can come from various data sources.\n\n## Requirements\n\n- The Business Calendar Panel 3.X requires **Grafana 10** or **Grafana 11**.\n- Calendar Panel 2.X requires **Grafana 9.2** or **Grafana 10**.\n- Calendar Panel 1.X requires **Grafana 8.5** or **Grafana 9**.\n\n## Getting Started\n\nYou can install the Business Calendar Panel plugin from the [Grafana Plugins catalog](https://grafana.com/grafana/plugins/marcusolsson-calendar-panel/) or use the Grafana command line tool.\n\nFor the latter, please use the following command:\n\n```bash\ngrafana-cli plugins install marcusolsson-calendar-panel\n```\n\n## Highlights\n\n- Intuitive multi-language toolbar that allows you to:\n  - Switch between the **Day**, **Week**, **Month**, **Work Week**, **Year**, and **Agenda** views.\n  - Switch back to today's events.\n  - Display events from the previous and subsequent time ranges.\n- Fetch and combine event data from any data sources.\n- Event filter by a time range.\n- Event coloring based on the Grafana Thresholds.\n- Enables the opening of a data link instead of a sidebar when clicking on an event.\n- Enables the display of annotations across all dashboards for the specified period.\n- Supports Internationalization: Spanish, French, German, and Chinese.",
+        "defaultContent": "# Business Calendar\n\nThe Business Calendar panel is a Grafana plugin that displays events in a stylish calendar format. The data can come from various data sources.\n\n##\n## Requirements\n\n- The Business Calendar Panel 3.X requires **Grafana 10** or **Grafana 11**.\n- Calendar Panel 2.X requires **Grafana 9.2** or **Grafana 10**.\n- Calendar Panel 1.X requires **Grafana 8.5** or **Grafana 9**.\n\n##\n## Getting Started\n\nYou can install the Business Calendar Panel plugin from the [Grafana Plugins catalog](https://grafana.com/grafana/plugins/marcusolsson-calendar-panel/) or use the Grafana command line tool.\n\nFor the latter, please use the following command:\n\n```bash\ngrafana-cli plugins install marcusolsson-calendar-panel\n```\n\n## Highlights\n\n- Intuitive multi-language toolbar that allows you to:\n  - Switch between the **Day**, **Week**, **Month**, **Work Week**, **Year**, and **Agenda** views.\n  - Switch back to today's events.\n  - Display events from the previous and subsequent time ranges.\n- Fetch and combine event data from any data sources.\n- Event filter by a time range.\n- Event coloring based on the Grafana Thresholds.\n- Enables the opening of a data link instead of a sidebar when clicking on an event.\n- Enables the display of annotations across all dashboards for the specified period.\n- Supports Internationalization: Spanish, French, German, and Chinese.",
         "editor": {
           "format": "auto",
           "language": "markdown"
@@ -541,6 +541,6 @@
   "timezone": "browser",
   "title": "Business Calendar",
   "uid": "cdtmkqipv7mdcc",
-  "version": 4,
+  "version": 1,
   "weekStart": ""
 }

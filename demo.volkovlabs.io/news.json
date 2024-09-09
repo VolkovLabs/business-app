@@ -51,7 +51,7 @@
           "showLineNumbers": false,
           "showMiniMap": false
         },
-        "content": "# Business News\n\nThe Business News data source is a plugin for Grafana that retrieves RSS/Atom feeds and allows visualizing them using Business Text and other panels.\n\n## Requirements\n\n- Business News Data Source 4.X requires **Grafana 10** or **Grafana 11**.\n- RSS/Atom Data Source 3.X requires **Grafana 9** or **Grafana 10**.\n- RSS/Atom Data Source 2.X requires **Grafana 8.5** or **Grafana 9**.\n- RSS/Atom Data Source 1.X requires **Grafana 8**.\n\n## Getting Started\n\nThe Business News data source can be installed from the [Grafana Catalog](https://grafana.com/grafana/plugins/volkovlabs-rss-datasource/) or utilizing the Grafana command line tool.\n\nFor the latter, please use the following command.\n\n```bash\ngrafana-cli plugins install volkovlabs-rss-datasource\n```\n\n## Highlights\n\n- Supports RSS 2.0, RSS 1.0 and Atom.\n- Works with Dynamic Text visualization panel.\n- Returns Channel (Feed) data, Items (Entries) or both as separate data frames.\n- Extract and parse as additional fields:\n  - Image from Meta.\n  - H4 and Image from the Encoded content.\n  - Media:Group for YouTube.\n- Filter items/entries based on the selected Time Range.\n- Allows specifying Query parameters with dashboard variables.",
+        "content": "# Business News\n\nThe Business News data source is a plugin for Grafana that retrieves RSS/Atom feeds and allows visualizing them using Business Text and other panels.\n\n##\n## Requirements\n\n- Business News Data Source 4.X requires **Grafana 10** or **Grafana 11**.\n- RSS/Atom Data Source 3.X requires **Grafana 9** or **Grafana 10**.\n- RSS/Atom Data Source 2.X requires **Grafana 8.5** or **Grafana 9**.\n- RSS/Atom Data Source 1.X requires **Grafana 8**.\n\n##\n## Getting Started\n\nThe Business News data source can be installed from the [Grafana Catalog](https://grafana.com/grafana/plugins/volkovlabs-rss-datasource/) or utilizing the Grafana command line tool.\n\nFor the latter, please use the following command.\n\n```bash\ngrafana-cli plugins install volkovlabs-rss-datasource\n```\n\n##\n## Highlights\n\n- Supports RSS 2.0, RSS 1.0 and Atom.\n- Works with Dynamic Text visualization panel.\n- Returns Channel (Feed) data, Items (Entries) or both as separate data frames.\n- Extract and parse as additional fields:\n  - Image from Meta.\n  - H4 and Image from the Encoded content.\n  - Media:Group for YouTube.\n- Filter items/entries based on the selected Time Range.\n- Allows specifying Query parameters with dashboard variables.",
         "mode": "markdown"
       },
       "pluginVersion": "11.2.0",
@@ -723,6 +723,6 @@
   "timezone": "browser",
   "title": "Business News",
   "uid": "ddtpy13k0obggc",
-  "version": 3,
+  "version": 4,
   "weekStart": ""
 }
