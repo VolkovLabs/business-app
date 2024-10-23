@@ -72,14 +72,12 @@ RUN sed -i 's|Loading Grafana|Loading Business App|g' /usr/share/grafana/public/
 RUN sed -i "s|\[\[.NavTree\]\],|nav,|g; \
     s|window.grafanaBootData = {| \
     let nav = [[.NavTree]]; \
-    const alerting = nav.find((element) => element.id === 'alerting'); \
-    if (alerting) { alerting['url'] = '/alerting/list'; } \
     const dashboards = nav.find((element) => element.id === 'dashboards/browse'); \
     if (dashboards) { dashboards['children'] = [];} \
     const connections = nav.find((element) => element.id === 'connections'); \
     if (connections) { connections['url'] = '/datasources'; connections['children'].shift(); } \
     const help = nav.find((element) => element.id === 'help'); \
-    if (help) { help['subTitle'] = 'Business App 4.3.0'; help['children'] = [];} \
+    if (help) { help['subTitle'] = 'Business App 4.4.0'; help['children'] = [];} \
     window.grafanaBootData = {|g" \
     /usr/share/grafana/public/views/index.html
 
@@ -101,7 +99,7 @@ RUN find /usr/share/grafana/public/build/ -name *.js \
 ## Remove Edition in the Footer
     -exec sed -i 's|({target:"_blank",id:"license",.*licenseUrl})|()|g' {} \; \
 ## Remove Version in the Footer
-    -exec sed -i 's|({target:"_blank",id:"version",.*CHANGELOG.md":void 0})|()|g' {} \; \
+    -exec sed -i 's|({target:"_blank",id:"version",text:f.versionString,url:D?"https://github.com/grafana/grafana/blob/main/CHANGELOG.md":void 0})|()|g' {} \; \
 ## Remove News icon
     -exec sed -i 's|(.,.....)(....,{className:.,onClick:.,iconOnly:!0,icon:"rss","aria-label":"News"})|null|g' {} \; \
 ## Remove Open Source icon
