@@ -8,7 +8,7 @@ export const BusinessSatellite: React.FC = () => {
   return (
     <Card>
       <Card.Heading>Business Satellite</Card.Heading>
-      <Card.Description>Connect to Local and Remote Grafana instances.</Card.Description>
+      <Card.Description>Allows to retrieve data from local and remote Grafana instances via HTTP API.</Card.Description>
       <Card.Figure>
         <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/business-satellite/">
           <svg width={40} height={40} viewBox="0 0 150 98" fill="none" xmlns="http://www.w3.org/2000/svg">

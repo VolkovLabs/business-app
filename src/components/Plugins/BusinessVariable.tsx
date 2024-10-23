@@ -8,7 +8,9 @@ export const BusinessVariable: React.FC = () => {
   return (
     <Card>
       <Card.Heading>Business Variable</Card.Heading>
-      <Card.Description>Update dashboard variables.</Card.Description>
+      <Card.Description>
+        Allows you to have dashboard filters in a separate panel to place anywhere on the dashboard.
+      </Card.Description>
       <Card.Figure>
         <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/business-variable/">
           <svg width="40" height="40" viewBox="0 0 135 100" fill="none" xmlns="http://www.w3.org/2000/svg">

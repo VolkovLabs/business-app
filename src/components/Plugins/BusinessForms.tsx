@@ -8,7 +8,10 @@ export const BusinessForms: React.FC = () => {
   return (
     <Card>
       <Card.Heading>Business Forms</Card.Heading>
-      <Card.Description>Insert, update application data, and modify configuration.</Card.Description>
+      <Card.Description>
+        Allows inserting and updating application data, as well as modifying configuration directly from your Grafana
+        dashboard.
+      </Card.Description>
       <Card.Figure>
         <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/business-forms/">
           <svg width={40} height={40} viewBox="0 0 79 58">

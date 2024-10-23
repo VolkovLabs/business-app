@@ -8,7 +8,10 @@ export const BusinessMedia: React.FC = () => {
   return (
     <Card>
       <Card.Heading>Business Media</Card.Heading>
-      <Card.Description>Display media files.</Card.Description>
+      <Card.Description>
+        Allows to create the desired visual experience by mixing and matching any supported formats for multimedia file
+        visualizations.
+      </Card.Description>
       <Card.Figure>
         <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/business-media/">
           <svg width={40} height={40} viewBox="0 0 88 62">

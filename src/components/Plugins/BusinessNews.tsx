@@ -8,7 +8,9 @@ export const BusinessNews: React.FC = () => {
   return (
     <Card>
       <Card.Heading>Business News</Card.Heading>
-      <Card.Description>Visualize RSS/Atom feeds.</Card.Description>
+      <Card.Description>
+        Retrieves RSS and Atom feeds and allows visualizing them using Business Text and other panels.
+      </Card.Description>
       <Card.Figure>
         <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/business-news/">
           <svg width={40} height={40} viewBox="0 0 65 65">

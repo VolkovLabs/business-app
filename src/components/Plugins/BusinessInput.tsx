@@ -8,7 +8,7 @@ export const BusinessInput: React.FC = () => {
   return (
     <Card>
       <Card.Heading>Business Input</Card.Heading>
-      <Card.Description>Store and create your data.</Card.Description>
+      <Card.Description>Allows storing and emulating your data using JavaScript and LLM.</Card.Description>
       <Card.Figure>
         <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/business-input/">
           <svg width={40} height={40} viewBox="0 0 121 83" fill="none" xmlns="http://www.w3.org/2000/svg">
