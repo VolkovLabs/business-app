@@ -4,7 +4,8 @@
 
 ### Features / Enhancements
 
-- Updated to Grafana 11.3.0 image (#111)
+- Updated to Grafana 11.3.0 image (#115)
+- Updated to Grafana 11.3.0 dependencies (#116)
 
 ## 4.3.0 (2024-08-27)
 

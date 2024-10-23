@@ -8,7 +8,7 @@ export const BusinessTable: React.FC = () => {
   return (
     <Card>
       <Card.Heading>Business Table</Card.Heading>
-      <Card.Description>Summarize large amounts of data.</Card.Description>
+      <Card.Description>Allows to simplify data visualization in table format.</Card.Description>
       <Card.Figure>
         <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/business-table/">
           <svg width={40} height={40} viewBox="0 0 104 84" fill="none" xmlns="http://www.w3.org/2000/svg">

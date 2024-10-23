@@ -8,7 +8,9 @@ export const BusinessCharts: React.FC = () => {
   return (
     <Card>
       <Card.Heading>Business Charts</Card.Heading>
-      <Card.Description>Powerful visualizations powered by Apache ECharts.</Card.Description>
+      <Card.Description>
+        Integrates charts and graphs created by the Apache ECharts library into your Grafana dashboard.
+      </Card.Description>
       <Card.Figure>
         <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/business-charts/">
           <svg width={40} height={40} viewBox="0 0 107 94">

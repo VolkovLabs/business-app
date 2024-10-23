@@ -8,7 +8,9 @@ export const BusinessText: React.FC = () => {
   return (
     <Card>
       <Card.Heading>Business Text</Card.Heading>
-      <Card.Description>Dynamic, data-driven text.</Card.Description>
+      <Card.Description>
+        Allows to convert plain text and table data into visually appealing, easy-to-read information cards.
+      </Card.Description>
       <Card.Figure>
         <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/business-text/">
           <svg width={40} height={40} viewBox="0 0 95 95" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -8,7 +8,9 @@ export const BusinessCalendar: React.FC = () => {
   return (
     <Card>
       <Card.Heading>Business Calendar</Card.Heading>
-      <Card.Description>Display events and change time range.</Card.Description>
+      <Card.Description>
+        Displays events in a stylish calendar format. The data can come from various data sources.
+      </Card.Description>
       <Card.Figure>
         <a target="_blank" rel="noreferrer" href="https://volkovlabs.io/plugins/business-calendar/">
           <svg width="40" height="40" viewBox="0 0 310 322" fill="none">

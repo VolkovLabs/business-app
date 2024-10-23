@@ -1,4 +1,4 @@
-import { PluginPage, PluginPageProps } from '@grafana/runtime';
+import { PluginPage } from '@grafana/runtime';
 import React from 'react';
 
 import { TEST_IDS } from '../../constants';
@@ -16,14 +16,9 @@ import {
 } from '../Plugins';
 
 /**
- * Properties
- */
-interface Props extends PluginPageProps {}
-
-/**
  * Plugins
  */
-export const PluginsPage: React.FC<Props> = () => {
+export const PluginsPage: React.FC = () => {
   return (
     <PluginPage>
       <div data-testid={TEST_IDS.plugins.root}>
