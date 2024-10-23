@@ -1,7 +1,6 @@
 import { AppPluginMeta, PluginType } from '@grafana/data';
 import { render, screen } from '@testing-library/react';
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
 
 import { APP_INFO, TEST_IDS } from '../../constants';
 import { App } from './App';
@@ -41,9 +40,7 @@ describe('App', () => {
   describe('rendering', () => {
     it('Should render plugins page', async () => {
       render(
-        <BrowserRouter>
-          <App basename={APP_INFO.root} meta={meta} path={null as any} query={null as any} onNavChanged={jest.fn()} />
-        </BrowserRouter>
+        <App basename={APP_INFO.root} meta={meta} path={null as any} query={null as any} onNavChanged={jest.fn()} />
       );
 
       expect(screen.getByTestId(TEST_IDS.plugins.root)).toBeInTheDocument();
